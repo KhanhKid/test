@@ -1,78 +1,306 @@
-<div id="content-home">
-  <?php require 'lazy/menu.phtml' ?>
-  <h1>Laptop cũ giá rẻ uy tín chất lượng</h1>
-  <div class="box">
-      <!--<div class="box-heading">Mới nhất</div>-->
-      <div class="box-content">
-          <input type="hidden" id="brandID" value="<?=isset($brandID)?$brandID:0?>">
-          <div class="box-product" id="listProduct">
-                <?php if(count($listProduct) == 0) echo "<strong>Hiện tại chưa có sản phẩm nào</strong>" ?>
-                <?php foreach ($listProduct as $key => $value) { 
-                    ?>
-                    <div class="boxover">
-                        <div class="image"><a href="<?=$linkHost?>/detail/<?=$value['id']?>-<?=$value['link_seo']?>"><img src="/userfiles/<?=$value['img']?>" alt="<?=$value['name']?>" /></a></div>
-                        <div class="name"><a href="<?=$linkHost?>/detail/<?=$value['id']?>-<?=$value['link_seo']?>"><?=$value['name']?></a></div>
-                        <div class="price">
-                            <?=number_format($value['price'])?> VND &nbsp;
-                        </div>
-                        <div class="description">
-                            <?=$value['shortdetail']?>
-                        </div>
-                        <!-- them show len -->
-                        <div class="boxover_info">
-                          <span class="name"><?=$value['name']?></span><br/><br/><br/>
-                          <span class="name1">Tính năng nổi bật:</span> <br/><br/>
-                          <p>
-                              <?=$value['shortdetail']?>
-                          </p>
-                          <div class="boxover_price">
-                              <span class="price"><?=number_format($value['price'])?> VND</span>
-                          </div>
-                          </div>
-                  </div>
-                <?php } ?>
+<section id="about">
+    <div class="container">
+        <div class="row about-container">
+            <div class="col-lg-8 content order-lg-1 order-2">
+                <h2 class="title">Công ty TNHH Thương mại - Xử lý Môi trường Thành Lập</h2>
+                <p>- Với kinh nghiệm hơn 15 năm trong lĩnh vực xử lý và tái chế chất thải, là một trong những đơn vị đi đầu trong lĩnh vực trên đang ngày càng phát triển, đầu tư thêm trang thiết bị mới, hiện đại,… được Quý Khách hàng đánh giá cao về chất lượng sản phẩm dịch vụ sẽ là sự lựa chọn tốt nhất cho các Khách hàng trong việc tìm kiếm các đơn vị có đầy đủ năng lực và tiết kiệm chi phí cho việc xử lý chất thải.</br>- Xin chân thành cảm ơn Quý Khách hàng đã tín nhiệm và hợp tác với chúng tôi trong thời gian qua. Công ty chúng tôi cam kết sẽ đồng hành cùng Quý khách trong công tác bảo vệ môi trường và phát triển bền vững với dịch vụ tốt nhất, giá cả cạnh tranh và hợp lý nhất. Hy vọng, Công ty chúng tôi sẽ đóng góp một phần nhỏ vào sự thành công của Quý  khách.
+                </p>
+                <div class="icon-box wow fadeInUp">
+                    <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+                    <h4 class="title"><a href="">XỬ LÝ CHẤT THẢI</a></h4>
+                    <p class="description">Xử lý chất thải bao gồm: chất thải nguy hại và chất thải không nguy hại là khâu then chốt trong phát triển sản xuất sạch hơn và tiêu dùng sạch hơn, hướng tới nền công nghiệp xanh.</p>
+                </div>
+                <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="icon"><i class="fa fa-photo"></i></div>
+                    <h4 class="title"><a href="">THU MUA PHẾ LIỆU</a></h4>
+                    <p class="description">Thu mua phế liệu từ công trình, nhà xưởng, hàng hóa thanh lý, các loại phế liệu đồng, nhôm, chì, kẽm, sắt, phế liệu nhựa, giấy, dầu nhớt, dung môi,…</p>
+                </div>
+                <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="icon"><i class="fa fa-bar-chart"></i></div>
+                    <h4 class="title"><a href="">TƯ VẤN MÔI TRƯỜNG</a></h4>
+                    <p class="description">Tư vấn giải pháp xử lý môi trường phù hợp, đảm bảo hiệu quả xử lý, tiết kiệm chi phí đầu tư, tái chế chất thải.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+    </div>
+</section>
+<!-- #about -->
+<!--==========================
+    Facts Section
+    ============================-->
+<section id="facts">
+    <div class="container wow fadeIn">
+        <div class="section-header">
+            <h3 class="section-title">Facts</h3>
+            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row counters">
+            <div class="col-lg-3 col-6 text-center">
+                <span data-toggle="counter-up">232</span>
+                <p>Clients</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+                <span data-toggle="counter-up">521</span>
+                <p>Projects</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+                <span data-toggle="counter-up">1,463</span>
+                <p>Hours Of Support</p>
+            </div>
+            <div class="col-lg-3 col-6 text-center">
+                <span data-toggle="counter-up">15</span>
+                <p>Hard Workers</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #facts -->
+<!--==========================
+    Services Section
+    ============================-->
+<section id="services">
+    <div class="container wow fadeIn">
+        <div class="section-header">
+            <h3 class="section-title">Dịch Vụ</h3>
+            <p class="section-description">Chúng tôi mong muốn mang lại những dịch vụ tốt nhất cho bạn</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                    <h4 class="title"><a href="">XỬ LÝ CHẤT THẢI</a></h4>
+                    <p class="description">Bao gồm: chất thải nguy hại và chất thải không nguy hại là khâu then chốt trong phát triển sản xuất sạch hơn và tiêu dùng sạch hơn, hướng tới nền công nghiệp xanh.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+                    <h4 class="title"><a href="">THU MUA PHẾ LIỆU</a></h4>
+                    <p class="description">Thu mua phế liệu từ công trình, nhà xưởng, hàng hóa thanh lý, các loại phế liệu đồng, nhôm, chì, kẽm, sắt, phế liệu nhựa, giấy, dầu nhớt, dung môi,…</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+                    <h4 class="title"><a href="">TƯ VẤN MÔI TRƯỜNG</a></h4>
+                    <p class="description">Tư vấn giải pháp xử lý môi trường phù hợp, đảm bảo hiệu quả xử lý, tiết kiệm chi phí đầu tư, tái chế chất thải.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #services -->
+<!-- #facts -->
+<!--==========================
+    Call To Action Section
+    ============================-->
+<section id="call-to-action">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+                <h3 class="cta-title">Liên hệ để được tư vấn</h3>
+                <p class="cta-text">Công ty TNHH Thương mại - Xử lý Môi trường Thành Lập với kinh nghiệm hơn 15 năm trong lĩnh vực xử lý và tái chế chất thải, là một trong những đơn vị đi đầu trong lĩnh vực trên đang ngày càng phát triển, đầu tư thêm trang thiết bị mới, hiện đại,</p>
+            </div>
+            <div class="col-lg-3 cta-btn-container text-center">
+                <a class="cta-btn align-middle" href="tel:02833603072">Gọi Ngay</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--==========================
+    license Section
+    ============================-->
+<section id="license">
+    <div class="container wow fadeIn">
+        <div class="section-header">
+            <h3 class="section-title">Giấy Phép</h3>
+            <p class="section-description">Chúng tôi mong muốn mang lại những dịch vụ tốt nhất cho bạn</p> 
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
+                    <h4 class="title"><a href="">Quyết định phê duyệt đề án ĐTM</a></h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
+                    <h4 class="title"><a href="">Giấy phép kinh doanh</a></h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+                    <h4 class="title"><a href="">Giấy phép hành nghề quản lý chất thải nguy hại</a></h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="box">
+                    <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
+                    <h4 class="title"><a href="">Tiêu chuẩn ISO</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- #license -->
+<!-- #call-to-action -->
+<!--==========================
+    Portfolio Section
+    ============================-->
+<section id="portfolio">
+    <div class="container wow fadeInUp">
+        <div class="section-header">
+            <h3 class="section-title">THIẾT BỊ XỬ LÝ CHẤT THẢI</h3>
+            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row" id="portfolio-wrapper">
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app1.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống lò đốt</h4>
+                        <span>Hệ thống lò đốt</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app2.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống xử lý nước thải</h4>
+                        <span>Hệ thống xử lý nước thải</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app3.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống tái chế dầu nhớt</h4>
+                        <span>Hệ thống tái chế dầu nhớt</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app4.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống tái chế dung môi</h4>
+                        <span>Hệ thống tái chế dung môi</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app5.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống xử lý bóng đèn</h4>
+                        <span>Hệ thống xử lý bóng đèn</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app6.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống xử lý ắc quy</h4>
+                        <span>Hệ thống xử lý ắc quy</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app7.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống súc rửa thùng phuy</h4>
+                        <span>Hệ thống súc rửa thùng phuy</span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <a href="">
+                    <img src="/assets/frontend/img/portfolio/app8.jpg" alt="">
+                    <div class="details">
+                        <h4>Hệ thống xử lý linh kiện điện tử</h4>
+                        <span>Hệ thống xử lý linh kiện điện tử</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #portfolio -->
+<!--==========================
+    Team Section
+    ============================-->
+<section id="team">
+    <div class="container wow fadeInUp">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/assets/frontend/img/team-1.jpg" alt=""></div>
+              <h4>Walter White</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
           </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/assets/frontend/img/team-2.jpg" alt=""></div>
+              <h4>Sarah Jhinson</h4>
+              <span>Product Manager</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/assets/frontend/img/team-3.jpg" alt=""></div>
+              <h4>William Anderson</h4>
+              <span>CTO</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="/assets/frontend/img/team-4.jpg" alt=""></div>
+              <h4>Amanda Jepson</h4>
+              <span>Accountant</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-  </div>
-</div>
-<script type="text/javascript">
-    jQuery(document).ready(function($) {
-
-        $(".cateID").on('click', function(event) {
-            var selected = new Array();
-            $("input:checkbox[name=cateID]:checked").each(function(){
-                selected.push($(this).val());
-            });
-            brandID = $("#brandID").val();
-            console.log(selected,brandID);
-            $.ajax({
-                url: '/cateajax',
-                type: 'POST',
-                dataType: 'json',
-                data: {cateID: selected, brandID: brandID},
-            })
-            .done(function(data) {
-                $("#listProduct").html("");
-                for (var i = data.length - 1; i >= 0; i--) {
-                    value = data[i];
-                    row ='<div class="boxover">\
-                        <div class="image"><a href="<?=$linkHost?>/detail/'+value.id+'-'+value.link_seo+'"><img src="/userfiles/'+value.img+'" alt="'+value.name+'"></a></div>\
-                        <div class="name"><a href="<?=$linkHost?>/detail/'+value.id+'-'+value.link_seo+'">'+value.name+'</a></div>\
-                        <div class="price">\
-                            '+value.price+'\
-                        </div>\
-                        <div class="description">\
-                            '+value.shortdetail+'\
-                        </div>\
-                        \
-                  </div>';
-                    $("#listProduct").append(row);
-                }
-                if(data.length == 0){
-                    $("#listProduct").html("<strong>Hiện tại chưa có sản phẩm nào</strong>");
-                }
-            });
-        });
-    });
-
-</script>
+</section>
+<!-- #team -->

@@ -653,6 +653,74 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
   line-height: 24px;
 }
+/*==== License === */
+
+/* Services Section
+--------------------------------*/
+#license {
+  background: #fff;
+  background-size: cover;
+  padding: 80px 0 60px 0;
+}
+
+#license .box {
+  padding: 50px 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #e6e6e6;
+  height: 200px;
+  position: relative;
+  background: #fafafa;
+}
+
+#license .icon {
+  position: absolute;
+  top: -36px;
+  left: calc(50% - 36px);
+  transition: 0.2s;
+  border-radius: 50%;
+  display: inline-block;
+  border: 6px solid #fff;
+}
+
+#license .icon a {
+  display: inline-block;
+  background: #2dc997;
+  border: 2px solid #2dc997;
+  padding: 16px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+#license .icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+#license .box:hover .icon i {
+  color: #2dc997;
+}
+
+#license .box:hover .icon a {
+  color: #2dc997;
+  background: #fff;
+}
+
+#license .title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+#license .title a {
+  color: #111;
+}
+
+#license .description {
+  font-size: 14px;
+  line-height: 24px;
+}
 
 /* Call To Action Section
 --------------------------------*/
