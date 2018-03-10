@@ -1,17 +1,18 @@
 **Virtual host**
 
-    <VirtualHost *:80>
-		<Directory "E:/wamp/www/offshore/vessel">
+	<VirtualHost *:80>
+		<Directory "E:/wamp/www/heroku/thanhcong">
 			Require all granted
-	        AllowOverride All
+		AllowOverride All
 			Order Deny,Allow   
 			Allow from all 
 	    </Directory>
-	    SetEnv FUEL_ENV "development"
-	    DocumentRoot "E:/wamp/www/offshore/vessel/public/"
-	    ServerName localsv.vessel.net	
-	    ServerAlias localsv.vessel.net
-	    ErrorLog "E:/wamp/logs/vessel.log"
+	    SetEnv APPLICATION_ENV "DEVELOPMENT"
+	    DocumentRoot "E:/wamp/www/heroku/thanhcong/public/"
+	    ServerName dev.thanhcong.vn	
+	    ServerAlias dev.thanhcong.vn
+	    ErrorLog "E:/wamp/logs/thanhcong.log"
+	    CustomLog "logs/thanhcong.log" common
 	</VirtualHost>
 
 
