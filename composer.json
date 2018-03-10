@@ -1,3 +1,15 @@
 {
-    "license": "MIT"
+    "require": {
+        "php": "~5.3"
+    },
+    "extra": {
+        "heroku": {
+            "document-root": "public",
+            "index": "public/index.php",
+            "engines": {
+                "php": "5.3.23",
+                "nginx": "~1.2.0"
+            }
+        }
+    }
 }
