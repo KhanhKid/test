@@ -50,7 +50,7 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="#team">Giấy Phép</a>
+                            <a href="/#license">Giấy Phép</a>
                             <ul>
                                 <li><a href="#">Quyết định phê duyệt đề án ĐTM</a></li>
                                 <li><a href="#">Giấy phép kinh doanh</a></li>
@@ -59,7 +59,7 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="#power">HỒ SƠ NĂNG LỰC</a>
+                            <a href="#portfolio">HỒ SƠ NĂNG LỰC</a>
                             <ul>
                                 <li><a href="#">Công ty khách hàng</a></li>
                                 <li><a href="#">Thiết bị – công nghệ</a></li>
