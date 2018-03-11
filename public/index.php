@@ -26,7 +26,7 @@ define('DOCROOT', __DIR__.DIRECTORY_SEPARATOR);
 define('APPPATH', realpath(__DIR__.'/../fuel/app/').DIRECTORY_SEPARATOR);
 
 define('APPPATH_USERFILE', realpath(__DIR__.'/../public/userfiles/').DIRECTORY_SEPARATOR);
-define('ASSETSPATH', realpath('/assets').DIRECTORY_SEPARATOR);
+define('ASSETSPATH', realpath(__DIR__.'/../public/assets').DIRECTORY_SEPARATOR);
 /**
  * Path to the default packages directory.
  */

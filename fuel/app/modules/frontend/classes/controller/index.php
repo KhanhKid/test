@@ -6,6 +6,7 @@ use \Request;
 use \Auth;
 use \Input;
 use \Session;
+use \Asset;
 use \Model_Product;
 
 class Controller_Index extends Controller_Base{
@@ -20,10 +21,10 @@ class Controller_Index extends Controller_Base{
         $this->template->content = View::forge('index/index',$data);
     } 
 
-    public function action_contact() {
-        $data = array();
+    public function action_news() {
+        $data = array();        
         $this->template->meta = $this->metaTag();
-        $this->template->content = View::forge('index/contact',$data);
+        $this->template->content = View::forge('index/news',$data);
     }
 
     public function action_laptop($seo){

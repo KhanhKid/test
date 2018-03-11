@@ -28,6 +28,10 @@
             License: https://bootstrapmade.com/license/
             ======================================================= -->
     </head>
+
+<?php 
+    $infoPage = \Request::active();
+?>
     <body>
         <!--==========================
             Header
@@ -35,14 +39,14 @@
         <header id="header">
             <div class="container">
                 <div id="logo" class="pull-left">
-                    <a href="#hero"><img src="/public/assets/frontend/img/logo.png" alt="" title="" /></img></a>
+                    <a href="/#hero"><img src="/public/assets/frontend/img/logo.png" alt="" title="" /></img></a>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li class="menu-active"><a href="#hero">Trang chủ</a></li>
-                        <li><a href="#about">Giới Thiệu</a></li>
+                        <li class="menu-active"><a href="/">Trang chủ</a></li>
+                        <li><a href="/#about">Giới Thiệu</a></li>
                         <li class="menu-has-children">
                             <a href="#services">Dịch Vụ</a>
                             <ul>
@@ -62,7 +66,7 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="#portfolio">HỒ SƠ NĂNG LỰC</a>
+                            <a href="/#portfolio">HỒ SƠ NĂNG LỰC</a>
                             <ul>
                                 <li><a href="#">Công ty khách hàng</a></li>
                                 <li><a href="#">Thiết bị – công nghệ</a></li>
@@ -77,8 +81,8 @@
                                 <li><a href="#">Văn bản khác</a></li>
                             </ul>
                         </li>
-                        <li class="menu-has-children"><a href="">TIN MÔI TRƯỜNG</a></li>
-                        <li><a href="#services">LIÊN HỆ</a></li>
+                        <li class="menu-has-children"><a href="/news/   ">TIN MÔI TRƯỜNG</a></li>
+                        <li><a href="/#contact">LIÊN HỆ</a></li>
                     </ul>
                 </nav>
                 <!-- #nav-menu-container -->
@@ -88,6 +92,10 @@
         <!--==========================
             Hero Section
             ============================-->
+            
+        <?php
+            if($infoPage->controller != "Frontend\Controller_News") {
+        ?>
         <section id="hero">
             <div class="hero-container">
                 <h1>THÀNH LẬP</h1>
@@ -95,6 +103,9 @@
                 <a href="#about" class="btn-get-started">Get Started</a>
             </div>
         </section>
+        <?php
+            }
+        ?>
         <!-- #hero -->
         <main id="main">
         <!--==========================

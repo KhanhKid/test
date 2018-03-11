@@ -26,7 +26,6 @@
 <![endif]-->
 
 </head>
-
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container-fluid">
