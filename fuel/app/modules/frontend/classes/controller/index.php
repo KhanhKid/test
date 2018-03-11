@@ -14,13 +14,18 @@ class Controller_Index extends Controller_Base{
     public function before(){
     	parent::before();
     }
-    public function action_index(){
+    public function action_index() {
         $data = array();
-        $listProduct = Model_Product::getAllItem(0,0,1);
-        $data['listProduct'] = $listProduct;
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('index/index',$data);
     } 
+
+    public function action_contact() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('index/contact',$data);
+    }
+
     public function action_laptop($seo){
         $arrTemp = explode("-",$seo);
         $data = array();
