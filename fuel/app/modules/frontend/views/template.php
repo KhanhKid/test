@@ -13,11 +13,14 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
         <!-- Bootstrap CSS File -->
         <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        
         <!-- Libraries CSS Files -->
+        <link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans&amp;subset=latin-ext,vietnamese" rel="stylesheet">
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
         <!-- Main Stylesheet File -->
         <link href="/public/assets/frontend/css/style.css" rel="stylesheet">
+        
         <!-- =======================================================
             Theme Name: Regna
             Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
@@ -105,7 +108,7 @@
             <section id="contact">
                 <div class="container wow fadeInUp">
                     <div class="section-header">
-                        <h3 class="section-title">Contact</h3>
+                        <h3 class="section-title">Liên Hệ</h3>
                         <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
                     </div>
                 </div>
