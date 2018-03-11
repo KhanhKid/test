@@ -7,17 +7,17 @@
         <meta content="" name="keywords">
         <meta content="" name="description">
         <!-- Favicons -->
-        <link href="/assets/frontend/img/favicon.png" rel="icon">
-        <link href="/assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="/public/assets/frontend/img/favicon.png" rel="icon">
+        <link href="/public/assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
         <!-- Bootstrap CSS File -->
-        <link href="/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <!-- Libraries CSS Files -->
-        <link href="/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
+        <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
         <!-- Main Stylesheet File -->
-        <link href="/assets/frontend/css/style.css" rel="stylesheet">
+        <link href="/public/assets/frontend/css/style.css" rel="stylesheet">
         <!-- =======================================================
             Theme Name: Regna
             Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
@@ -32,7 +32,7 @@
         <header id="header">
             <div class="container">
                 <div id="logo" class="pull-left">
-                    <a href="#hero"><img src="/assets/frontend/img/logo.png" alt="" title="" /></img></a>
+                    <a href="#hero"><img src="/public/assets/frontend/img/logo.png" alt="" title="" /></img></a>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div>
@@ -189,17 +189,17 @@
         <!-- #footer -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         <!-- JavaScript Libraries -->
-        <script src="/assets/frontend/lib/jquery/jquery.min.js"></script>
-        <script src="/assets/frontend/lib/jquery/jquery-migrate.min.js"></script>
-        <script src="/assets/frontend/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/assets/frontend/lib/easing/easing.min.js"></script>
-        <script src="/assets/frontend/lib/wow/wow.min.js"></script>
+        <script src="/public/assets/frontend/lib/jquery/jquery.min.js"></script>
+        <script src="/public/assets/frontend/lib/jquery/jquery-migrate.min.js"></script>
+        <script src="/public/assets/frontend/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="/public/assets/frontend/lib/easing/easing.min.js"></script>
+        <script src="/public/assets/frontend/lib/wow/wow.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
-        <script src="/assets/frontend/lib/waypoints/waypoints.min.js"></script>
-        <script src="/assets/frontend/lib/counterup/counterup.min.js"></script>
-        <script src="/assets/frontend/lib/superfish/hoverIntent.js"></script>
-        <script src="/assets/frontend/lib/superfish/superfish.min.js"></script>
+        <script src="/public/assets/frontend/lib/waypoints/waypoints.min.js"></script>
+        <script src="/public/assets/frontend/lib/counterup/counterup.min.js"></script>
+        <script src="/public/assets/frontend/lib/superfish/hoverIntent.js"></script>
+        <script src="/public/assets/frontend/lib/superfish/superfish.min.js"></script>
         <!-- Template Main Javascript File -->
-        <script src="/assets/frontend/js/main.js"></script>
+        <script src="/public/assets/frontend/js/main.js"></script>
     </body>
 </html>

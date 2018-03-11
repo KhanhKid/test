@@ -160,7 +160,7 @@
         <div class="row" id="portfolio-wrapper">
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app1.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app1.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống lò đốt</h4>
                         <span>Hệ thống lò đốt</span>
@@ -169,7 +169,7 @@
             </div>
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app2.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app2.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống xử lý nước thải</h4>
                         <span>Hệ thống xử lý nước thải</span>
@@ -178,7 +178,7 @@
             </div>
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app3.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app3.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống tái chế dầu nhớt</h4>
                         <span>Hệ thống tái chế dầu nhớt</span>
@@ -187,7 +187,7 @@
             </div>
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app4.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app4.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống tái chế dung môi</h4>
                         <span>Hệ thống tái chế dung môi</span>
@@ -196,7 +196,7 @@
             </div>
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app5.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app5.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống xử lý bóng đèn</h4>
                         <span>Hệ thống xử lý bóng đèn</span>
@@ -205,7 +205,7 @@
             </div>
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app6.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app6.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống xử lý ắc quy</h4>
                         <span>Hệ thống xử lý ắc quy</span>
@@ -214,7 +214,7 @@
             </div>
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app7.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app7.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống súc rửa thùng phuy</h4>
                         <span>Hệ thống súc rửa thùng phuy</span>
@@ -223,7 +223,7 @@
             </div>
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
                 <a href="">
-                    <img src="/assets/frontend/img/portfolio/app8.jpg" alt="">
+                    <img src="/public/assets/frontend/img/portfolio/app8.jpg" alt="">
                     <div class="details">
                         <h4>Hệ thống xử lý linh kiện điện tử</h4>
                         <span>Hệ thống xử lý linh kiện điện tử</span>
@@ -246,7 +246,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="/assets/frontend/img/team-1.jpg" alt=""></div>
+              <div class="pic"><img src="/public/assets/frontend/img/team-1.jpg" alt=""></div>
               <h4>Walter White</h4>
               <span>Chief Executive Officer</span>
               <div class="social">
@@ -260,7 +260,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="/assets/frontend/img/team-2.jpg" alt=""></div>
+              <div class="pic"><img src="/public/assets/frontend/img/team-2.jpg" alt=""></div>
               <h4>Sarah Jhinson</h4>
               <span>Product Manager</span>
               <div class="social">
@@ -274,7 +274,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="/assets/frontend/img/team-3.jpg" alt=""></div>
+              <div class="pic"><img src="/public/assets/frontend/img/team-3.jpg" alt=""></div>
               <h4>William Anderson</h4>
               <span>CTO</span>
               <div class="social">
@@ -288,7 +288,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="member">
-              <div class="pic"><img src="/assets/frontend/img/team-4.jpg" alt=""></div>
+              <div class="pic"><img src="/public/assets/frontend/img/team-4.jpg" alt=""></div>
               <h4>Amanda Jepson</h4>
               <span>Accountant</span>
               <div class="social">
