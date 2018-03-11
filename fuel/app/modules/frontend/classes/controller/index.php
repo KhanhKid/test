@@ -15,6 +15,7 @@ class Controller_Index extends Controller_Base{
     	parent::before();
     }
     public function action_index() {
+        echo '<pre>',var_dump($_SERVER),'</pre>';
         $data = array();
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('index/index',$data);
