@@ -94,7 +94,7 @@
             ============================-->
             
         <?php
-            if($infoPage->controller != "Frontend\Controller_News") {
+            if($infoPage->controller == "Frontend\Controller_Index") {
         ?>
         <section id="hero">
             <div class="hero-container">

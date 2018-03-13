@@ -1,0 +1,34 @@
+<?php
+namespace Frontend;
+use \View;
+use \Response;
+use \Request;
+use \Auth;
+use \Input;
+use \Session;
+use \Asset;
+use \Model_Product;
+
+class Controller_Introduction extends Controller_Base{
+    public $template = 'template';
+
+    public function before(){        
+        parent::before();
+    }
+    public function action_gioithieu() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/gioithieu',$data);
+    } 
+    public function action_tuvanmoitruong() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/tuvanmoitruong',$data);
+    } 
+    public function action_vanchuyenthugom() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/vanchuyenthugom',$data);
+    } 
+}
+?>
