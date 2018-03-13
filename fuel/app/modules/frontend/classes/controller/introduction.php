@@ -30,5 +30,10 @@ class Controller_Introduction extends Controller_Base{
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/vanchuyenthugom',$data);
     } 
+    public function action_thumuaphelieu() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/thumuaphelieu',$data);
+    } 
 }
 ?>

@@ -32,8 +32,8 @@
 <section id="facts">
     <div class="container wow fadeIn">
         <div class="section-header">
-            <h3 class="section-title">Facts</h3>
-            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            <h3 class="section-title">Tổng số dự án đã thực hiện</h3>
+            <p class="section-description">Chúng tôi tự tin mang lại sản phẩm, dịch vụ tốt nhất cho các bạn</p>
         </div>
         <div class="row counters">
             <div class="col-lg-3 col-6 text-center">

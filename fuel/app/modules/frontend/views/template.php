@@ -15,7 +15,7 @@
         <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         
         <!-- Libraries CSS Files -->
-        <link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
         <!-- Main Stylesheet File -->
@@ -46,14 +46,14 @@
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
                         <li class="menu-active"><a href="/">Trang chủ</a></li>
-                        <li><a href="/#about">Giới Thiệu</a></li>
+                        <li><a href="/gioi-thieu">Giới Thiệu</a></li>
                         <li class="menu-has-children">
                             <a href="#services">Dịch Vụ</a>
                             <ul>
-                                <li><a href="#">Vận chuyển, thu gom và xử lý chất thải</a></li>
+                                <li><a href="/van-chuyen-thu-gom">Vận chuyển, thu gom và xử lý chất thải</a></li>
                                 <li><a href="#">Tiêu hủy hàng hóa</a></li>
-                                <li><a href="#">Thu mua phế liệu</a></li>
-                                <li><a href="#">Tư vấn môi trường</a></li>
+                                <li><a href="/thu-mua-phe-lieu">Thu mua phế liệu</a></li>
+                                <li><a href="/tu-van-moi-truong">Tư vấn môi trường</a></li>
                             </ul>
                         </li>
                         <li class="menu-has-children">
@@ -120,7 +120,7 @@
                 <div class="container wow fadeInUp">
                     <div class="section-header">
                         <h3 class="section-title">Liên Hệ</h3>
-                        <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+                        <p class="section-description">VP HCM - 39 Cao Triều, Phường Tân Phong<br>Quận 7, TP.HCM</p>
                     </div>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0327381567954!2d106.70658291477103!3d10.731958392351737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f905028bfdd%3A0xdb55a39f6bd160c7!2zMzkgQ2FvIFRyaeG7gXUgUGjDoXQsIFTDom4gUGhvbmcsIFF14bqtbiA3LCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520671504032" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -200,6 +200,30 @@
                 </div>
             </div>
         </footer>
+        <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+            appId            : 'your-app-id',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v2.12'
+            });
+        };
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/vi_VN/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        <div class="fb-customerchat"
+        page_id="1553963951520556"
+        theme_color="#6699cc"
+        logged_in_greeting="Chat với chúng tôi một cách nhanh nhất"
+        logged_out_greeting="Chat với chúng tôi một cách nhanh nhất"
+        >
+        </div>
         <!-- #footer -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         <!-- JavaScript Libraries -->
