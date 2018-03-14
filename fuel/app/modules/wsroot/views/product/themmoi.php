@@ -1,5 +1,5 @@
 <?php $linkHost = "http://".$_SERVER['SERVER_NAME'];?>
-<script type="text/javascript" src="/assets/ckfinder/ckfinder.js"></script>
+<script type="text/javascript" src="/public/assets/ckfinder/ckfinder.js"></script>
 <div class="row">
     <ol class="breadcrumb">
         <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
@@ -115,7 +115,7 @@
     </div><!-- /.col-->
 </div><!-- /.row -->
 
-<script src="/assets/ckeditor/ckeditor.js"></script>
+<script src="/public/assets/ckeditor/ckeditor.js"></script>
 <script>
     // Note: in this sample we use CKEditor with two extra plugins:
     // - uploadimage to support pasting and dragging images,

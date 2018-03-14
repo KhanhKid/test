@@ -3,26 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sản Phẩm Laptop24 - Dashboard</title>
+<title>Thành Lập - Dashboard</title>
 
-<link href="/assets/admin/css/bootstrap.min.css" rel="stylesheet">
-<link href="/assets/admin/css/datepicker3.css" rel="stylesheet">
-<link href="/assets/admin/css/styles.css" rel="stylesheet">
+<link href="/public/assets/admin/css/bootstrap.min.css" rel="stylesheet">
+<link href="/public/assets/admin/css/datepicker3.css" rel="stylesheet">
+<link href="/public/assets/admin/css/styles.css" rel="stylesheet">
 
 <!--Icons-->
-<script src="/assets/admin/js/jquery-1.11.1.min.js"></script>
-<script src="/assets/admin/js/lumino.glyphs.js"></script>
+<script src="/public/assets/admin/js/jquery-1.11.1.min.js"></script>
+<script src="/public/assets/admin/js/lumino.glyphs.js"></script>
 
-<script src="/assets/admin/js/bootstrap.min.js"></script>
-<script src="/assets/admin/js/chart.min.js"></script>
-<script src="/assets/admin/js/chart-data.js"></script>
-<script src="/assets/admin/js/easypiechart.js"></script>
-<script src="/assets/admin/js/easypiechart-data.js"></script>
-<script src="/assets/admin/js/bootstrap-datepicker.js"></script>
+<script src="/public/assets/admin/js/bootstrap.min.js"></script>
+<script src="/public/assets/admin/js/chart.min.js"></script>
+<script src="/public/assets/admin/js/chart-data.js"></script>
+<script src="/public/assets/admin/js/easypiechart.js"></script>
+<script src="/public/assets/admin/js/easypiechart-data.js"></script>
+<script src="/public/assets/admin/js/bootstrap-datepicker.js"></script>
 
 <!--[if lt IE 9]>
-<script src="/assets/admin/js/html5shiv.js"></script>
-<script src="/assets/admin/js/respond.min.js"></script>
+<script src="/public/assets/admin/js/html5shiv.js"></script>
+<script src="/public/assets/admin/js/respond.min.js"></script>
 <![endif]-->
 
 </head>

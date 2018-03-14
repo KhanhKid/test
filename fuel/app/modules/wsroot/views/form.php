@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title><?php //echo($title) ?></title>
-        <?php echo render('layout/header'); ?>
+        <?php echo render('layout/header'); ?>sssss
     </head>
     <body class="bg_g">
         <div class="title"><?php //echo($title) ?></div>

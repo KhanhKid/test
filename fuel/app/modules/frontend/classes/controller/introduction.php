@@ -35,5 +35,20 @@ class Controller_Introduction extends Controller_Base{
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/thumuaphelieu',$data);
     } 
+    public function action_giayphep() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/giayphep',$data);
+    } 
+    public function action_hosonangluc() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/hosonangluc',$data);
+    } 
+    public function action_vanbanphapquy() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/vanbanphapquy',$data);
+    } 
 }
 ?>

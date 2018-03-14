@@ -59,26 +59,26 @@
                         <li class="menu-has-children">
                             <a href="/#license">Giấy Phép</a>
                             <ul>
-                                <li><a href="#">Quyết định phê duyệt đề án ĐTM</a></li>
-                                <li><a href="#">Giấy phép kinh doanh</a></li>
-                                <li><a href="#">Giấy phép hành nghề quản lý chất thải nguy hại</a></li>
-                                <li><a href="#">Chứng nhận ISO</a></li>
+                                <li><a href="/giay-phep">Quyết định phê duyệt đề án ĐTM</a></li>
+                                <li><a href="/giay-phep">Giấy phép kinh doanh</a></li>
+                                <li><a href="/giay-phep">Giấy phép hành nghề quản lý chất thải nguy hại</a></li>
+                                <li><a href="/giay-phep">Chứng nhận ISO</a></li>
                             </ul>
                         </li>
                         <li class="menu-has-children">
                             <a href="/#portfolio">HỒ SƠ NĂNG LỰC</a>
                             <ul>
-                                <li><a href="#">Công ty khách hàng</a></li>
-                                <li><a href="#">Thiết bị – công nghệ</a></li>
+                                <li><a href="/ho-so-nang-luc">Công ty khách hàng</a></li>
+                                <li><a href="/ho-so-nang-luc">Thiết bị – công nghệ</a></li>
                             </ul>
                         </li>
                         <li class="menu-has-children">
                             <a href="javascript:void(0)">VĂN BẢN PHÁP QUY</a>
                             <ul>
-                                <li><a href="#">Luật</a></li>
-                                <li><a href="#">Nghị định</a></li>
-                                <li><a href="#">Thông tư</a></li>
-                                <li><a href="#">Văn bản khác</a></li>
+                                <li><a href="/van-ban-phap-quy">Luật</a></li>
+                                <li><a href="/van-ban-phap-quy">Nghị định</a></li>
+                                <li><a href="/van-ban-phap-quy">Thông tư</a></li>
+                                <li><a href="/van-ban-phap-quy">Văn bản khác</a></li>
                             </ul>
                         </li>
                         <li class="menu-has-children"><a href="/news/   ">TIN MÔI TRƯỜNG</a></li>

@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Forms</title>
 
-<link href="/assets/admin/css/bootstrap.min.css" rel="stylesheet">
-<link href="/assets/admin/css/datepicker3.css" rel="stylesheet">
-<link href="/assets/admin/css/styles.css" rel="stylesheet">
+<link href="/public/assets/admin/css/bootstrap.min.css" rel="stylesheet">
+<link href="/public/assets/admin/css/datepicker3.css" rel="stylesheet">
+<link href="/public/assets/admin/css/styles.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
-<script src="/assets/admin/js/html5shiv.js"></script>
-<script src="/assets/admin/js/respond.min.js"></script>
+<script src="/public/assets/admin/js/html5shiv.js"></script>
+<script src="/public/assets/admin/js/respond.min.js"></script>
 <![endif]-->
 
 </head>
@@ -44,31 +44,6 @@
       </div>
     </div><!-- /.col-->
   </div><!-- /.row -->  
-  
-    
-
-  <script src="/assets/admin/js/jquery-1.11.1.min.js"></script>
-  <script src="/assets/admin/js/bootstrap.min.js"></script>
-  <script src="/assets/admin/js/chart.min.js"></script>
-  <script src="/assets/admin/js/chart-data.js"></script>
-  <script src="/assets/admin/js/easypiechart.js"></script>
-  <script src="/assets/admin/js/easypiechart-data.js"></script>
-  <script src="/assets/admin/js/bootstrap-datepicker.js"></script>
-  <script>
-    !function ($) {
-      $(document).on("click","ul.nav li.parent > a > span.icon", function(){      
-        $(this).find('em:first').toggleClass("glyphicon-minus");    
-      }); 
-      $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
-    }(window.jQuery);
-
-    $(window).on('resize', function () {
-      if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
-    })
-    $(window).on('resize', function () {
-      if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
-    })
-  </script> 
 </body>
 
 </html>

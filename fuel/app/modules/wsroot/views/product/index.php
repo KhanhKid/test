@@ -1,15 +1,15 @@
-<script type="text/javascript" src="/assets/datatable/jquery.dataTables.min.js"></script>
-<link href="/assets/datatable/jquery.dataTables.min.css" rel="stylesheet">
+<script type="text/javascript" src="/public/assets/datatable/jquery.dataTables.min.js"></script>
+<link href="/public/assets/datatable/jquery.dataTables.min.css" rel="stylesheet">
 <div class="row">
     <ol class="breadcrumb">
         <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-        <li class="active">Icons</li>
+        <li class="active">Bài Viết</li>
     </ol>
 </div><!--/.row-->
 
 <div class="row">
     <div class="col-lg-12">
-        <h1 class="page-header">Các sản phẩm</h1>
+        <h1 class="page-header">Bài Viết</h1>
     </div>
 </div><!--/.row-->
         
@@ -17,7 +17,7 @@
 <div class="row list-product">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Toàn bộ sản phẩm</div>
+            <div class="panel-heading">Bài Viết</div>
 
             <div class="panel-body">
                 <a href="/wsroot/product/themmoi" class="btn btn-primary">+ Thêm mới</a>
@@ -48,9 +48,9 @@
                     <tbody>
                         <?php 
                             foreach ($listProduct as $key => $value) {
-                                $imgStatus = '/assets/img/wsroot/checked.png';
+                                $imgStatus = '/public/assets/img/wsroot/checked.png';
                                 if($value['status'] == 0){
-                                    $imgStatus = '/assets/img/wsroot/cancel.png';
+                                    $imgStatus = '/public/assets/img/wsroot/cancel.png';
                                 }
                                 ?>
                             <tr>
