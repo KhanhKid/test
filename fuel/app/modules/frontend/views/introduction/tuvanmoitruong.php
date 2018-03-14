@@ -18,8 +18,7 @@
     <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-        <h2 class="section-heading">Công ty môi trường Thành Lập</h2>
-        <p>Công ty chúng tôi nhận thực hiện trọn gói các thủ tục về môi trường:
+            <p><h4>Công ty môi trường Thành Lập</h4>Công ty chúng tôi nhận thực hiện trọn gói các thủ tục về môi trường:</p>
             <ul>
             <li>Lập đăng ký đạt tiêu chuẩn môi trường</li>
             <li>Lập đăng ký chủ nguồn thải</li>

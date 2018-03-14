@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>Tư vấn môi trường</h1>
+                    <h1>Quy Trình Thu Gom Vận Chuyển Xử Lý</h1>
                 </div>
             </div>
         </div>
@@ -28,7 +28,7 @@
                 <p><strong>3. Quy trình hoạt động chung của nhà máy</strong></p>
                 <p style="text-align: center;"><img src="/public/assets/frontend/img/vanchuyenthugom/quytrinhhoatdongchung.png"/></p>
                 
-                <h2 class="section-heading">I. XỬ LÝ, TIÊU HỦY CHẤT THẢI</h2>
+                <h2 class="section-heading">II. XỬ LÝ, TIÊU HỦY CHẤT THẢI</h2>
                 <p><strong>1. Xử lý bằng phương pháp đốt</strong></p>
                 <p style="text-align: center;"><img src="/public/assets/frontend/img/vanchuyenthugom/phuongphapdot.png"/></p>
                 <ul>
@@ -44,8 +44,7 @@
                     <li>Khi bị nhiệt phân từ buồng đốt sơ cấp được đưa qua buồng đốt thứ cấp, tại đây khí tiếp tục được đốt cháy đến nhiệt độ 1.100 - 1.3000C bằng béc đốt nhiên liệu dầu D.O. Nhờ nhiệt độ cao và thời gian lưu khí trong buồng đốt đủ lâu (2-4s) đảm bảo tiêu hủy các khí độc hại có trong khí thải, đặc biệt là Dioxin, Furans và mùi.</li>
                     <li>Khí thải sau khi được tiêu hủy qua buồng đốt thứ cấp được cho qua hệ thống giải nhiệt cưỡng bức để giảm nhiệt độ khí thải, sau đó tiếp tục được đưa qua các tháp hấp thụ khói, bụi bằng dung dịch hấp thụ để loại bỏ bụi và các khí độc hại dioxin, sunfuran. Khí thải sau khi xử lý đạt QCVN 30 : 2012/BTNMT - quy chuẩn về khí thải lò đốt chất thải công nghiệp trước khi phát tán ra môi trường.</li>
                 </ul>
-                <br />
-                <p>1. Hệ thống xử lý nước thải</p>
+                <p><strong>1. Hệ thống xử lý nước thải</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: Xử lý các loại nước thải và chất lỏng từ các chủ nguồn thải và nước thải phát sinh trong quá trình hoạt động của nhà máy. Nước thải sau xử lý đạt QCVN cột B. Bùn thải sau quá trình xử lý sẽ được chuyển sang lò đốt để tiếp tục xử lý.</li>
                     <li><strong><u>Côn</u></strong><strong><u>g suất</u></strong>: 6,25 m3/h– công suất tối đa 150 m3/ngày.đê</li>
@@ -57,7 +56,7 @@
                     <li>Bùn thải từ bể lắng và bể lọc áp lực được đưa qua máy ép bùn, bùn khô từ máy ép bùn được đưa qua lò đốt chất thải của nhà máy để tiêu hủy.</li>
                 </ul>
                 <p style="text-align: center;"><img width="700px" src="/public/assets/frontend/img/vanchuyenthugom/hethongxulychatthai.png"/></p>
-                <h2>3. Hệ thống tái chế dầu thải:</h2>
+                <p><strong>3. Hệ thống tái chế dầu thải:</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: Xử lý các loại dầu nhớt thải, cặn dầu thải, sản phẩm tạo thành làm dầu nhiên liệu cung cấp cho lò đốt chất thải của Công ty.</li>
                     <li><strong><u>Côn</u></strong><strong><u>gsuất</u></strong>: 50 m3/ngày.đêm.</li>
@@ -71,7 +70,7 @@
                     <li>Cặn thải sinh ra trong quá trình chưng cất được đưa qua lò đốt chất thải tiêu hủy.</li>
                     <li>Nước nhiễm dầu tách ra từ quá trình chưng cất được đưa qua hệ thống xử lý nước thải để xử lý đạt QCVN.</li>
                 </ul>
-                <h2>4. Hệ thống xử lý bóng đèn huỳnh quang</h2>
+                <p><strong>4. Hệ thống xử lý bóng đèn huỳnh quang</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong><strong>: </strong>xử lý triệt để bóng đèn huỳnh quang thải bỏ trong một quy trình khép kín nhằm đảm bảo không làm phát tán hơi thủy ngân trong bóng đèn vào môi trường.</li>
                     <li><strong><u>Công suất</u></strong>: 1.000 kg/ngày</li>
@@ -79,7 +78,7 @@
                     <li><strong><u>Quy trình xử lý</u></strong>:</li>
                 </ul>
                 <p style="text-align: center;"><img src="/public/assets/frontend/img/vanchuyenthugom/cacloaibongden.png"/></p>
-                <p>Hệ thống ổn định hóa rắn</p>
+                <p><strong>5. Hệ thống ổn định hóa rắn</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: Bê tông hóa chất thải (tro, xỉ, các chất thải không thể phân hủy bằng lò đốt) nhằm giảm thiểu khả năng phát tán các chất ô nhiễm vào môi trường.</li>
                     <li><strong><u>Công suất</u></strong>: 370 kg/h</li>
@@ -92,7 +91,7 @@
                     <li>Sản phẩm hóa rắn được tập kết lưu trữ và sử dụng cho mục đích nội bộ.</li>
                 </ul>
                 <p style="text-align: center;"><img width="700px"  src="/public/assets/frontend/img/vanchuyenthugom/chatthai.png"/></p>
-                <p>6. Hệ thống súc rửa thùng phuy, bao bì</p>
+                <p><strong>6. Hệ thống súc rửa thùng phuy, bao bì</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: Xử lý các loại thùng phuy kim loại và nhựa, các loại bao bì nhiễm thành phần nguy hại, tái chế thùng phuy và bao bì mới để cung cấp cho các đơn vị có nhu cầu sử dụng.</li>
                     <li><strong><u>Công suất</u></strong>: 100 phuy/ngày.</li>
@@ -105,7 +104,7 @@
                 </ul>
                 <p style="text-align: center;"><img src="/public/assets/frontend/img/vanchuyenthugom/may.png"/></p>
                 <p style="text-align: center;"><img width="700px"  src="/public/assets/frontend/img/vanchuyenthugom/baobi.png"/></p>
-                <p>7. Hệ thống tháo dỡ ắc quy và thu hồi phế liệu</p>
+                <p><strong>7. Hệ thống tháo dỡ ắc quy và thu hồi phế liệu</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: xử lý các bình ắc quy.</li>
                     <li><strong><u>Công suất</u></strong>: 1,5 tấn/ngày</li>
@@ -116,7 +115,7 @@
                 </ul>
                 <p style="text-align: center;"><img width="700px" src="/public/assets/frontend/img/vanchuyenthugom/acquy.png"/></p>
                 
-                <p>8. Hệ thống xử lý chất thải điện tử</p>
+                <p><strong>8. Hệ thống xử lý chất thải điện tử</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: xử lý, thu hồi kim loại và nhựa làm phế liệu.</li>
                     <li><strong><u>Công suất</u></strong>: 1,5 tấn/ngày.</li>
@@ -131,12 +130,10 @@
                     <li>Phần bản mạch sau khi được tháo dỡ các IC, tụ điện, điện trở… sẽ được nghiền nhỏ để tách kim loại.</li>
                     <li>Phần không tận dụng đem đốt hoặc hóa rắn.</li>
                 </ul>
-                <br />
-                <p>9. Hệ thống tái chế dung môi thải.</p>
+                <p><strong>9. Hệ thống tái chế dung môi thải.</strong></p>
                 <p>Dung môi các loại từ bồn chứa (<strong>1</strong>) được bơm vào nồi gia nhiệt (<strong>2</strong>) đến thể tích nhất định. Tại nồi gia nhiệt, hệ thống điện trở cấp nhiệt cho hỗn hợp đến nhiệt độ bay hơi (40 - 200<sup>o</sup>C). Hơi dung môi được dẫn vào thiết bị ngưng tụ (<strong>4</strong>), tại đây nước lạnh được dùng để làm ngưng tụ dung môi. Hỗn hợp dung môi sau khi chưng cất được dẫn qua thiết bị phân tách (<strong>5</strong>) để phân tách. Phần dung môi chưa tinh khiết được bơm hoàn lưu (<strong>7</strong>) trở lại tháp chưng cất, phần dung môi tinh khiết được thu hồi và tái sử dụng. Cặn được xả đáy theo chu kỳ và được xử lý bằng phương pháp đốt trong lò đốt 02 cấp có hệ thống xử lý khí.</p>
-
                 <p style="text-align: center;"><img src="/public/assets/frontend/img/vanchuyenthugom/dungmoi.png"/></p>
-                <p>10. Hệ thống tẩy rửa chất thải nhiễm dầu mỡ</p>
+                <p><strong>10. Hệ thống tẩy rửa chất thải nhiễm dầu mỡ</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: xử lý các loại chất thải nhiễm dầu mỡ</li>
                     <li><strong><u>Công suất</u></strong>: 2 tấn/ngày</li>
@@ -144,8 +141,8 @@
                     <li><strong><u>Quy trình xử lý</u></strong>:</li>
                 </ul>
                 <p style="text-align: center;"><img width="700px" src="/public/assets/frontend/img/vanchuyenthugom/thai dau mo.png"/></p>
-                <p>11. Xử lý tái chế</p>
-                <p>Đối với các chất thải có khả năng tái chế, Thành Lập không ngừng nghiên cứu để đưa ra phương án xử lý tái chế hiệu quả nhất góp phần giảm thiểu tác động của chất thải đến môi trường và mang lại nguồn thu cho công ty.</a></p>
+                <p><strong>11. Xử lý tái chế</strong></p>
+                <p>Đối với các chất thải có khả năng tái chế, Thành Lập không ngừng nghiên cứu để đưa ra phương án xử lý tái chế hiệu quả nhất góp phần giảm thiểu tác động của chất thải đến môi trường và mang lại nguồn thu cho công ty.</p>
             </p>
         </div>
     </div>
