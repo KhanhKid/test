@@ -35,5 +35,10 @@ class Controller_Introduction extends Controller_Base{
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/thumuaphelieu',$data);
     } 
+    public function action_thieuhuyhanghoa() {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/thieuhuyhanghoa',$data);
+    } 
 }
 ?>

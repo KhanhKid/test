@@ -16,6 +16,7 @@
         
         <!-- Libraries CSS Files -->
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
         <!-- Main Stylesheet File -->
@@ -51,7 +52,7 @@
                             <a href="#services">Dịch Vụ</a>
                             <ul>
                                 <li><a href="/van-chuyen-thu-gom">Vận chuyển, thu gom và xử lý chất thải</a></li>
-                                <li><a href="#">Tiêu hủy hàng hóa</a></li>
+                                <li><a href="/thieu-huy-hang-hoa">Tiêu hủy hàng hóa</a></li>
                                 <li><a href="/thu-mua-phe-lieu">Thu mua phế liệu</a></li>
                                 <li><a href="/tu-van-moi-truong">Tư vấn môi trường</a></li>
                             </ul>
@@ -120,7 +121,7 @@
                 <div class="container wow fadeInUp">
                     <div class="section-header">
                         <h3 class="section-title">Liên Hệ</h3>
-                        <p class="section-description">VP HCM - 39 Cao Triều, Phường Tân Phong<br>Quận 7, TP.HCM</p>
+                        <p class="section-description">VP HCM - 39 Cao Triều, Phường Tân Phong, Quận 7, TP.HCM</p>
                     </div>
                 </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0327381567954!2d106.70658291477103!3d10.731958392351737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f905028bfdd%3A0xdb55a39f6bd160c7!2zMzkgQ2FvIFRyaeG7gXUgUGjDoXQsIFTDom4gUGhvbmcsIFF14bqtbiA3LCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520671504032" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -193,10 +194,10 @@
             </div>
             <div class="container">
                 <div class="copyright">
-                    &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+                    &copy; Copyright <strong>Thanh Lap</strong>. All Rights Reserved
                 </div>
                 <div class="credits">
-                    Bootstrap Templates by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    Bootstrap Templates by <a href="https://bootstrapmade.com/">Regna</a>
                 </div>
             </div>
         </footer>

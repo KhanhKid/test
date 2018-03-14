@@ -7,6 +7,7 @@ return array(
     'tu-van-moi-truong' => 'frontend/introduction/tuvanmoitruong',
     'van-chuyen-thu-gom' => 'frontend/introduction/vanchuyenthugom',
     'thu-mua-phe-lieu' => 'frontend/introduction/thumuaphelieu',
+    'thieu-huy-hang-hoa' => 'frontend/introduction/thieuhuyhanghoa',
 
     'news' => 'frontend/news/index',
     'news/(:num)' => 'frontend/news/detail/$1',

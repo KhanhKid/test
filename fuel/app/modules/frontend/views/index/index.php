@@ -158,7 +158,7 @@
     <div class="container wow fadeInUp">
         <div class="section-header">
             <h3 class="section-title">THIẾT BỊ XỬ LÝ CHẤT THẢI</h3>
-            <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+            <p class="section-description">thiết bị tiên tiến và hiện đại mang lại những dịch vụ tốt nhất cho các bạn</p>
         </div>
         <div class="row" id="portfolio-wrapper">
             <div class="col-lg-3 col-md-6 portfolio-item filter-app">
