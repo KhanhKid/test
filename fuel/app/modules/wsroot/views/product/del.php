@@ -23,16 +23,23 @@
                             ID: <label><?=$product['id']?></label>
                         </div>
                         <div class="form-group">
-                            Tên Sản Phẩm: <label><?=$product['name']?></label>
+                            Tên Sản Phẩm: <label><?=$product['title']?></label>
                         </div>
                         <div class="form-group">
-                            Giá: <label><?=number_format($product['price'])?></label>
+                            Loại: <?=isset($listBrand[$product['brand_id']])?$listBrand[$product['brand_id']]:"Chưa có thương hiệu";?> <br> 
+                            Dòng: <?php 
+                            $cate = explode(",",$product['cate_id']);
+                            foreach ($cate as $k_cate => $k_cateValue): 
+                                if(isset($listCate[$k_cateValue])){
+                                    echo $listCate[$k_cateValue].",";
+                                }
+                            endforeach ?>
                         </div>
                         <div class="form-group">
-                            Ảnh: <img src="/userfiles/<?=$product['img']?>">
+                            Mô tả ngắn: 
                         </div>
                         <div class="form-group">
-                            Mô tả ngắn: <?=html_entity_decode($product['shortdetail'])?>
+                            <?=html_entity_decode($product['content'])?>
                         </div>
                     </div>
                     <div class="col-md-6"></div>

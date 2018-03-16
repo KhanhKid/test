@@ -6,7 +6,7 @@
 return array(
 	'default' => array(
 		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=nhlapr2v_laptop24',
+			'dsn'        => 'mysql:host=localhost;dbname=thanhlap_db',
 			'username'   => 'root',
 			'password'   => 'root',
 		),

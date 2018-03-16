@@ -7,24 +7,7 @@ use \Auth;
 use \Upload;
 
 class Controller_Admin extends Controller_Base{
-
-   /* public $error_noti = array(
-            'is_required' => ': 入力してください。',
-            'choose_required' => ': 選択してください。',
-            'wrong_format' => ': 正しく入力してください。',
-            'zenkaku' => ': 全角ひらがなで入力してください。',
-            'furigana' => ': 全角ひらがなで入力してください。',
-            'email_format' => ': メールアドレス形式で入力してください。',
-            'hankaku' => ': 半角で入力してください。',
-            'hankakueisu' => ': 半角英数記で入力してください。',
-            'hankakusuji' => ': 半角数字で入力してください。',
-            'furigana' => ': 全角ひらがなで入力してください。',
-            'katakana' => ': 全角カタカナで入力してください。',
-            'phone_number' => '電話番号形式で入力してください。',
-            'existed' => ': すでに存在しています。',
-            'max_digit' => ': 文字未満で入力してください。',
-            );*/
-
+    
     public function before()
     {
         parent::before();

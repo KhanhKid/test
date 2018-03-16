@@ -28,38 +28,21 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Tên Sản Phẩm</label>
-                            <input type="text" name="name" av id="productName" class="form-control" placeholder="Placeholder" value="<?=isset($product['name'])?$product['name']:''?>">
-                        </div>
-                        <div class="form-group">
-                            <label>Link SEO</label>
-                            <input type="text" name="linkseo" id="linkseo" value="<?=isset($product['link_seo'])?$product['link_seo']:''?>" class="form-control" placeholder="Placeholder">
-                        </div>
-                        <div class="form-group">
-                            <label>Tìm kiếm</label>
-                            <span>Phần dùng để tìm kiếm trong mục tìm kiếm định dạng như sau 
-                            <strong>ram:16g,vga:1g,hdd:512g,ssd:256,manhinh:14,chuanmanhinh:touch,cpu:i5</strong>
-                            </span>
-                            <input type="text" name="str_search" id="str_search" value="<?=isset($product['str_search'])?$product['str_search']:''?>" class="form-control" placeholder="Placeholder">
+                            <input type="text" name="title" id="productName" class="form-control" placeholder="Placeholder" value="<?=isset($product['title'])?$product['title']:''?>">
                         </div>
                         <div class="form-group">
                             <label><input type="checkbox" name="status" <?=(isset($product['status'])&&$product['status']==1)?'checked':''?> value="1"> 
                                 Hiển thị
                             </label>
                         </div>
-                        <div class="form-group">
-                            <label>Ảnh sản phẩm bìa:</label>
-                            <input type="file" name="banner" >
-                            <hr>
-                            <?=isset($product['img'])?'<img src="/userfiles/'.$product['img'].'" width="156px" />':''?>
-                        </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Thương Hiệu:</label>
-                            <select name="brand">
+                            <select name="brand_id">
                                 <option value="0">Chưa có thương hiệu</option>
                                 <?php 
-                                $brandID = isset($product['brandID'])?$product['brandID']:0;
+                                $brandID = isset($product['brand_id'])?$product['brand_id']:0;
                                 foreach ($brand as $key => $value): 
                                     $selected="";
                                     if($value['id'] == $brandID) $selected="selected";
@@ -70,43 +53,34 @@
                         </div>
                         <div class="form-group">
                             <label>Dòng máy:</label>
-                            <?php 
-                            $arrCate = isset($product)?explode(",",$product['cateID']):array();
-                            foreach ($cate as $key => $value): 
-                                $checked="";
-                                if(in_array($value['id'], $arrCate)) $checked="checked";
+                            <select name="cate_id">
+                                <option value="">Chọn Loại bài</option>
+                                <?php 
+                                $brandID = isset($product['cate_id'])?$product['cate_id']:0;
+                                foreach ($cate as $key => $value): 
+                                    $selected="";
+                                    if($value['id'] == $brandID) $selected="selected";
                                 ?>
-                                <input type="checkbox" <?=$checked?> name="cate[]" value="<?=$value['id']?>"> <?=$value['value']?>
-                            <?php endforeach ?>
-                            
-                        </div>
-                        <div class="form-group">
-                            <label>Giá</label>
-                            <input type="number" name="price" value="<?=isset($product['price'])?$product['price']:''?>" class="form-control" placeholder="0">
+                                    <option <?=$selected?> value="<?=$value['id']?>"><?=$value['value']?></option>
+                                <?php endforeach ?>
+                            </select>
                         </div>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
                             <label>Mô tả ngắn</label>
-                            <textarea id="shortdetail" name="shortdetail" class="form-control" rows="3"><?=isset($product['shortdetail'])?$product['shortdetail']:''?></textarea>
+                            <textarea id="content" name="content" class="form-control" rows="3"><?=isset($product['content'])?$product['content']:''?></textarea>
                         </div>  
                         <hr>
-                        Upload PDF: <input type="file" name="fileToUpload" id="fileToUpload">
-                        <a href="/userfiles/<?php if(isset($product['pdf'])) echo $product['pdf']?>"><?php if(isset($product['pdf'])) echo $product['pdf']?></a>
-
+                        Upload tài liệu: <input type="file" name="fileToUpload" id="fileToUpload">
                         <?php if(isset($product['pdf']) && $product['pdf']){ ?>
-                        <iframe src="http://docs.google.com/gview?url=<?=$linkHost?>/userfiles/<?=$product['pdf']?>&embedded=true" style="width:100%; height:300px;" frameborder="0"></iframe>
+                            <a href="/public/userfiles/<?php if(isset($product['pdf'])) echo $product['pdf']?>"><span class="glyphicon glyphicon-open-file">aaa</span></a>
+                            <iframe src="http://docs.google.com/gview?url=<?=$linkHost?>/userfiles/<?=$product['pdf']?>&embedded=true" style="width:100%; height:300px;" frameborder="0"></iframe>
                         <?php }?>
                         <hr>
-                        Hoặc
-                        
-                        <div class="form-group">
-                            <label>Chi Tiết</label>
-                            <textarea id="detail" name="detail" class="form-control" rows="3"><?=isset($product['detail'])?$product['detail']:''?></textarea>
-                        </div>  
                     </div>
                     <div class="col-md-6">
-                        <button type="submit" class="btn btn-primary">Submit Button</button>
+                        <button type="submit" class="btn btn-primary">Lưu bài</button>
                         <button type="reset" class="btn btn-default">Reset Button</button>
                     </div>
                 </div>
@@ -124,7 +98,7 @@
     // All these modifications are not required by CKFinder, they just provide better user experience.
     if ( typeof CKEDITOR !== 'undefined' ) {
         CKEDITOR.addCss( 'img {max-width:100%; height: auto;}' );
-        var editor = CKEDITOR.replace( 'shortdetail', {
+        var editor = CKEDITOR.replace( 'content', {
             height:350
         } );
         var detail = CKEDITOR.replace( 'detail', {
