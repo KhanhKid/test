@@ -37,14 +37,8 @@ class Controller_Introduction extends Controller_Base{
     } 
     public function action_tuvanmoitruong() {
         $data = array();
-        $brandId = 4;
-        $cateId = (isset($_GET["c"]))?(int)$_GET["c"]:null;
-        $listPost = Model_Article::getListCateDetail($brandId, $cateId);
-
-        $this->template->title = $data["title"] = "Tư vấn môi trường";
-        $data['listPost'] = $listPost;
         $this->template->meta = $this->metaTag();
-        $this->template->content = View::forge('introduction/list',$data);
+        $this->template->content = View::forge('introduction/tuvanmoitruong',$data);
     } 
 
     // NEWS
