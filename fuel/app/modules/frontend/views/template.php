@@ -6,6 +6,7 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="môi trường, thành lập, công ty thành lập, xử lý môi trường thành lập, thành lập company, xử lý môi trường, tiêu huỷ hàng hoá, thu mua phế liệu, tư vấn môi trường" name="keywords">
         <meta content="CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP, Cty môi trường Thành Lập là công ty tiên phong cung cấp dịch vụ tiêu hủy xủ lý hàng hóa hết hạn sử dụng tại TP.HCM và khu vực Miền Nam." name="description">
+        <meta name="google-site-verification" content="44Q_MqyA2Tvpwgzx38mF2yipMrfMukG_6lYi75Guudo" />
         <!-- Favicons -->
         <link href="/public/assets/frontend/img/favicon.png" rel="icon">
         <link href="/public/assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
