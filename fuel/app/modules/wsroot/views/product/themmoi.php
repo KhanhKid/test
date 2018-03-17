@@ -52,12 +52,6 @@
                             <textarea name="short_desc" class="form-control" rows="3"><?=isset($product['short_desc'])?$product['short_desc']:''?></textarea>
                         </div>  
                         <hr>
-                        Upload tài liệu: <input type="file" name="fileToUpload" id="fileToUpload">
-                        <?php if(isset($product['pdf']) && $product['pdf']){ ?>
-                            <a href="/public/userfiles/<?php if(isset($product['pdf'])) echo $product['pdf']?>"><span class="glyphicon glyphicon-open-file">aaa</span></a>
-                            <iframe src="http://docs.google.com/gview?url=<?=$linkHost?>/userfiles/<?=$product['pdf']?>&embedded=true" style="width:100%; height:300px;" frameborder="0"></iframe>
-                        <?php }?>
-                        <hr>
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
