@@ -4,18 +4,14 @@
         <meta charset="utf-8">
         <title>CÔNG TY TNHH THƯƠNG MẠI – XỬ LÝ MÔI TRƯỜNG</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="môi trường, thành lập, công ty thành lập, xử lý môi trường thành lập, thành lập company, xử lý môi trường, tiêu huỷ hàng hoá, thu mua phế liệu, tư vấn môi trường" name="keywords">
+        <meta content="CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP, Cty môi trường Thành Lập là công ty tiên phong cung cấp dịch vụ tiêu hủy xủ lý hàng hóa hết hạn sử dụng tại TP.HCM và khu vực Miền Nam." name="description">
         <!-- Favicons -->
         <link href="/public/assets/frontend/img/favicon.png" rel="icon">
         <link href="/public/assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
         <!-- Bootstrap CSS File -->
         <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         
-        <!-- Libraries CSS Files -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">

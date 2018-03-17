@@ -123,26 +123,26 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="box">
-                    <div class="icon"><a href=""><i class="fa fa-desktop"></i></a></div>
-                    <h4 class="title"><a href="">Quyết định phê duyệt đề án ĐTM</a></h4>
+                    <div class="icon"><a href="/giay-phep?c=1"><i class="fa fa-desktop"></i></a></div>
+                    <h4 class="title"><a href="/giay-phep?c=1">Quyết định phê duyệt đề án ĐTM</a></h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="box">
-                    <div class="icon"><a href=""><i class="fa fa-bar-chart"></i></a></div>
-                    <h4 class="title"><a href="">Giấy phép kinh doanh</a></h4>
+                    <div class="icon"><a href="/giay-phep?c=2"><i class="fa fa-bar-chart"></i></a></div>
+                    <h4 class="title"><a href="/giay-phep?c=2">Giấy phép kinh doanh</a></h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="box">
-                    <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
-                    <h4 class="title"><a href="">Giấy phép hành nghề quản lý chất thải nguy hại</a></h4>
+                    <div class="icon"><a href="/giay-phep?c=3"><i class="fa fa-paper-plane"></i></a></div>
+                    <h4 class="title"><a href="/giay-phep?c=3">Giấy phép hành nghề quản lý chất thải nguy hại</a></h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="box">
-                    <div class="icon"><a href=""><i class="fa fa-paper-plane"></i></a></div>
-                    <h4 class="title"><a href="">Tiêu chuẩn ISO</a></h4>
+                    <div class="icon"><a href="/giay-phep?c=4"><i class="fa fa-paper-plane"></i></a></div>
+                    <h4 class="title"><a href="/giay-phep?c=4">Tiêu chuẩn ISO</a></h4>
                 </div>
             </div>
         </div>
