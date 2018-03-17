@@ -61,7 +61,7 @@
                         <hr>
                         Upload tài liệu: <input type="file" name="fileToUpload" id="fileToUpload">
                         <?php if(isset($product['pdf']) && $product['pdf']){ ?>
-                            <a href="/public/userfiles/<?php if(isset($product['pdf'])) echo $product['pdf']?>"><span class="glyphicon glyphicon-open-file">aaa</span></a>
+                            <a href="/public/userfiles/<?php if(isset($product['pdf'])) echo $product['pdf']?>"><span class="glyphicon glyphicon-open-file">Download files</span></a>
                             <iframe src="http://docs.google.com/gview?url=<?=$linkHost?>/userfiles/<?=$product['pdf']?>&embedded=true" style="width:100%; height:300px;" frameborder="0"></iframe>
                         <?php }?>
                         <hr>

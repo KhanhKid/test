@@ -52,7 +52,7 @@
                             </td>
                             <td>
                                 <?php if(isset($value['pdf']) && $value['pdf']){ ?>
-                                    <a href="/public/userfiles/<?php if(isset($value['pdf'])) echo $value['pdf']?>"><span class="glyphicon glyphicon-open-file">file</span></a>
+                                    <a href="/public/userfiles/<?php if(isset($value['pdf'])) echo $value['pdf']?>"><span class="glyphicon glyphicon-open-file">Download files</span></a>
                                 <?php }?>
                             </td>
                             <td><?=$value['reg_datetime']?></td>
