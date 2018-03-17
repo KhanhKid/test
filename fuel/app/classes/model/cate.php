@@ -9,10 +9,27 @@ class Model_Cate extends \Orm\Model{
     }
 	public static function getListCate()
     {
-    	$allBrand = self::query()->get();
+		$allCate = Model_Cate::find('all', array(
+            'where' => array(
+                array('status', 1),
+            ),
+        ));
     	$results = array();
-    	foreach ($allBrand as $key => $value) {
+    	foreach ($allCate as $key => $value) {
     		 $results[$value['id']] = $value['value'];
+    	}
+    	return $results;
+    }
+	public static function getListCateGroupBrand()
+    {
+		$allCate = Model_Cate::find('all', array(
+            'where' => array(
+                array('status', 1),
+            ),
+        ));
+    	$results = array();
+    	foreach ($allCate as $key => $value) {
+    		 $results[$value['brand_id']][$value['id']] = $value['value'];
     	}
     	return $results;
     }

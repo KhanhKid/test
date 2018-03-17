@@ -32,6 +32,7 @@
 
 <?php 
     $infoPage = \Request::active();
+    $listCate = \Model_Cate::getListCateGroupBrand();
 ?>
     <body>
         <!--==========================
@@ -58,28 +59,33 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/#license">Giấy Phép</a>
+                            <a href="/giay-phep">Giấy Phép</a>
                             <ul>
-                                <li><a href="/giay-phep">Quyết định phê duyệt đề án ĐTM</a></li>
-                                <li><a href="/giay-phep">Giấy phép kinh doanh</a></li>
-                                <li><a href="/giay-phep">Giấy phép hành nghề quản lý chất thải nguy hại</a></li>
-                                <li><a href="/giay-phep">Chứng nhận ISO</a></li>
+                                <?php 
+                                    foreach ($listCate[1] as $key => $value) {
+                                        echo "<li><a href='/giay-phep?c={$key}'>{$value}</a></li>";
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/#portfolio">HỒ SƠ NĂNG LỰC</a>
+                            <a href="/ho-so-nang-luc">HỒ SƠ NĂNG LỰC</a>
                             <ul>
-                                <li><a href="/ho-so-nang-luc">Công ty khách hàng</a></li>
-                                <li><a href="/ho-so-nang-luc">Thiết bị – công nghệ</a></li>
+                                <?php 
+                                    foreach ($listCate[2] as $key => $value) {
+                                        echo "<li><a href='/giay-phep?c={$key}'>{$value}</a></li>";
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="javascript:void(0)">VĂN BẢN PHÁP QUY</a>
+                            <a href="/van-ban-phap-quy">VĂN BẢN PHÁP QUY</a>
                             <ul>
-                                <li><a href="/van-ban-phap-quy">Luật</a></li>
-                                <li><a href="/van-ban-phap-quy">Nghị định</a></li>
-                                <li><a href="/van-ban-phap-quy">Thông tư</a></li>
-                                <li><a href="/van-ban-phap-quy">Văn bản khác</a></li>
+                                <?php 
+                                    foreach ($listCate[3] as $key => $value) {
+                                        echo "<li><a href='/giay-phep?c={$key}'>{$value}</a></li>";
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="menu-has-children"><a href="/news/   ">TIN MÔI TRƯỜNG</a></li>

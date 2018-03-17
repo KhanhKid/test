@@ -34,10 +34,11 @@ class Controller_Product extends Controller_Admin{
             $data = array(
                     'title' => Input::post('title'),
                     'status' => isset($_POST['status'])?1:0,
+                    'short_desc' => Input::post('short_desc'),
                     'content' => Input::post('content'),
-                    'brand_id' => Input::post('brand_id'),
                     'cate_id' => Input::post('cate_id'),
                     'pdf' => $linkpdf,
+                    'reg_datetime' => date("Y-m-d H:i:s"),
                 );
             $product = Model_Article::forge()->set($data);
             $product->save();
@@ -46,7 +47,7 @@ class Controller_Product extends Controller_Admin{
         }
         $data['brand'] = \Model_Brand::getAllItem();
         $data['cate'] = \Model_Cate::getAllItem();
-        $this->template->title = $data['title'] = "Thêm mới sản phẩm";
+        $this->template->title = $data['title'] = "Thêm mới bài viết";
         $this->template->content = View::forge('product/themmoi',$data);
     }
 
@@ -60,8 +61,8 @@ class Controller_Product extends Controller_Admin{
             $linkpdf ="";
             $product->title = Input::post('title');
             $product->status = isset($_POST['status'])?1:0;
+            $product->short_desc = Input::post('short_desc');
             $product->content = Input::post('content');
-            $product->brand_id = Input::post('brand_id');
             $product->cate_id = Input::post('cate_id');
 
             $linkpdf ="";
@@ -83,24 +84,20 @@ class Controller_Product extends Controller_Admin{
         }
 
         $data['product'] = $product;
-        $data['brand'] = \Model_Brand::getAllItem();
         $data['cate'] = \Model_Cate::getAllItem();
-        $this->template->title = $data['title'] = "Chỉnh sửa sản phẩm";
+        $this->template->title = $data['title'] = "Chỉnh sửa bài viết";
         $this->template->content = View::forge('product/themmoi',$data);
     }
     public function action_index()
     {
         $data = array();
         $data['listProduct'] = Model_Article::getAllItem();
-        $data['listBrand'] = Model_Brand::getListBrand();
         $data['listCate'] = Model_Cate::getListCate();
         $this->template->title = "Danh sách sản phẩm";
         $this->template->content = View::forge('product/index',$data);
     }
     public function action_del($proID)
     {
-        
-        $data['listBrand'] = Model_Brand::getListBrand();
         $data['listCate'] = Model_Cate::getListCate();
         $product = Model_Article::find($proID);
         if (\Input::method() == 'POST')

@@ -19,13 +19,15 @@ class Controller_Cate extends Controller_Admin{
         {
             $data = array(
                     'value' => Input::post('name'),
+                    'brand_id' => (int)Input::post('brand_id'),
                     'status' => isset($_POST['status'])?1:0,
                 );
             $cate = Model_Cate::forge()->set($data);
             $cate->save();
             $data['message'] = "Tạo mới thành công";   
         }
-        $this->template->title = $data['title'] = "Thêm dòng mới";
+        $data['convertBrand'] = Model_Brand::getListBrand();
+        $this->template->title = $data['title'] = "Thêm mới loại bài viết";
         $this->template->content = View::forge('cate/themmoi',$data);
     }
     public function action_del($cateID)
@@ -33,11 +35,6 @@ class Controller_Cate extends Controller_Admin{
         $cate = Model_Cate::find($cateID);
         if (\Input::method() == 'POST')
         {
-            $listProduct = Model_Product::find("all",array('where' => array(array('cateID','LIKE', "%".$cateID."%"))));
-            foreach ($listProduct as $key => $value) {
-                $value['cateID'] = str_replace($cateID.",","",$value['cateID']);
-                $value->save();
-            }
             $cate->delete();
             Response::redirect('/wsroot/cate/');
         }
@@ -60,11 +57,13 @@ class Controller_Cate extends Controller_Admin{
         {
             $cate->value = Input::post('name');
             $cate->status = isset($_POST['status'])?1:0;
+            $cate->brand_id = (int) Input::post('brand_id');
             $cate->save();
             $data['message'] = "Sửa sản phẩm thành công";   
         }
 
         $data['cate'] = $cate;
+        $data['convertBrand'] = Model_Brand::getListBrand();
         $this->template->title = $data['title'] = "Chỉnh sửa dòng";
         $this->template->content = View::forge('cate/themmoi',$data);
     }
@@ -72,6 +71,9 @@ class Controller_Cate extends Controller_Admin{
     {
         $data = array();
         $data['listCate'] = Model_Cate::find('all');
+
+        $data['listBrand'] = Model_Brand::find('all');
+        $data['convertBrand'] = Model_Brand::getListBrand();
         $this->template->title = "Danh sách dòng";
         $this->template->content = View::forge('cate/index',$data);
     }

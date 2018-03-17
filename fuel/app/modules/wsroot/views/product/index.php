@@ -2,22 +2,15 @@
 <link href="/public/assets/datatable/jquery.dataTables.min.css" rel="stylesheet">
 <div class="row">
     <ol class="breadcrumb">
-        <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-        <li class="active">Bài Viết</li>
+        <li><a href="/wsroot/"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+        <li class="active">Danh sách    </li>
     </ol>
 </div><!--/.row-->
-
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">Bài Viết</h1>
-    </div>
-</div><!--/.row-->
-        
 
 <div class="row list-product">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Bài Viết</div>
+            <div class="panel-heading">Danh sách bài viết</div>
 
             <div class="panel-body">
                 <a href="/wsroot/product/themmoi" class="btn btn-primary">+ Thêm mới</a>
@@ -27,7 +20,6 @@
                         <tr>
                             <th>No</th>
                             <th>Title</th>
-                            <th>Brand</th>
                             <th>Category</th>
                             <th>Files</th>
                             <th>Ngày Tạo</th>
@@ -38,7 +30,6 @@
                         <tr>
                             <th>No</th>
                             <th>Title</th>
-                            <th>Brand</th>
                             <th>Category</th>
                             <th>Files</th>
                             <th>Ngày Tạo</th>
@@ -49,7 +40,7 @@
                         <?php 
                             foreach ($listProduct as $key => $value) {
                                 $imgStatus = '/public/assets/img/wsroot/checked.png';
-                                if($value['status'] == 1){
+                                if($value['status'] == 0){
                                     $imgStatus = '/public/assets/img/wsroot/cancel.png';
                                 }
                                 ?>
@@ -57,16 +48,7 @@
                             <td><?=$value['id']?></td>
                             <td><?=$value['title']?></td>
                             <td>
-                                Loại: <?=isset($listBrand[$value['brand_id']])?$listBrand[$value['brand_id']]:"Chưa có thương hiệu";?> <br> 
-                            </td>
-                            <td>
-                                Dòng: <?php 
-                                $cate = explode(",",$value['cate_id']);
-                                foreach ($cate as $k_cate => $k_cateValue): 
-                                    if(isset($listCate[$k_cateValue])){
-                                        echo $listCate[$k_cateValue].",";
-                                    }
-                                endforeach ?>
+                                <?=$listCate[$value['cate_id']]?>
                             </td>
                             <td>
                                 <?php if(isset($value['pdf']) && $value['pdf']){ ?>
@@ -97,6 +79,7 @@
     $(document).ready(function() {
         $('#listproduct').DataTable({
             "searching": true,
+            "order": [[ 4, "desc" ]],
             "columns": [
                 { "width": "5%" },
                 null,

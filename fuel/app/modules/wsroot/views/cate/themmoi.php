@@ -1,17 +1,11 @@
 <?php $linkHost = "http://".$_SERVER['SERVER_NAME'];?>
 <div class="row">
     <ol class="breadcrumb">
-        <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-        <li class="active">Icons</li>
+        <li><a href="/"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+        <li><a href="/wsroot/cate/">Danh sách</a></li>
+        <li class="active">Thêm mới</li>
     </ol>
 </div><!--/.row-->
-
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header"><?=$title?></h1>
-    </div>
-</div><!--/.row-->
-    
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
@@ -26,8 +20,21 @@
                     <?php echo \Form::csrf();?>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label>Tên Sản Phẩm</label>
-                            <input type="text" name="name" av id="productName" class="form-control" placeholder="Placeholder" value="<?=isset($cate['value'])?$cate['value']:''?>">
+                            <label>Tên loại mới</label>
+                            <input type="text" name="name" av id="productName" class="form-control" placeholder="Tên loại bài" value="<?=isset($cate['value'])?$cate['value']:''?>">
+                        </div>
+                        <div class="form-group">
+                            <label>Tên menu:</label>
+                            <select name="brand_id">
+                                <?php 
+                                $brandID = isset($cate['brand_id'])?$cate['brand_id']:0;
+                                foreach ($convertBrand as $key => $value): 
+                                    $selected="";
+                                    if($key == $brandID) $selected="selected";
+                                ?>
+                                    <option <?=$selected?> value="<?=$key?>"><?=$value?></option>
+                                <?php endforeach ?>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label><input type="checkbox" name="status" <?=(isset($cate['status'])&&$cate['status']==1)?'checked':''?> value="1"> 

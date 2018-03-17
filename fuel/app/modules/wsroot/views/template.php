@@ -36,7 +36,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"><span>Laptop</span>Admin</a>
+                <a class="navbar-brand" href="/"><span>Thành Lập</span> Admin</a>
                 <ul class="user-menu">
                     <li class="dropdown pull-right">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> User <span class="caret"></span></a>
@@ -59,12 +59,8 @@
             </div>
         </form>
         <ul class="nav menu">
-            <li><a href="/wsroot/product/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Sản phẩm</a></li>
-            <li><a href="/wsroot/brand/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Thương hiệu</a></li>
-            <li><a href="/wsroot/cate/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Dòng</a></li>
-            <li><a href="/wsroot/pageinfo/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Thông tin trang</a></li>
-            <li><a href="/wsroot/searchoption/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Tìm kiếm</a></li>
-            <li><a href="/wsroot/banner/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Banner</a></li>
+            <li><a href="/wsroot/product/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Bài viết mới</a></li>
+            <li><a href="/wsroot/cate/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Loại bài post</a></li>
             <li role="presentation" class="divider"></li>
         </ul>
         <div class="attribution">Template by <a href="http://www.medialoot.com/item/lumino-admin-bootstrap-template/">Medialoot</a><br/><a href="http://www.glyphs.co" style="color: #333;">Icons by Glyphs</a></div>
