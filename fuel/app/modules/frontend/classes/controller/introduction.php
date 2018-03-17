@@ -49,7 +49,7 @@ class Controller_Introduction extends Controller_Base{
         $cateId = (isset($_GET["c"]))?(int)$_GET["c"]:null;
         $listPost = Model_Article::getListCateDetail($brandId, $cateId);
 
-        $this->template->title = $data["title"] = "Giấy phép";
+        $this->template->title = $data["title"] = "GIẤY PHÉP";
         $data['listPost'] = $listPost;
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/list',$data);
@@ -60,7 +60,7 @@ class Controller_Introduction extends Controller_Base{
         $cateId = (isset($_GET["c"]))?(int)$_GET["c"]:null;
         $listPost = Model_Article::getListCateDetail($brandId, $cateId);
 
-        $this->template->title = $data["title"] = "Hồ sơ năng lực";
+        $this->template->title = $data["title"] = "HỒ SƠ NĂNG LỰC";
         $data['listPost'] = $listPost;
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/list',$data);
@@ -71,7 +71,7 @@ class Controller_Introduction extends Controller_Base{
         $cateId = (isset($_GET["c"]))?(int)$_GET["c"]:null;
         $listPost = Model_Article::getListCateDetail($brandId, $cateId);
 
-        $this->template->title = $data["title"] = "Văn bản pháp quy";
+        $this->template->title = $data["title"] = "VĂN BÀN PHÁP QUY";
         $data['listPost'] = $listPost;
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/list',$data);
