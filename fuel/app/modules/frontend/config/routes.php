@@ -11,6 +11,7 @@ return array(
     'giay-phep' => 'frontend/introduction/giayphep',
     'ho-so-nang-luc' => 'frontend/introduction/hosonangluc',
     'van-ban-phap-quy' => 'frontend/introduction/vanbanphapquy',
+    'tin-moi-truong' => 'frontend/introduction/tinmoitruong',
     'thieu-huy-hang-hoa' => 'frontend/introduction/thieuhuyhanghoa',
 
 

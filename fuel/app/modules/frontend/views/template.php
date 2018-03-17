@@ -73,7 +73,7 @@
                             <ul>
                                 <?php 
                                     foreach ($listCate[2] as $key => $value) {
-                                        echo "<li><a href='/giay-phep?c={$key}'>{$value}</a></li>";
+                                        echo "<li><a href='/ho-so-nang-luc?c={$key}'>{$value}</a></li>";
                                     }
                                 ?>
                             </ul>
@@ -83,12 +83,12 @@
                             <ul>
                                 <?php 
                                     foreach ($listCate[3] as $key => $value) {
-                                        echo "<li><a href='/giay-phep?c={$key}'>{$value}</a></li>";
+                                        echo "<li><a href='/van-ban-phap-quy?c={$key}'>{$value}</a></li>";
                                     }
                                 ?>
                             </ul>
                         </li>
-                        <li class="menu-has-children"><a href="/news/   ">TIN MÔI TRƯỜNG</a></li>
+                        <li class="menu-has-children"><a href="/tin-moi-truong">TIN MÔI TRƯỜNG</a></li>
                         <li><a href="/#contact">LIÊN HỆ</a></li>
                     </ul>
                 </nav>
