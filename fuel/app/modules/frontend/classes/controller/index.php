@@ -137,5 +137,13 @@ class Controller_Index extends Controller_Base{
         </url></urlset>';
         die();
     }
+    public function action_robot() 
+    {
+        header('Content-type: text/plain');
+        echo "User-agent: SpamBot
+Disallow: /
+User-agent: *
+Disallow: /";die();
+    }
 }
 ?>

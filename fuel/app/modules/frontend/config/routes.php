@@ -17,5 +17,6 @@ return array(
 
     'news' => 'frontend/news/index',
     'sitemap' => 'frontend/index/sitemap',
+    'robot' => 'frontend/index/robot',
     'news/(:num)/(:any)' => 'frontend/news/detail/$1',
 );
