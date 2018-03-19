@@ -142,8 +142,7 @@ class Controller_Index extends Controller_Base{
         header('Content-type: text/plain');
         echo "User-agent: SpamBot
 Disallow: /
-User-agent: *
-Disallow: /";die();
+User-agent: *";die();
     }
 }
 ?>
