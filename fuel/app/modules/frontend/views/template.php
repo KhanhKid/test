@@ -12,7 +12,7 @@
         <link href="/public/assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
         <!-- Bootstrap CSS File -->
         <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
@@ -187,18 +187,64 @@
             </section>
             <!-- #contact -->
             <style>
-                a {
-                    color: #2dc997;
+                .ten_ya{
+                    margin:10px 0px !important;
+                    font-size:16px !important;
+                    color:#1872c5 !important;
                 }
+                .dt_ya{
+                    margin:10px 0px !important;
+                    font-size:14px !important;
+                    color:#1872c5 !important;
+                    
+                }
+                .ho_tro_h{
+                    margin-bottom:10px;
+                    border-bottom:1px dashed #ccc;
+                    padding:0px 10px;
+                    box-sizing:border-box;
+                }
+                div.content1 {
+                    float: left;
+                    width: 301px;
+                    border-left:none;
+                    border-right:none;
+                    border-bottom:none;
+                    border-radius: 0px 0px 5px 5px;
+                }                
             </style>
-            <div id="box_member">
-                <p class="box_center">HỖ TRỢ</p>
-                <ul>
-                <li><span>Mr. Thế (<a href="tel:+84915665333">0915.665.333</a>) <a href="mailto:kd.thanhlapcom@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></span></li>
-                <li><span>Mr. Vũ (<a href="tel:+84903889268">0903.889.268</a>) <a href="mailto:moitruongtl@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></span></li>
-                <li><span>Ms. Hạnh (<a href="tel:+84907089325">0907.089.325</a>) <a href="mailto:duthimyhanh.hcmus@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></span></li>
-                </ul>
+            <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 6% 12px no-repeat; position: fixed; right: 0px; top: 200px; width: 350px; z-index: 2147483647; overflow: hidden; min-height: 300px; margin-right: -300px;">
+                <div style="width:300px; float:right;min-height:200px; background:#FFF;border-bottom-left-radius:8px;border-top-left-radius:8px; min-height:252px;">
+                    <div class="ho_tro_h">
+                        <h3 class="ten_ya">Tên: <b>Kinh doanh Mr thế </b></h3>
+                        <h3 class="dt_ya">Điện thoại: <b><a href="tel:+84915665333">0915.665.333</a></b></h3>
+                        <h3 class="dt_ya">Email: <b><a href="mailto:kd.thanhlapcom@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></b></h3>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="ho_tro_h">
+                        <h3 class="ten_ya">Tên: <b>Kỹ thuật Mr. Vũ</b></h3>
+                        <h3 class="dt_ya">Điện thoại: <b><a href="tel:+84903889268">0903.889.268</a></b></h3>
+                        <h3 class="dt_ya">Email: <b><a href="mailto:moitruongtl@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></b></h3>
+                    </div>
+                    <div class="clear"></div> 
+                    <div class="ho_tro_h">
+                        <h3 class="ten_ya">Tên: Ms. Hạnh<b></b></h3>
+                        <h3 class="dt_ya">Điện thoại: <b><a href="tel:+84907089325">0907.089.325</a></b></h3>
+                        <h3 class="dt_ya">Email: <b><a href="mailto:duthimyhanh.hcmus@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></b></h3>
+                    </div>
+                    <div class="clear"></div>
+                </div>
             </div>
+                <script>
+                $(document).ready(function(e) {
+                    $('.chon').animate({marginRight:'-300px'},1000);
+                    $('.chon').hover(function(){
+                            $(this).stop().animate({marginRight:'0px'},1000);
+                        },function(){
+                            $(this).stop().animate({marginRight:'-300px'},1000);
+                            });
+                });
+                </script>
         </main>
         <!--==========================
             Footer
