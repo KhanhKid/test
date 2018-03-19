@@ -12,7 +12,7 @@
         <link href="/public/assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
         <!-- Bootstrap CSS File -->
         <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="/public/assets/admin/js/jquery-1.11.1.min.js"></script>
         <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
