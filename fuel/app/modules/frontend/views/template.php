@@ -66,7 +66,7 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/ho-so-nang-luc">HỒ SƠ NĂNG LỰC</a>
+                            <a href="/ho-so-nang-luc">Hồ Sơ Năng Lực</a>
                             <ul>
                                 <?php 
                                     foreach ($listCate[2] as $key => $value) {
@@ -76,7 +76,7 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/van-ban-phap-quy">VĂN BẢN PHÁP QUY</a>
+                            <a href="/van-ban-phap-quy">Văn Bản Pháp Quy</a>
                             <ul>
                                 <?php 
                                     foreach ($listCate[3] as $key => $value) {
@@ -85,8 +85,8 @@
                                 ?>
                             </ul>
                         </li>
-                        <li class="menu-has-children"><a href="/tin-moi-truong">TIN MÔI TRƯỜNG</a></li>
-                        <li><a href="/#contact">LIÊN HỆ</a></li>
+                        <li class="menu-has-children"><a href="/tin-moi-truong">Tin Môi Trường</a></li>
+                        <li><a href="/#contact">Liên Hệ</a></li>
                     </ul>
                 </nav>
                 <!-- #nav-menu-container -->
@@ -186,12 +186,17 @@
                 </div>
             </section>
             <!-- #contact -->
+            <style>
+                a {
+                    color: #2dc997;
+                }
+            </style>
             <div id="box_member">
                 <p class="box_center">HỖ TRỢ</p>
                 <ul>
-                <li><span>Mr. Thế (<a href="tel:+84915665333">0915.665.333</a>) <a href="mailto:someone@example.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></span></li>
-                <li><span>Mr. Vũ (<a href="tel:+84903889268">0903.889.268</a>) <a href="mailto:someone@example.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></span></li>
-                <li><span>Ms. Hạnh (<a href="tel:+84907089325">0907.089.325</a>) <a href="mailto:someone@example.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></span></li>
+                <li><span>Mr. Thế (<a href="tel:+84915665333">0915.665.333</a>) <a href="mailto:kd.thanhlapcom@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></span></li>
+                <li><span>Mr. Vũ (<a href="tel:+84903889268">0903.889.268</a>) <a href="mailto:moitruongtl@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></span></li>
+                <li><span>Ms. Hạnh (<a href="tel:+84907089325">0907.089.325</a>) <a href="mailto:duthimyhanh.hcmus@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></span></li>
                 </ul>
             </div>
         </main>
