@@ -211,26 +211,29 @@
                     border-right:none;
                     border-bottom:none;
                     border-radius: 0px 0px 5px 5px;
-                }                
+                }      
+                a {
+                    color: #2dc997;
+                }          
             </style>
             <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 6% 12px no-repeat; position: fixed; right: 0px; top: 200px; width: 350px; z-index: 2147483647; overflow: hidden; min-height: 300px; margin-right: -300px;">
                 <div style="width:300px; float:right;min-height:200px; background:#FFF;border-bottom-left-radius:8px;border-top-left-radius:8px; min-height:252px;">
                     <div class="ho_tro_h">
-                        <h3 class="ten_ya">Tên: <b>Kinh doanh Mr thế </b></h3>
-                        <h3 class="dt_ya">Điện thoại: <b><a href="tel:+84915665333">0915.665.333</a></b></h3>
-                        <h3 class="dt_ya">Email: <b><a href="mailto:kd.thanhlapcom@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></b></h3>
+                        <p class="ten_ya">Tên: <b>Kinh doanh Mr thế </b></p>
+                        <p class="dt_ya">Điện thoại: <b><a href="tel:+84915665333">0915.665.333</a></b></p>
+                        <p class="dt_ya">Email: <b><a href="mailto:kd.thanhlapcom@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></b></p>
                     </div>
                     <div class="clear"></div>
                     <div class="ho_tro_h">
-                        <h3 class="ten_ya">Tên: <b>Kỹ thuật Mr. Vũ</b></h3>
-                        <h3 class="dt_ya">Điện thoại: <b><a href="tel:+84903889268">0903.889.268</a></b></h3>
-                        <h3 class="dt_ya">Email: <b><a href="mailto:moitruongtl@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></b></h3>
+                        <p class="ten_ya">Tên: <b>Kỹ thuật Mr. Vũ</b></p>
+                        <p class="dt_ya">Điện thoại: <b><a href="tel:+84903889268">0903.889.268</a></b></p>
+                        <p class="dt_ya">Email: <b><a href="mailto:moitruongtl@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></b></p>
                     </div>
                     <div class="clear"></div> 
                     <div class="ho_tro_h">
-                        <h3 class="ten_ya">Tên: Ms. Hạnh<b></b></h3>
-                        <h3 class="dt_ya">Điện thoại: <b><a href="tel:+84907089325">0907.089.325</a></b></h3>
-                        <h3 class="dt_ya">Email: <b><a href="mailto:duthimyhanh.hcmus@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></b></h3>
+                        <p class="ten_ya">Tên: Ms. Hạnh<b></b></p>
+                        <p class="dt_ya">Điện thoại: <b><a href="tel:+84907089325">0907.089.325</a></b></p>
+                        <p class="dt_ya">Email: <b><a href="mailto:duthimyhanh.hcmus@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></b></p>
                     </div>
                     <div class="clear"></div>
                 </div>
