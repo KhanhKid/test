@@ -5,7 +5,7 @@ RewriteRule ^ %1 [L,NE,R=302]
 RewriteRule ^(.*)$ public/index.php?$1 [L,QSA]
 
 RewriteRule ^sitemap\.xml$ /index.php?eID=sitemap [L]
-RewriteRule ^robots\.txt$ /index.php?eID=robot [L]
+RewriteRule ^robots\.txt$ /index.php?eID=robots [L]
 
 <ifmodule mod_expires.c>
   # Turn on Expires and set default to 0
