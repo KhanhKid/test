@@ -34,7 +34,7 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Loại bài:</label>
-                            <select name="cate_id">
+                            <select name="cate_id" class="form-control">
                                 <?php 
                                 $brandID = isset($product['cate_id'])?$product['cate_id']:0;
                                 foreach ($cate as $key => $value): 
