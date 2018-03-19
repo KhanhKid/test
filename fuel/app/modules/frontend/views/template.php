@@ -17,7 +17,7 @@
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
         <!-- Main Stylesheet File -->
-        <link href="/public/assets/frontend/css/style.css" rel="stylesheet">
+        <link href="/public/assets/frontend/css/style.css?v=20180319" rel="stylesheet">
         
         <!-- =======================================================
             Theme Name: Regna
@@ -186,6 +186,14 @@
                 </div>
             </section>
             <!-- #contact -->
+            <div id="box_member">
+                <p class="box_center">HỖ TRỢ</p>
+                <ul>
+                <li><span>Mr. Thế (<a href="tel:+84915665333">0915.665.333</a>) <a href="mailto:someone@example.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></span></li>
+                <li><span>Mr. Vũ (<a href="tel:+84903889268">0903.889.268</a>) <a href="mailto:someone@example.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></span></li>
+                <li><span>Ms. Hạnh (<a href="tel:+84907089325">0907.089.325</a>) <a href="mailto:someone@example.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></span></li>
+                </ul>
+            </div>
         </main>
         <!--==========================
             Footer

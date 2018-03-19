@@ -240,7 +240,7 @@
 <!--==========================
     Team Section
     ============================-->
-<section id="team">
+<!-- <section id="team">
     <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Team</h3>
@@ -305,5 +305,5 @@
         </div>
 
       </div>
-</section>
+</section> -->
 <!-- #team -->
