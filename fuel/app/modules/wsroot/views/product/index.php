@@ -2,22 +2,15 @@
 <link href="/public/assets/datatable/jquery.dataTables.min.css" rel="stylesheet">
 <div class="row">
     <ol class="breadcrumb">
-        <li><a href="#"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
-        <li class="active">Bài Viết</li>
+        <li><a href="/wsroot/"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
+        <li class="active">Danh sách    </li>
     </ol>
 </div><!--/.row-->
-
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">Bài Viết</h1>
-    </div>
-</div><!--/.row-->
-        
 
 <div class="row list-product">
     <div class="col-lg-12">
         <div class="panel panel-default">
-            <div class="panel-heading">Bài Viết</div>
+            <div class="panel-heading">Danh sách bài viết</div>
 
             <div class="panel-body">
                 <a href="/wsroot/product/themmoi" class="btn btn-primary">+ Thêm mới</a>
@@ -26,10 +19,9 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <th>Name</th>
-                            <th>Image</th>
-                            <th>Loại</th><!-- 
-                            <th>Mô Tả Ngắn</th> -->
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Files</th>
                             <th>Ngày Tạo</th>
                             <th>Tool</th>
                         </tr>
@@ -37,10 +29,9 @@
                     <tfoot>
                         <tr>
                             <th>No</th>
-                            <th>Name</th>
-                            <th>Image</th>
-                            <th>Loại</th><!-- 
-                            <th>Mô Tả Ngắn</th> -->
+                            <th>Title</th>
+                            <th>Category</th>
+                            <th>Files</th>
                             <th>Ngày Tạo</th>
                             <th>Tool</th>
                         </tr>
@@ -55,21 +46,18 @@
                                 ?>
                             <tr>
                             <td><?=$value['id']?></td>
-                            <td><?=$value['name']?></td>
-                            <td><img width="150px" src="/userfiles/<?=$value['img']?>"></td>
-                            <td>Loại: <?=isset($listBrand[$value['brandID']])?$listBrand[$value['brandID']]:"Chưa có thương hiệu";?> <br> 
-                                Dòng: <?php 
-                                $cate = explode(",",$value['cateID']);
-                                foreach ($cate as $k_cate => $k_cateValue): 
-                                    if(isset($listCate[$k_cateValue])){
-                                        echo $listCate[$k_cateValue].",";
-                                    }
-                                endforeach ?>
-                            </td><!-- 
-                            <td><?php echo preg_replace('#\<(.*?)\>#', '\n', $value['shortdetail'])?></td> -->
-                            <td><?=$value['timecreate']?></td>
+                            <td><?=$value['title']?></td>
                             <td>
-                                <a href="/wsroot/product/status/<?=$value['id']?>"><img width="24" src="<?=$imgStatus?>"></a>
+                                <?=$listCate[$value['cate_id']]?>
+                            </td>
+                            <td>
+                                <?php if(isset($value['pdf']) && $value['pdf']){ ?>
+                                    <a href="/public/userfiles/<?php if(isset($value['pdf'])) echo $value['pdf']?>"><span class="glyphicon glyphicon-open-file">Download files</span></a>
+                                <?php }?>
+                            </td>
+                            <td><?=$value['reg_datetime']?></td>
+                            <td>
+                                <a href="/wsroot/product/status/<?=$value['id']?>"><img width="24" alt="Thay đổi status" src="<?=$imgStatus?>"></a>
                                 |
                                 <a href="/wsroot/product/del/<?=$value['id']?>"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"/></svg></a>
                                 |
@@ -91,6 +79,7 @@
     $(document).ready(function() {
         $('#listproduct').DataTable({
             "searching": true,
+            "order": [[ 4, "desc" ]],
             "columns": [
                 { "width": "5%" },
                 null,

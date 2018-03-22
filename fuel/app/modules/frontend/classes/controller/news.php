@@ -7,7 +7,7 @@ use \Auth;
 use \Input;
 use \Session;
 use \Asset;
-use \Model_Product;
+use \Model_Article;
 
 class Controller_News extends Controller_Base{
     public $template = 'template';
@@ -22,6 +22,8 @@ class Controller_News extends Controller_Base{
     } 
     public function action_detail($idNews) {
         $data = array();
+        $infoArticle = Model_Article::getDetailbyID($idNews);
+        $data['infoArticle'] = $infoArticle;
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('news/detail',$data);
     } 

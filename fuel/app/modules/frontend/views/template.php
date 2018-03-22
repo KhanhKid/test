@@ -4,23 +4,20 @@
         <meta charset="utf-8">
         <title>CÔNG TY TNHH THƯƠNG MẠI – XỬ LÝ MÔI TRƯỜNG</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
+        <meta content="môi trường, thành lập, công ty thành lập, xử lý môi trường thành lập, thành lập company, xử lý môi trường, tiêu huỷ hàng hoá, thu mua phế liệu, tư vấn môi trường" name="keywords">
+        <meta content="CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP, Cty môi trường Thành Lập là công ty tiên phong cung cấp dịch vụ tiêu hủy xủ lý hàng hóa hết hạn sử dụng tại TP.HCM và khu vực Miền Nam." name="description">
+        <meta name="google-site-verification" content="44Q_MqyA2Tvpwgzx38mF2yipMrfMukG_6lYi75Guudo" />
         <!-- Favicons -->
         <link href="/public/assets/frontend/img/favicon.png" rel="icon">
         <link href="/public/assets/frontend/img/apple-touch-icon.png" rel="apple-touch-icon">
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
         <!-- Bootstrap CSS File -->
         <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        
-        <!-- Libraries CSS Files -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <script src="/public/assets/admin/js/jquery-1.11.1.min.js"></script>
         <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
         <!-- Main Stylesheet File -->
-        <link href="/public/assets/frontend/css/style.css" rel="stylesheet">
+        <link href="/public/assets/frontend/css/style.css?v=20180319" rel="stylesheet">
         
         <!-- =======================================================
             Theme Name: Regna
@@ -32,6 +29,7 @@
 
 <?php 
     $infoPage = \Request::active();
+    $listCate = \Model_Cate::getListCateGroupBrand();
 ?>
     <body>
         <!--==========================
@@ -58,32 +56,37 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/#license">Giấy Phép</a>
+                            <a href="/giay-phep">Giấy Phép</a>
                             <ul>
-                                <li><a href="/giay-phep">Quyết định phê duyệt đề án ĐTM</a></li>
-                                <li><a href="/giay-phep">Giấy phép kinh doanh</a></li>
-                                <li><a href="/giay-phep">Giấy phép hành nghề quản lý chất thải nguy hại</a></li>
-                                <li><a href="/giay-phep">Chứng nhận ISO</a></li>
+                                <?php 
+                                    foreach ($listCate[1] as $key => $value) {
+                                        echo "<li><a href='/giay-phep?c={$key}'>{$value}</a></li>";
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/#portfolio">HỒ SƠ NĂNG LỰC</a>
+                            <a href="/ho-so-nang-luc">Hồ Sơ Năng Lực</a>
                             <ul>
-                                <li><a href="/ho-so-nang-luc">Công ty khách hàng</a></li>
-                                <li><a href="/ho-so-nang-luc">Thiết bị – công nghệ</a></li>
+                                <?php 
+                                    foreach ($listCate[2] as $key => $value) {
+                                        echo "<li><a href='/ho-so-nang-luc?c={$key}'>{$value}</a></li>";
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="javascript:void(0)">VĂN BẢN PHÁP QUY</a>
+                            <a href="/van-ban-phap-quy">Văn Bản Pháp Quy</a>
                             <ul>
-                                <li><a href="/van-ban-phap-quy">Luật</a></li>
-                                <li><a href="/van-ban-phap-quy">Nghị định</a></li>
-                                <li><a href="/van-ban-phap-quy">Thông tư</a></li>
-                                <li><a href="/van-ban-phap-quy">Văn bản khác</a></li>
+                                <?php 
+                                    foreach ($listCate[3] as $key => $value) {
+                                        echo "<li><a href='/van-ban-phap-quy?c={$key}'>{$value}</a></li>";
+                                    }
+                                ?>
                             </ul>
                         </li>
-                        <li class="menu-has-children"><a href="/news/   ">TIN MÔI TRƯỜNG</a></li>
-                        <li><a href="/#contact">LIÊN HỆ</a></li>
+                        <li class="menu-has-children"><a href="/tin-moi-truong">Tin Môi Trường</a></li>
+                        <li><a href="/#contact">Liên Hệ</a></li>
                     </ul>
                 </nav>
                 <!-- #nav-menu-container -->
@@ -124,7 +127,13 @@
                         <p class="section-description">VP HCM - 39 Cao Triều, Phường Tân Phong, Quận 7, TP.HCM</p>
                     </div>
                 </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.0327381567954!2d106.70658291477103!3d10.731958392351737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f905028bfdd%3A0xdb55a39f6bd160c7!2zMzkgQ2FvIFRyaeG7gXUgUGjDoXQsIFTDom4gUGhvbmcsIFF14bqtbiA3LCBI4buTIENow60gTWluaCwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1520671504032" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe
+                width="100%"
+                height="300"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUY6ev7kFUcCj0NDcpsA8i_IQTLfHB8d8
+                    &q=Space+Needle,Seattle+WA" allowfullscreen>
+                </iframe>
                 <div class="container wow fadeInUp">
                     <div class="row justify-content-center">
                         <div class="col-lg-3 col-md-4">
@@ -183,6 +192,68 @@
                 </div>
             </section>
             <!-- #contact -->
+            <style>
+                .ten_ya{
+                    margin:10px 0px !important;
+                    font-size:16px !important;
+                    color:#1872c5 !important;
+                }
+                .dt_ya{
+                    margin:10px 0px !important;
+                    font-size:14px !important;
+                    color:#1872c5 !important;
+                    
+                }
+                .ho_tro_h{
+                    margin-bottom:10px;
+                    border-bottom:1px dashed #ccc;
+                    padding:0px 10px;
+                    box-sizing:border-box;
+                }
+                div.content1 {
+                    float: left;
+                    width: 301px;
+                    border-left:none;
+                    border-right:none;
+                    border-bottom:none;
+                    border-radius: 0px 0px 5px 5px;
+                }      
+                a {
+                    color: #2dc997;
+                }          
+            </style>
+            <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 6% 12px no-repeat; position: fixed; right: 0px; top: 200px; width: 350px; z-index: 2147483647; overflow: hidden; min-height: 300px; margin-right: -300px;">
+                <div style="width:300px; float:right;min-height:200px; background:#FFF;border-bottom-left-radius:8px;border-top-left-radius:8px; min-height:252px;">
+                    <div class="ho_tro_h">
+                        <p class="ten_ya">Tên: <b>Kinh doanh Mr thế </b></p>
+                        <p class="dt_ya">Điện thoại: <b><a href="tel:+84915665333">0915.665.333</a></b></p>
+                        <p class="dt_ya">Email: <b><a href="mailto:kd.thanhlapcom@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></b></p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="ho_tro_h">
+                        <p class="ten_ya">Tên: <b>Kỹ thuật Mr. Vũ</b></p>
+                        <p class="dt_ya">Điện thoại: <b><a href="tel:+84903889268">0903.889.268</a></b></p>
+                        <p class="dt_ya">Email: <b><a href="mailto:moitruongtl@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">moitruongtl@gmail.com</a></b></p>
+                    </div>
+                    <div class="clear"></div> 
+                    <div class="ho_tro_h">
+                        <p class="ten_ya">Tên: Ms. Hạnh<b></b></p>
+                        <p class="dt_ya">Điện thoại: <b><a href="tel:+84907089325">0907.089.325</a></b></p>
+                        <p class="dt_ya">Email: <b><a href="mailto:duthimyhanh.hcmus@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></b></p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+                <script>
+                $(document).ready(function(e) {
+                    $('.chon').animate({marginRight:'-300px'},1000);
+                    $('.chon').hover(function(){
+                            $(this).stop().animate({marginRight:'0px'},1000);
+                        },function(){
+                            $(this).stop().animate({marginRight:'-300px'},1000);
+                            });
+                });
+                </script>
         </main>
         <!--==========================
             Footer
@@ -204,7 +275,7 @@
         <script>
         window.fbAsyncInit = function() {
             FB.init({
-            appId            : 'your-app-id',
+            appId            : '359751687855910',
             autoLogAppEvents : true,
             xfbml            : true,
             version          : 'v2.12'

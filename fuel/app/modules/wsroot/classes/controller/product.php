@@ -4,7 +4,7 @@ use \View;
 use \Input;
 use \Session;
 use \Response;
-use \Model_Product;
+use \Model_Article;
 use \Model_Brand;
 use \Model_Cate;
 
@@ -23,85 +23,60 @@ class Controller_Product extends Controller_Admin{
                 foreach ($_FILES as $key => $value) {
                     if(is_uploaded_file($value['tmp_name'])) {
                         $sourcePath = $value['tmp_name'];
-                        $targetPath = APPPATH_USERFILE."product/".str_replace(".",date("Ymdhis").".",$value['name']);
-                        if($key == "banner")
-                            $linkbanner = "product/".str_replace(".",date("Ymdhis").".",$value['name']);
-                        else
-                            $linkpdf = "product/".str_replace(".",date("Ymdhis").".",$value['name']);
+                        $targetPath = APPPATH_USERFILE.str_replace(".",date("Ymdhis").".",$value['name']);
+                        $linkpdf = str_replace(".",date("Ymdhis").".",$value['name']);
                         move_uploaded_file($sourcePath,$targetPath);
-                        if($key == "banner"){
-                            \Image::load($targetPath)
-                                ->config('bgcolor', '#fff')
-                                ->resize(156, 156, true, true)->save($targetPath);
-                        }
                     }
                 }
                 
             }
+            
             $data = array(
-                    'name' => Input::post('name'),
-                    'status' => isset($_POST['status'])?1   :0,
-                    'str_search' => Input::post('str_search'),
-                    'link_seo' => Input::post('linkseo'),
-                    'price' => Input::post('price'),
-                    'shortdetail' => Input::post('shortdetail'),
-                    'detail' => Input::post('detail'),
-                    'brandID' => Input::post('brand'),
-                    'cateID' => isset($_POST['cate'])?",".implode(",",$_POST['cate']).",":"",
+                    'title' => Input::post('title'),
+                    'status' => isset($_POST['status'])?1:0,
+                    'short_desc' => Input::post('short_desc'),
+                    'content' => Input::post('content'),
+                    'cate_id' => Input::post('cate_id'),
                     'pdf' => $linkpdf,
-                    'img' => $linkbanner,
-                    'timestamp' => date("Y-m-d H:i:s"),
+                    'reg_datetime' => date("Y-m-d H:i:s"),
                 );
-            $product = Model_Product::forge()->set($data);
+            $product = Model_Article::forge()->set($data);
             $product->save();
 
             $data['message'] = "Đăng thành công";   
         }
         $data['brand'] = \Model_Brand::getAllItem();
         $data['cate'] = \Model_Cate::getAllItem();
-        $this->template->title = $data['title'] = "Thêm mới sản phẩm";
+        $this->template->title = $data['title'] = "Thêm mới bài viết";
         $this->template->content = View::forge('product/themmoi',$data);
     }
 
     public function action_chinhsua($proID)
     {
-        $product = Model_Product::getDetailbyID($proID);
+        $product = Model_Article::getDetailbyID($proID);
         if(!$product) die("400");
         if (\Input::method() == 'POST')
         {
             $linkbanner ="";
             $linkpdf ="";
+            $product->title = Input::post('title');
+            $product->status = isset($_POST['status'])?1:0;
+            $product->short_desc = Input::post('short_desc');
+            $product->content = Input::post('content');
+            $product->cate_id = Input::post('cate_id');
+
+            $linkpdf ="";
             if(is_array($_FILES)) {             
                 foreach ($_FILES as $key => $value) {
                     if(is_uploaded_file($value['tmp_name'])) {
                         $sourcePath = $value['tmp_name'];
-                        $targetPath = APPPATH_USERFILE."product/".str_replace(".",date("Ymdhis").".",$value['name']);
-                        if($key == "banner"){
-                            @unlink(APPPATH_USERFILE.$product->img); 
-                            $linkbanner = "product/".str_replace(".",date("Ymdhis").".",$value['name']);
-                        }else{
-                            $product->pdf = $linkpdf;
-                            $linkpdf = "product/".str_replace(".",date("Ymdhis").".",$value['name']);
-                        }
+                        $targetPath = APPPATH_USERFILE.str_replace(".",date("Ymdhis").".",$value['name']);
+                        $linkpdf = str_replace(".",date("Ymdhis").".",$value['name']);
                         move_uploaded_file($sourcePath,$targetPath);
-                        if($key == "banner"){
-                            \Image::load($targetPath)
-                                ->config('bgcolor', '#fff')
-                                ->resize(156, 156, true, true)->save($targetPath);
-                        }
                     }
-                }   
+                }
+                
             }
-            $product->name = Input::post('name');
-            $product->status = isset($_POST['status'])?1:0;
-            $product->link_seo = Input::post('linkseo');
-            $product->str_search = Input::post('str_search');
-            $product->price = Input::post('price');
-            $product->shortdetail = Input::post('shortdetail');
-            $product->detail = Input::post('detail');
-            $product->brandID = Input::post('brand');
-            $product->cateID = isset($_POST['cate'])?",".implode(",",$_POST['cate']).",":"";
-            if($linkbanner != "") $product->img = $linkbanner;
             if($linkpdf != "") $product->pdf = $linkpdf;
             
             $product->save();
@@ -109,23 +84,22 @@ class Controller_Product extends Controller_Admin{
         }
 
         $data['product'] = $product;
-        $data['brand'] = \Model_Brand::getAllItem();
         $data['cate'] = \Model_Cate::getAllItem();
-        $this->template->title = $data['title'] = "Chỉnh sửa sản phẩm";
+        $this->template->title = $data['title'] = "Chỉnh sửa bài viết";
         $this->template->content = View::forge('product/themmoi',$data);
     }
     public function action_index()
     {
         $data = array();
-        $data['listProduct'] = Model_Product::getAllItem();
-        $data['listBrand'] = Model_Brand::getListBrand();
+        $data['listProduct'] = Model_Article::getAllItem();
         $data['listCate'] = Model_Cate::getListCate();
         $this->template->title = "Danh sách sản phẩm";
         $this->template->content = View::forge('product/index',$data);
     }
     public function action_del($proID)
     {
-        $product = Model_Product::find($proID);
+        $data['listCate'] = Model_Cate::getListCate();
+        $product = Model_Article::find($proID);
         if (\Input::method() == 'POST')
         {
             $product->delete();
@@ -137,7 +111,7 @@ class Controller_Product extends Controller_Admin{
     }
     public function action_status($proID)
     {
-        $product = Model_Product::find($proID);
+        $product = Model_Article::find($proID);
         $product->status = ($product->status == 1)?0:1;
         $product->save();
         Response::redirect('/wsroot/product/');        

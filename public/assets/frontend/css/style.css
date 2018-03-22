@@ -10,7 +10,7 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
 }
 
 a {
@@ -29,7 +29,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -299,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 13px;
@@ -583,7 +583,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   font-size: 14px;
 }
 
@@ -749,7 +749,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Nunito", sans-serif;
+  font-family: sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -913,7 +913,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7f7f7;
+  background: #fff;
   padding: 80px 0 40px 0;
 }
 
@@ -1039,4 +1039,37 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .txt_blue {
   color: blue;
+}
+
+#box_member {
+    width: 198px;
+    border: 1px solid #2dc997;
+    border-radius: 5px;
+    padding: 15px 0;
+    position: fixed;
+    top: auto!important;
+    bottom: 30px;
+    left: 20px;
+    background: #fff
+}
+#box_member .box_center {
+    text-align: center;
+    background-color: #2dc997;
+    margin-top: -15px;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#box_member span {
+    display: block
+}
+
+#box_member ul {
+    font-size: 12px;
+        margin-left: -20px;
+}
+
+#box_member p {
+    margin-bottom: 10px
 }
