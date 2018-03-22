@@ -49,10 +49,16 @@ class Controller_Introduction extends Controller_Base{
         $data = array();
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/vanbanphapquy',$data);
+    }
     public function action_thieuhuyhanghoa() {
         $data = array();
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/thieuhuyhanghoa',$data);
+    } 
+    public function action_detail($id) {
+        $data = array();
+        $this->template->meta = $this->metaTag();
+        $this->template->content = View::forge('introduction/detail',$data);
     } 
 }
 ?>

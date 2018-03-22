@@ -13,6 +13,8 @@ return array(
     'van-ban-phap-quy' => 'frontend/introduction/vanbanphapquy',
     'thieu-huy-hang-hoa' => 'frontend/introduction/thieuhuyhanghoa',
 
+    'article/(:num)' => 'frontend/introduction/detail/$1',
+
 
     'news' => 'frontend/news/index',
     'news/(:num)' => 'frontend/news/detail/$1',
