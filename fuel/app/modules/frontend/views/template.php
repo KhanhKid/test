@@ -103,7 +103,7 @@
         <section id="hero">
             <div class="hero-container">
                 <img src="/public/assets/frontend/img/logo_.png" width="200px"/>
-                <h1 style="color:#20bf6b ; text-shadow: -1px 0 #black, 0 1px #black, 1px 0 black, 0 -1px black;">THÀNH LẬP</h1>
+                <h1 style="color:#20bf6b ; text-shadow: -1px 0 #20bf6b, 0 1px #20bf6b, 1px 0 black, 0 -1px black;">THÀNH LẬP</h1>
                 <h2>CÔNG TY TNHH THƯƠNG MẠI – XỬ LÝ MÔI TRƯỜNG </h2>
                 <a href="#about" class="btn-get-started">Get Started</a>
             </div>

@@ -541,11 +541,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   padding: 16px;
   border-radius: 50%;
-  border: 2px solid #eb3b5a;
+  border: 2px solid #20bf6b;
 }
 
 #about .about-container .icon-box .icon i {
-  color: #eb3b5a;
+  color: #20bf6b;
   font-size: 24px;
 }
 
