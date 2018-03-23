@@ -52,7 +52,7 @@
         <p>– Có nguồn nhân lực hùng hậu và trang thiết bị, phương tiện vận chuyển hiện đại.</p>
         <p>– Chính sách giá ổn định.</p>
         <p>– Tư vấn nhiệt tình các vấn đề liên quan về môi trường.</p>
-        <h2><strong>Cty môi trường Thành Lập </strong><strong>cung cấp dịch vụ xử lý tiêu hủy hàng, <u>thực phẩm, thuốc tây, hóa chất</u> hết hạn sử dụng, hàng lỗi không đặt yêu cầu</strong></h2>
+        <h2>Cty môi trường Thành Lập cung cấp dịch vụ xử lý tiêu hủy hàng, <u>thực phẩm, thuốc tây, hóa chất</u> hết hạn sử dụng, hàng lỗi không đặt yêu cầu</h2>
         <p><strong>Quy trình tiêu hủy hàng hóa, hóa chất hết hạn sử dụng của chúng tôi:</strong></p>
         <ol>
         <li>Cty môi trường Thành Lập sẽ cho phương tiện vận chuyển đến tận kho chứa của cơ quan tổ chức cần tiêu hủy hàng hóa để tiến hành thu gom. Sau khi quá trình thu gom hoàn tất chúng tôi sẽ ghi biên bản giao nhận để xác định chính xác khối lượng hàng hóa mà cơ quan tổ chức cần tiến hành thu gom.</li>
