@@ -18,20 +18,28 @@
     <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-        <h4 class="section-heading"><i class="fa fa-info-circle"></i> Thông tin chung</h4>
-        <p>Tên đầy đủ: <b>CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP</b></p>
-        <p>Tên tiếng anh: THANH LAP TRADING - ENVIRONMENT PROTECTION CO., LTD</p>
-        <p>Tên công ty viết tắt: CTY TNHH TM - XL MT THÀNH LẬP</p>
-        <p>Mã quản lý CTNH: 3-4-5-6.021.VX</p>
+        <h1 style="text-align:center"><strong>&nbsp;TH&Ocirc;NG TIN CHUNG</strong></h1>
 
-        <p>Tài khoản: 200014851037950 - Ngân hàng Eximbank chi nhánh TP. Hồ Chí Minhp</br>Mã số thuế: 0301761350p</br>Website: moitruongthanhlap.com.vnp</br>Số điện thoại: (028). 3860 3072p</br>E-mail: thanhlapcom@yahoo.comp</br>Địa chỉ văn phòng: 39 Cao Triều Phát, phường Tân Phong, quận 7, Tp. Hồ Chí Minh</br>Nhà máy xử lý: Lô 147, tổ 3, ấp bàu Trăn, xã Nhuận Đức, huyện Củ Chi, Tp. Hồ Chí Minh</br>Đại diện pháp luật: Tăng A Pẩu</p>
+        <ul>
+            <li>T&ecirc;n đ&acirc;̀y đủ:&nbsp;<strong>C&Ocirc;NG TY TR&Aacute;CH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ L&Yacute; M&Ocirc;I TRƯỜNG TH&Agrave;NH LẬP</strong></li>
+            <li>T&ecirc;n ti&ecirc;́ng anh: THANH LAP TRADING - ENVIRONMENT PROTECTION CO., LTD</li>
+            <li>T&ecirc;n c&ocirc;ng ty viết tắt: CTY TNHH TM - XL MT TH&Agrave;NH LẬP</li>
+            <li>Mã quản lý CTNH: 3-4-5-6.021.VX</li>
+            <li>Tài khoản: 200014851037950 - Ng&acirc;n h&agrave;ng Eximbank chi nhánh TP. Hồ Ch&iacute; Minhp</li>
+            <li>Mã s&ocirc;́ thu&ecirc;́: 0301761350p</li>
+            <li>Website: moitruongthanhlap.com.vn</li>
+            <li>S&ocirc;́ đi&ecirc;̣n thoại: (028). 3860 3072p</li>
+            <li>E-mail: thanhlapcom@yahoo.comp</li>
+            <li>Địa chỉ văn phòng: 39 Cao Tri&ecirc;̀u Phát, phường T&acirc;n Phong, qu&acirc;̣n 7, Tp. H&ocirc;̀ Chí Minh</li>
+            <li>Nhà máy xử lý: L&ocirc; 147, t&ocirc;̉ 3, &acirc;́p bàu Trăn, xã Nhu&acirc;̣n Đức, huy&ecirc;̣n Củ Chi, Tp. H&ocirc;̀ Chí Minh</li>
+            <li>Đại di&ecirc;̣n pháp lu&acirc;̣t: Tăng A P&acirc;̉u</li>
+        </ul>
 
-        
-        <h4 class="section-heading"><i class="fa fa-info-circle"></i> Quá trình hình thành</h4>
+        <h1 style="text-align:center"><strong>&nbsp;QU&Aacute; TR&Igrave;NH TH&Agrave;NH LẬP</strong></h1>
 
-        <p>Công ty TNHH Thương mại - Xử lý môi trường Thành Lập được thành lập năm 1999 theo giấy phép số 1581/GP-TLDN ngày 10/07/1999 của UBND TP. Hồ Chí Minh và giấy chứng nhận ĐKKD số 072351 do Sở Kế Hoạch và Đầu Tư TP. Hồ Chí Minh cấp. Công ty được BỘ TÀI NGUYÊN VÀ MÔI TRƯỜNG cấp giấy phép hành nghề QLCTNH số 3-4-5-6.021.VX.</p>
+        <p>C&ocirc;ng ty TNHH Thương mại - Xử l&yacute; m&ocirc;i trường Th&agrave;nh Lập được th&agrave;nh lập năm 1999 theo giấy ph&eacute;p số 1581/GP-TLDN ng&agrave;y 10/07/1999 của UBND TP. Hồ Ch&iacute; Minh v&agrave; giấy chứng nhận ĐKKD số 072351 do Sở Kế Hoạch v&agrave; Đầu Tư TP. Hồ Ch&iacute; Minh cấp. C&ocirc;ng ty được B&Ocirc;̣ TÀI NGUY&Ecirc;N VÀ M&Ocirc;I TRƯỜNG cấp giấy ph&eacute;p h&agrave;nh nghề QLCTNH số 3-4-5-6.021.VX.</p>
 
-        <h4 class="section-heading"><i class="fa fa-info-circle"></i> Sơ đồ tổ chức</h4>
+        <h1 style="text-align:center"><strong>&nbsp;SƠ ĐỒ TỔ CHỨC</strong></h1>
 
         <p style="text-align: center;"><img src="/public/assets/frontend/img/gioithieu/sodo.png"/></p>
     </div>
