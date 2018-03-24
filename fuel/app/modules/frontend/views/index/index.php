@@ -2,9 +2,7 @@
     <div class="container">
         <div class="row about-container">
             <div class="col-lg-8 content order-lg-1 order-2">
-                <h2 class="title" style="text-align: center;
-    color: #20bf6b;
-    text-shadow: -1px 0 #20bf6b, 0 1px #20bf6b, 1px 0 black, 0 -1px black;">CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP</h2>
+                <h2 class="title" style="text-align: center;color:#0C82C1;">CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG <span style="font-size:35px;color: #eb3b5a;text-shadow: -1px 0 #eb3b5a, 0 1px #eb3b5a, 1px 0 black, 0 -1px black;">THÀNH LẬP</span></h2>
                 <p>- Với kinh nghiệm hơn <b>15 năm trong lĩnh vực xử lý và tái chế chất thải</b>, là một trong những đơn vị đi đầu trong lĩnh vực trên đang ngày càng phát triển, đầu tư thêm trang thiết bị mới, hiện đại,… được Quý Khách hàng đánh giá cao về chất lượng sản phẩm dịch vụ sẽ là sự lựa chọn tốt nhất cho các Khách hàng trong việc tìm kiếm các đơn vị có <b>đầy đủ năng lực và tiết kiệm chi phí cho việc xử lý chất thải</b>.</br>- Xin chân thành cảm ơn Quý Khách hàng đã tín nhiệm và hợp tác với chúng tôi trong thời gian qua. Công ty chúng tôi cam kết sẽ đồng hành cùng Quý khách trong công tác bảo vệ môi trường và phát triển bền vững với dịch vụ tốt nhất, </b>giá cả cạnh tranh và hợp lý nhất</b>. Hy vọng, Công ty chúng tôi sẽ đóng góp một phần nhỏ vào sự thành công của Quý  khách.
                 </p>
                 <div class="icon-box wow fadeInUp">

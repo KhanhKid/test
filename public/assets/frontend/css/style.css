@@ -10,7 +10,8 @@
 body {
   background: #fff;
   color: #666666;
-  font-family: sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 20px;
 }
 
 a {
@@ -29,7 +30,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -102,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 6px 0;
   line-height: 1;
-  font-family: sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -250,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero .btn-get-started {
-  font-family: sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -525,8 +526,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header
 --------------------------------*/
 .section-header .section-title {
-  font-size: 32px;
-  color: #111;
+  font-size: 33px;
+  color: #20bf6b;
+  background: url(../img/nen_05.png) no-repeat center 37px;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -534,6 +536,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header .section-description {
+  font-size: 20px;
   text-align: center;
   padding-bottom: 40px;
   color: #999;
@@ -557,7 +560,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .title {
-  color: #333;
+  color: #20bf6b;
   font-weight: 700;
   font-size: 32px;
 }
@@ -604,13 +607,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box .title a {
-  color: #111;
+  color: #20bf6b;
 }
 
 #about .about-container .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 /* Facts Section
@@ -623,13 +626,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: #20bf6b;
+  color: rgb(0, 0, 0);
 }
 
 #facts .counters p {
   padding: 0;
   margin: 0 0 20px 0;
-  font-family: sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   font-size: 14px;
 }
 
@@ -686,17 +689,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 #services .title a {
-  color: #111;
+  color: #20bf6b;
 }
 
 #services .description {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
 }
 /*==== License === */
@@ -754,13 +757,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #license .title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 #license .title a {
-  color: #111;
+  color: #20bf6b;
 }
 
 #license .description {
@@ -795,7 +798,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: sans-serif;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
