@@ -93,6 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo {
+  margin-top: -6px;
   float: left;
 }
 
@@ -116,6 +117,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  h1 {
+    color: white;
+    font-size: 75px;
+  }
+}
+
 @media (max-width: 768px) {
   #header #logo h1 {
     font-size: 26px;
@@ -123,13 +131,22 @@ h1, h2, h3, h4, h5, h6 {
   #header #logo img {
     max-height: 40px;
   }
+  
+  h1 {
+    color: white;
+    font-size: 45px;
+  }
 }
 
 #header.header-fixed {
-  background: #343b40;
+  background: rgba(52, 59, 64, 0.8);
+  margin-left: 75px;
+  margin-right: 75px;
   padding: 20px 0;
   height: 72px;
   transition: all 0.5s;
+  border-bottom-left-radius: 68px;
+  border-bottom-right-radius: 68px;
 }
 
 /*--------------------------------------------------------------
@@ -138,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/hero-bg.png) top center;
   background-size: cover;
   position: relative;
 }
@@ -147,11 +164,25 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background-attachment: fixed;
   }
+  #hero .div_logo {
+    
+    background:rgba(52, 59, 64, 0.8);
+    border-radius: 55px; 
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  #hero .div_logo {
+    background:rgba(52, 59, 64, 0.8);
+    border-radius: 55px; 
+    width: 90%;
+  }
+}
+#hero .div_logo:hover{
+   background-color:rgba(48, 51, 107, 0.8);
 }
 
 #hero:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -174,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 30px 0 10px 0;
-  font-size: 48px;
+  font-size: 75px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;

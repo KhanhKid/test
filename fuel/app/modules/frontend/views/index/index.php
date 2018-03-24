@@ -309,3 +309,21 @@
       </div>
 </section> -->
 <!-- #team -->
+
+<script>
+    $(document).ready(function () {
+        window.onload = function () {
+            function changeImage() {   
+                var BackgroundImg=["/public/assets/frontend/img/hero-bg_3.jpg","/public/assets/frontend/img/hero-bg.png",
+                    "/public/assets/frontend/img/hero-bg_2.jpg",
+                    "/public/assets/frontend/img/hero-bg.jpg",
+                    "/public/assets/frontend/img/hero-bg1.png",
+                ];
+                var i = Math.floor((Math.random() * 4));
+                $("#hero").attr("style",'background: url("' + BackgroundImg[i] + '") top center');
+            }
+            window.setInterval(changeImage, 5000);
+        }
+    });
+
+</script>

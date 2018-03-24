@@ -35,10 +35,10 @@
         <!--==========================
             Header
             ============================-->
-        <header id="header">
+        <header id="header" class="header-fixed">
             <div class="container">
                 <div id="logo" class="pull-left">
-                    <a href="/#hero"><img src="/public/assets/frontend/img/logo.png" alt="" title="" /></img></a>
+                    <img src="/public/assets/frontend/img/logo_.png" width="45px"/> <a href="/#hero"><img src="/public/assets/frontend/img/logo.png" width="120px" /></a>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div>
@@ -101,11 +101,13 @@
             if($infoPage->controller == "Frontend\Controller_Index") {
         ?>
         <section id="hero">
-            <div class="hero-container">
-                <img src="/public/assets/frontend/img/logo_.png" width="200px"/>
-                <h1 style="color:#20bf6b ; text-shadow: -1px 0 #20bf6b, 0 1px #20bf6b, 1px 0 black, 0 -1px black;">THÀNH LẬP</h1>
-                <h2>CÔNG TY TNHH THƯƠNG MẠI – XỬ LÝ MÔI TRƯỜNG </h2>
-                <a href="#about" class="btn-get-started">Get Started</a>
+            <div class="hero-container" >
+                <div class="div_logo" style="color:white ; text-shadow: 0px 0 #20bf6b, 0 0px #20bf6b, 1px 0 black, 0 -1px black"> 
+                    <img src="/public/assets/frontend/img/logo_.png" width="200px"/>
+                    <h1 class="name_company">THÀNH LẬP</h1>
+                    <h2 style="color:#20bf6b; padding-top: 14px;"><b>CÔNG TY TNHH THƯƠNG MẠI – XỬ LÝ MÔI TRƯỜNG </b></h2>
+                    <a href="#about" class="btn-get-started">Get Started</a>
+                </div>
             </div>
         </section>
         <?php
