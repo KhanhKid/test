@@ -314,7 +314,7 @@
     $(document).ready(function () {
         window.onload = function () {
             function changeImage() {   
-                var BackgroundImg=["/public/assets/frontend/img/hero-bg_3.jpg","/public/assets/frontend/img/hero-bg.png",
+                var BackgroundImg=["/public/assets/frontend/img/hero-bg_3.jpg",
                     "/public/assets/frontend/img/hero-bg_2.jpg",
                     "/public/assets/frontend/img/hero-bg.jpg",
                     "/public/assets/frontend/img/hero-bg1.png",
