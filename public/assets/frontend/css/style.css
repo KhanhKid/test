@@ -122,6 +122,16 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: 75px;
   }
+  #header.header-fixed {
+    background: rgba(52, 59, 64, 0.8);
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+    border-bottom-left-radius: 68px;
+    border-bottom-right-radius: 68px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -136,18 +146,15 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     font-size: 45px;
   }
+  #header.header-fixed {
+    background: rgba(52, 59, 64, 0.8);
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+  }
 }
 
-#header.header-fixed {
-  background: rgba(52, 59, 64, 0.8);
-  margin-left: 120px;
-  margin-right: 120px;
-  padding: 20px 0;
-  height: 72px;
-  transition: all 0.5s;
-  border-bottom-left-radius: 68px;
-  border-bottom-right-radius: 68px;
-}
+
 
 /*--------------------------------------------------------------
 # Hero Section
