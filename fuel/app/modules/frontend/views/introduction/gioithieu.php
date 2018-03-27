@@ -1,12 +1,12 @@
 
 <link href="/public/assets/frontend/news/css/clean-blog.min.css" rel="stylesheet">
-<header class="masthead" style="background-image: url('/public/assets/frontend/img/gioithieu/gioithieu.png'); background-position: 0px -540px;">
+<header class="masthead" style="background-image: url('/public/assets/frontend/img/gioithieu/gioithieu.png'); background-position: 0px -455px;">
     <div class="overlay"></div>
     <div class="container">
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-                <h1>Giới Thiệu</h1>
+                <h1>GIỚI THIỆU</h1>
             </div>
         </div>
     </div>
@@ -15,9 +15,9 @@
 
 <!-- Post Content -->
 <article>
-    <div class="container"  style="background-image: url('/public/assets/frontend/img/paper.gif');background-repeat: repeat-y;">
+    <div class="container content_article">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="col-lg-10 col-md-10 mx-auto">
                 <h1 style="text-align:center"><strong>&nbsp;TH&Ocirc;NG TIN CHUNG</strong></h1>
 
                 <ul>

@@ -1,11 +1,11 @@
 <link href="/public/assets/frontend/news/css/clean-blog.min.css" rel="stylesheet">
-<header class="masthead" style="background-image: url('/public/assets/frontend/img/gioithieu/gioithieu.png'); background-position: 0px -540px;">
+<header class="masthead" style="background-image: url('/public/assets/frontend/img/gioithieu/gioithieu.png');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-10 mx-auto">
                 <div class="site-heading">
-                    <h1>Quy Trình Thu Gom Vận Chuyển Xử Lý</h1>
+                    <h1>QUY TRÌNH THU GOM VẬN CHUYỂN XỬ LÝ</h1>
                 </div>
             </div>
         </div>
@@ -15,7 +15,7 @@
 <article>
     <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-10 mx-auto">
             <p>
                 <h2 class="section-heading">I. THU GOM VÀ VẬN CHUYỂN CHẤT THẢI</h2>
                 
