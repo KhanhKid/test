@@ -71,10 +71,10 @@ class Controller_Introduction extends Controller_Base{
         $cateId = (isset($_GET["c"]))?(int)$_GET["c"]:null;
         $listPost = Model_Article::getListCateDetail($brandId, $cateId);
 
-        $this->template->title = $data["title"] = "VĂN BÀN PHÁP QUY";
+        $this->template->title = $data["title"] = "VĂN BẢNG PHÁP QUY";
         $data['listPost'] = $listPost;
         $this->template->meta = $this->metaTag();
-        $this->template->content = View::forge('introduction/vanbanphapquy',$data);
+        $this->template->content = View::forge('introduction/list',$data);
     }
     public function action_tinmoitruong() {
         $data = array();
