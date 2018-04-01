@@ -85,7 +85,7 @@ class Controller_Index extends Controller_Base{
             $mail->send();
             return true;
         } catch (Exception $e) {
-            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;die();
+            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
         }
     }
     public function action_sitemap()

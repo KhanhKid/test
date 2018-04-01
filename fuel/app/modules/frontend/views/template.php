@@ -167,7 +167,7 @@
                         </div>
                         <div class="col-lg-5 col-md-8">
                             <div class="form">
-                                <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                <div id="sendmessage">Bạn đã giữ email thành công, chúng tôi sẽ liên hệ với bạn sớm nhất.</div>
                                 <div id="errormessage"></div>
                                 <form class="contactForm" id="frm_contact">
                                     <div class="form-group">
