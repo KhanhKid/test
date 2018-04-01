@@ -40,7 +40,7 @@ class Controller_Index extends Controller_Base{
             $mail->Port = 587;                                    // TCP port to connect to
 
             //Recipients
-            $mail->setFrom('sachlong112359@gmail.com', 'Mailer');
+            $mail->setFrom('info@moitruongthanhlap.com.vn', 'Mailer');
             $mail->addAddress('sachlong112359@gmail.com', 'Joe User');     // Add a recipient
             $mail->addReplyTo('info@moitruongthanhlap.com.vn', 'Information');
 
@@ -57,7 +57,7 @@ class Controller_Index extends Controller_Base{
         }
         die();
     }
-
+    
     public function action_sitemap()
     {
         header('Content-type: application/xml');
