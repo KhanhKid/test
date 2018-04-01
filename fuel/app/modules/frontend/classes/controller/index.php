@@ -32,7 +32,7 @@ class Controller_Index extends Controller_Base{
             //Server settings
             $mail->SMTPDebug = 2;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'mail.moitruongthanhlap.com.vn';  // Specify main and backup SMTP servers
+            $mail->Host = '103.53.169.5';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'info@moitruongthanhlap.com.vn';                 // SMTP username
             $mail->Password = 'L7.Z~R8Uat.&';                           // SMTP password
