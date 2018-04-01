@@ -9,6 +9,10 @@ use \Session;
 use \Asset;
 use \Model_Product;
 
+
+use \PHPMailer\PHPMailer\PHPMailer;
+use \PHPMailer\PHPMailer\Exception;
+
 class Controller_Index extends Controller_Base{
     public $template = 'template';
 
@@ -19,7 +23,41 @@ class Controller_Index extends Controller_Base{
         $data = array();
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('index/index',$data);
-    } 
+    }
+
+    public function action_contact_form() {
+        $mail = new PHPMailer(true);                             // Passing `true` enables exceptions
+        // echo '<pre>',var_dump($mail),'</pre>';die();
+        try {
+            //Server settings
+            $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+            $mail->isSMTP();                                      // Set mailer to use SMTP
+            $mail->Host = 'mail.moitruongthanhlap.com.vn';  // Specify main and backup SMTP servers
+            $mail->SMTPAuth = true;                               // Enable SMTP authentication
+            $mail->Username = 'info@moitruongthanhlap.com.vn';                 // SMTP username
+            $mail->Password = 'L7.Z~R8Uat.&';                           // SMTP password
+            $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+            $mail->Port = 587;                                    // TCP port to connect to
+
+            //Recipients
+            $mail->setFrom('sachlong112359@gmail.com', 'Mailer');
+            $mail->addAddress('sachlong112359@gmail.com', 'Joe User');     // Add a recipient
+            $mail->addReplyTo('info@moitruongthanhlap.com.vn', 'Information');
+
+            //Content
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = 'Here is the subject';
+            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            $mail->send();
+            echo 'Message has been sent';
+        } catch (Exception $e) {
+            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+        }
+        die();
+    }
+
     public function action_sitemap()
     {
         header('Content-type: application/xml');

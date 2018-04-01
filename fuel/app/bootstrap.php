@@ -23,3 +23,7 @@ require COREPATH.'bootstrap.php';
 
 // Initialize the framework with the config file.
 \Fuel::init('config.php');
+
+
+//Load Composer's autoloader
+require DOCROOT.'../vendor/autoload.php';

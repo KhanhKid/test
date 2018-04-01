@@ -4,5 +4,8 @@
             "document-root": "public",
             "index": "public/index.php"
         }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.0"
     }
 }
