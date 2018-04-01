@@ -32,7 +32,7 @@ class Controller_Index extends Controller_Base{
             //Server settings
             $mail->SMTPDebug = 2;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = '103.53.169.5';  // Specify main and backup SMTP servers
+            $mail->Host = 'mail.moitruongthanhlap.com';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
             $mail->Username = 'info@moitruongthanhlap.com.vn';                 // SMTP username
             $mail->Password = 'L7.Z~R8Uat.&';                           // SMTP password
@@ -41,7 +41,7 @@ class Controller_Index extends Controller_Base{
 
             //Recipients
             $mail->setFrom('info@moitruongthanhlap.com.vn', 'Mailer');
-            $mail->addAddress('sachlong112359@gmail.com', 'Joe User');     // Add a recipient
+            $mail->addAddress('info@moitruongthanhlap.com.vn', 'Joe User');     // Add a recipient
             $mail->addReplyTo('info@moitruongthanhlap.com.vn', 'Information');
 
             //Content
