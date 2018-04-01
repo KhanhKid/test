@@ -2,7 +2,7 @@
 return array(
     '_root_' => 'frontend/index',
     'index' => 'frontend/index',
-    'contact_form' => 'frontend/index/contact_form',
+    'contact/contact_form' => 'frontend/index/contact_form',
 
     'gioi-thieu' => 'frontend/introduction/gioithieu',
     'tu-van-moi-truong' => 'frontend/introduction/tuvanmoitruong',

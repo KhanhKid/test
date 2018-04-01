@@ -8,10 +8,8 @@ use \Input;
 use \Session;
 use \Asset;
 use \Model_Product;
-
-
-use \PHPMailer\PHPMailer\PHPMailer;
-use \PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 class Controller_Index extends Controller_Base{
     public $template = 'template';
@@ -26,38 +24,70 @@ class Controller_Index extends Controller_Base{
     }
 
     public function action_contact_form() {
-        $mail = new PHPMailer(true);                             // Passing `true` enables exceptions
-        // echo '<pre>',var_dump($mail),'</pre>';die();
+        
+        require(DOCROOT.'recaptcha/src/autoload.php');
+        $recaptcha = new \ReCaptcha\ReCaptcha("6LeoLVAUAAAAAB2NrVkpRmeeRBXKLMw3t8DmDqTw");
+        $gRecaptchaResponse = Input::post("g-recaptcha-response");
+        $arrResult = array();
+        $resp = $recaptcha->verify($gRecaptchaResponse, $_SERVER['REMOTE_ADDR']);
+        if ($resp->isSuccess()) {
+            $subject = Input::post("subject");
+            $name = Input::post("name");
+            $email = Input::post("email");
+            $message = Input::post("message");
+            $results =  self::send_mail( $email,$subject,$message,$message);
+            if($results == true){
+                $arrResult = array("data"=>"success");
+            } else {
+                $arrResult = array("data"=>"error", "error" => "Something wrong 1!");
+            }
+        } else {
+            // $errors = $resp->getErrorCodes();
+            $arrResult = array("data"=>"error", "error" => "Mã xác nhận sai!");
+        }
+        echo json_encode($arrResult);die();
+    }
+
+    function send_mail($sentTo, $subject, $body, $altBody = "") {
+        require DOCROOT.'../vendor/phpmailer/phpmailer/src/Exception.php';
+        require DOCROOT.'../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+        require DOCROOT.'../vendor/phpmailer/phpmailer/src/SMTP.php';
+        $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
         try {
             //Server settings
-            $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+            // $mail->SMTPDebug = 2;                                 // Enable verbose debug output
             $mail->isSMTP();                                      // Set mailer to use SMTP
-            $mail->Host = 'mail.moitruongthanhlap.com';  // Specify main and backup SMTP servers
+            $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                               // Enable SMTP authentication
-            $mail->Username = 'info@moitruongthanhlap.com.vn';                 // SMTP username
-            $mail->Password = 'L7.Z~R8Uat.&';                           // SMTP password
+            $mail->Username = 'moitruongthanhlap.mttl@gmail.com';                 // SMTP username
+            $mail->Password = 'aB123456789';                           // SMTP password
             $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                                    // TCP port to connect to
 
             //Recipients
-            $mail->setFrom('info@moitruongthanhlap.com.vn', 'Mailer');
-            $mail->addAddress('info@moitruongthanhlap.com.vn', 'Joe User');     // Add a recipient
-            $mail->addReplyTo('info@moitruongthanhlap.com.vn', 'Information');
+            $mail->setFrom('thanhlapcom@yahoo.com', 'Moi Truong Thanh Lap');
+            $mail->addAddress($sentTo);     // Add a recipient
+            $mail->addReplyTo('thanhlapcom@yahoo.com', 'Moi Truong Thanh Lap');
 
+            $mail->SMTPOptions = array(
+                'ssl' => array(
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+                )
+                );
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+            $mail->Subject = $subject;
+            $mail->Body    = $body;
+            $mail->AltBody = $altBody;
 
             $mail->send();
-            echo 'Message has been sent';
+            return true;
         } catch (Exception $e) {
-            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;die();
         }
-        die();
     }
-    
     public function action_sitemap()
     {
         header('Content-type: application/xml');
