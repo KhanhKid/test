@@ -168,7 +168,7 @@
                         <div class="col-lg-5 col-md-8">
                             <div class="form">
                                 <div id="sendmessage">Bạn đã giữ email thành công, chúng tôi sẽ liên hệ với bạn sớm nhất.</div>
-                                <div id="errormessage"></div>
+                                <div id="errormessage">Đã có lỗi xảy ra, Vui lòng sử dụng số điện thoại</div>
                                 <form class="contactForm" id="frm_contact">
                                     <div class="form-group">
                                         <input type="text" name="name" class="form-control" id="name" placeholder="Tên của bạn" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -230,7 +230,7 @@
             <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 6% 12px no-repeat; position: fixed; right: 0px; top: 200px; width: 350px; z-index: 2147483647; overflow: hidden; min-height: 300px; margin-right: -300px;">
                 <div style="width:300px; float:right;min-height:200px; background:#FFF;border-bottom-left-radius:8px;border-top-left-radius:8px; min-height:252px;">
                     <div class="ho_tro_h">
-                        <p class="ten_ya">Tên: <b>Mr thế </b></p>
+                        <p class="ten_ya">Tên: <b>Mr Thế </b></p>
                         <p class="dt_ya">Điện thoại: <b><a href="tel:+84915665333">0915.665.333</a></b></p>
                         <p class="dt_ya">Email: <b><a href="mailto:kd.thanhlapcom@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">kd.thanhlapcom@gmail.com</a></b></p>
                     </div>

@@ -30,28 +30,34 @@ class Controller_Index extends Controller_Base{
         $gRecaptchaResponse = Input::post("g-recaptcha-response");
         $arrResult = array();
         $resp = $recaptcha->verify($gRecaptchaResponse, $_SERVER['REMOTE_ADDR']);
-        if ($resp->isSuccess()) {
+        if (!$resp->isSuccess()) {
             $subject = Input::post("subject");
             $name = Input::post("name");
             $email = Input::post("email");
             $message = Input::post("message");
-            $results =  self::send_mail( $email,$subject,$message,$message);
+
+            $clientMsg = file_get_contents(APPPATH."files/client_template.html");
+            $adminMsg = file_get_contents(APPPATH."files/admin_template.html");
+
+            $clientMsg = str_replace("%name%",$name,$clientMsg);
+            $adminMsg = sprintf($adminMsg,$name,$email,$subject,$message);
+            $results =  self::send_mail( "moitruongthanhlap.mttl@gmail.com","[MoiTruongThanhLap] Co yeu cau moi",$adminMsg);
+            $results =  self::send_mail( $email,"[MoiTruongThanhLap] Da nhan duoc yeu cau" ,$clientMsg);
             if($results == true){
                 $arrResult = array("data"=>"success");
             } else {
                 $arrResult = array("data"=>"error", "error" => "Something wrong 1!");
             }
         } else {
-            // $errors = $resp->getErrorCodes();
             $arrResult = array("data"=>"error", "error" => "Mã xác nhận sai!");
         }
         echo json_encode($arrResult);die();
     }
 
     function send_mail($sentTo, $subject, $body, $altBody = "") {
-        require DOCROOT.'../vendor/phpmailer/phpmailer/src/Exception.php';
-        require DOCROOT.'../vendor/phpmailer/phpmailer/src/PHPMailer.php';
-        require DOCROOT.'../vendor/phpmailer/phpmailer/src/SMTP.php';
+        require_once DOCROOT.'../vendor/phpmailer/phpmailer/src/Exception.php';
+        require_once DOCROOT.'../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+        require_once DOCROOT.'../vendor/phpmailer/phpmailer/src/SMTP.php';
         $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
         try {
             //Server settings
@@ -75,13 +81,12 @@ class Controller_Index extends Controller_Base{
                 'verify_peer_name' => false,
                 'allow_self_signed' => true
                 )
-                );
+            );
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = $subject;
             $mail->Body    = $body;
             $mail->AltBody = $altBody;
-
             $mail->send();
             return true;
         } catch (Exception $e) {
