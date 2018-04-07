@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #f7ffee;
+  background: #F7FFEE;
   color: #666666;
   font-family: 'Lato', Calibri, Arial, sans-serif;
   font-size: 20px;
@@ -398,7 +398,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li {
-  background: #f7ffee;
+  background: #F7FFEE;
 }
 
 .nav-menu ul li:first-child {
@@ -559,7 +559,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: #f7ffee;
+  background: #F7FFEE;
   padding: 30px 0;
 }
 
@@ -570,7 +570,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .content {
-  background: #f7ffee;
+  background: #F7FFEE;
 }
 
 #about .about-container .title {
@@ -594,14 +594,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box {
-  background: #f7ffee;
+  background: #F7FFEE;
   background-size: cover;
   padding: 0 0 30px 0;
 }
 
 #about .about-container .icon-box .icon {
   float: left;
-  background: #f7ffee;
+  background: #F7FFEE;
   padding: 16px;
   border-radius: 50%;
   border: 2px solid #20bf6b;
@@ -633,7 +633,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7ffee;
+  background: #F7FFEE;
   padding: 80px 0 60px 0;
 }
 
@@ -653,7 +653,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #f7ffee;
+  background: #F7FFEE;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -665,7 +665,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #e6e6e6;
   height: 400px;
   position: relative;
-  background: #f7ffee;
+  background: #F7FFEE;
 }
 
 #services .icon {
@@ -698,7 +698,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box:hover .icon a {
   color:#20bf6b;
-  background: #f7ffee;
+  background: #F7FFEE;
 }
 
 #services .title {
@@ -721,7 +721,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #license {
-  background: #f7ffee;
+  background: #F7FFEE;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -733,7 +733,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #e6e6e6;
   height: 200px;
   position: relative;
-  background: #f7ffee;
+  background: #F7FFEE;
 }
 
 #license .icon {
@@ -766,7 +766,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #license .box:hover .icon a {
   color: #20bf6b;
-  background: #f7ffee;
+  background: #F7FFEE;
 }
 
 #license .title {
@@ -834,7 +834,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  background: #f7ffee;
+  background: #F7FFEE;
   padding: 80px 0;
 }
 
@@ -859,7 +859,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #666666;
   border-radius: 4px;
   text-transform: uppercase;
-  background: #f7ffee;
+  background: #F7FFEE;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -925,7 +925,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #f7ffee;
+  background: #F7FFEE;
   padding: 80px 0 60px 0;
 }
 
@@ -976,7 +976,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #f7ffee;
+  background: #F7FFEE;
   padding: 80px 0 40px 0;
 }
 
