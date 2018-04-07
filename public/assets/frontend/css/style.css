@@ -165,12 +165,15 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.5s;
   }
 }
-
-
-.content_article {
-  background-image: url('/public/assets/frontend/img/paper.gif');background-repeat: repeat-y;
+.color_green {
+  color: #20bf6b;
 }
-  .content_article img {
+h1.color_green {
+  font-size: 50px;
+}
+
+ .content_article img,
+ .container img {
   max-width:100%;
   
 }
@@ -540,9 +543,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Sections Header
 --------------------------------*/
 .section-header .section-title {
-  font-size: 33px;
+  font-size: 40px;
   color: #20bf6b;
-  background: url(../img/nen_05.png) no-repeat center 37px;
+  /* background: url(../img/nen_05.png) no-repeat center 37px; */
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -550,7 +553,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header .section-description {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   padding-bottom: 40px;
   color: #999;
@@ -663,7 +666,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 50px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 400px;
+  height: 440px;
   position: relative;
   background: #F7FFEE;
 }
@@ -713,7 +716,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .description {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 24px;
 }
 /*==== License === */
@@ -999,7 +1002,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 0 10px 50px;
   margin-bottom: 20px;
   line-height: 22px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 #contact .info .email p {

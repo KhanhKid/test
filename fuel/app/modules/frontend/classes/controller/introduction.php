@@ -47,12 +47,12 @@ class Controller_Introduction extends Controller_Base{
         $data = array();
         $brandId = 1;
         $cateId = (isset($_GET["c"]))?(int)$_GET["c"]:null;
-        $listPost = Model_Article::getListCateDetail($brandId, $cateId);
-
+        $infoPost = Model_Article::getGiayPhep($brandId, $cateId);
+        $data['infoPost'] = $infoPost;
+        $data['cateId'] = $cateId;
         $this->template->title = $data["title"] = "GIẤY PHÉP";
-        $data['listPost'] = $listPost;
         $this->template->meta = $this->metaTag();
-        $this->template->content = View::forge('introduction/list',$data);
+        $this->template->content = View::forge('introduction/giayphep',$data);
     } 
     public function action_hosonangluc() {
         $data = array();

@@ -56,7 +56,7 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/giay-phep">Giấy Phép</a>
+                            <a href="javascript:void(0)">Giấy Phép</a>
                             <ul>
                                 <?php 
                                     foreach ($listCate[1] as $key => $value) {
@@ -97,27 +97,18 @@
             Hero Section
             ============================-->
             
-        <!-- <?php
-            if($infoPage->controller == "Frontend\Controller_Index") {
-        ?>
-        <section id="hero">
-            <div class="hero-container" >
-                <div class="div_logo" style="color:white ; text-shadow: 0px 0 #20bf6b, 0 0px #20bf6b, 1px 0 black, 0 -1px black"> 
-                    <img src="/public/assets/frontend/img/logo_.png" width="200px"/>
-                    <h1 class="name_company">THÀNH LẬP</h1>
-                    <h2 style="color:#20bf6b; padding-top: 14px;"><b>CÔNG TY TNHH THƯƠNG MẠI – XỬ LÝ MÔI TRƯỜNG </b></h2>
-                    <a href="#about" class="btn-get-started">Get Started</a>
-                </div>
-            </div>
-        </section>
-        <?php
-            }
-        ?> -->
-        <!-- #hero -->
-        <main id="main">
             <section id="banner">
                    <img src="/public/assets/frontend/img/1481862023183616003001.jpg" width="100%">
             </section>
+        <?php
+            if($infoPage->controller == "Frontend\Controller_Index") {
+        ?>
+        <?php
+            }
+        ?>
+        <!-- #hero -->
+        <main id="main">
+            
         <!--==========================
             About Us Section
             ============================-->
@@ -141,7 +132,7 @@
                 </iframe>
                 <div class="container wow fadeInUp">
                     <div class="row justify-content-center">
-                        <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-5 col-md-4">
                             <div class="info">
                                 <div>
                                     <i class="fa fa-map-marker"></i>
@@ -168,7 +159,7 @@
                                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
-                        <div class="col-lg-5 col-md-8">
+                        <div class="col-lg-5 col-md-8"  style="margin-top: 25px">
                             <div class="form">
                                 <div id="sendmessage">Bạn đã giữ email thành công, chúng tôi sẽ liên hệ với bạn sớm nhất.</div>
                                 <div id="errormessage">Đã có lỗi xảy ra, Vui lòng sử dụng số điện thoại</div>

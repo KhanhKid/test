@@ -33,5 +33,10 @@ class Model_Cate extends \Orm\Model{
     	}
     	return $results;
     }
+	public static function getCateName($id)
+    {
+		$results = Model_Cate::find($id);
+    	return $results->value;
+    }
 }
 ?>

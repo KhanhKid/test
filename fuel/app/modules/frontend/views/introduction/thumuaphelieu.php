@@ -1,24 +1,12 @@
 
 <link href="/public/assets/frontend/news/css/clean-blog.min.css" rel="stylesheet">
-<header class="masthead" style="background-image: url('/public/assets/frontend/img/gioithieu/gioithieu.png'); background-position: 0px -540px;">
-    <div class="overlay"></div>
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-                <h1>Thu Mua Phế Liệu</h1>
-            </div>
-        </div>
-    </div>
-    </div>
-</header>
 
 <!-- Post Content -->
 <article>
     <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-        <h2 class="section-heading">Công ty môi trường Thành Lập</h2>
+        <div class="col-lg-10 col-md-10 mx-auto">
+        <h2 class="section-heading color_green"  style="text-align:center">CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP</h2>
         
         <p>Công ty môi trường <strong>Thành Lập</strong> chúng tôi chuyên hoạt động trong lĩnh vực <strong>thu mua phế liệu và xử lý chất thải</strong>. Trong thời gian hoạt động suốt hơn 15 năm qua chúng tôi đã trở thành đối tác đáng tin cậy của rất nhiều công ty, xí nghiệp tại địa bàn trong và ngoài TPHCM. Khách hàng khi đến với chúng tôi sẽ luôn luôn hài lòng vì dịch vụ mà chúng tôi cung cấp luôn hướng đến chữ tín và đem lại lợi ích thỏa đáng cho cả đôi bên. Đặc biệt với dịch vụ thu mua phế liệu chúng tôi cam kết giá thu mua tại <strong>Cty môi trường Thành Lập</strong> là ổn định và cạnh tranh nhất thị trường phía Nam.</p>
 

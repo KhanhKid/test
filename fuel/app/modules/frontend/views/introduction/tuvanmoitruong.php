@@ -1,24 +1,12 @@
 
 <link href="/public/assets/frontend/news/css/clean-blog.min.css" rel="stylesheet">
-<header class="masthead" style="background-image: url('/public/assets/frontend/img/gioithieu/gioithieu.png'); background-position: 0px -540px;">
-    <div class="overlay"></div>
-    <div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <div class="site-heading">
-                <h1>Tư vấn môi trường</h1>
-            </div>
-        </div>
-    </div>
-    </div>
-</header>
-
 <!-- Post Content -->
 <article>
     <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
-            <p><h4>Công ty môi trường Thành Lập</h4>Công ty chúng tôi nhận thực hiện trọn gói các thủ tục về môi trường:</p>
+        <div class="col-lg-10 col-md-10 mx-auto">
+            <p><h2 class="section-heading color_green"  style="text-align:center">CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP</h2>
+        Công ty chúng tôi nhận thực hiện trọn gói các thủ tục về môi trường:</p>
             <ul>
             <li>Lập đăng ký đạt tiêu chuẩn môi trường</li>
             <li>Lập đăng ký chủ nguồn thải</li>

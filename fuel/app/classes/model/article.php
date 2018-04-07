@@ -36,6 +36,16 @@ class Model_Article extends \Orm\Model{
 
     	return $query->execute();
     }
+	public static function getGiayPhep($brandId, $cateId = null)
+    {   
+        $query = Model_Article::find('first', array(
+            'where' => array(
+                array('cate_id', $cateId),
+            ),
+            'order_by' => array('reg_datetime' => 'desc')
+        ));
+    	return $query;
+    }
 
     public static function getDetailbyID($artID)
     {   

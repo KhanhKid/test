@@ -2,7 +2,7 @@
     <div class="container" style="max-width:1400px">
         <div class="row about-container">
             <div class="col-lg-6 content order-lg-1 order-2" style="background:#0D7F45; color:white;">
-                <h2 class="title" style="text-align: center;color:white;">CÔNG TY TNHH TM – XL MÔI TRƯỜNG <br/><span style="font-size:35px;color: red;text-shadow: -1px 0 red, 0 1px red, 1px 0 black, 0 -1px black;">THÀNH LẬP</span></h2>
+                <h2 class="title" style="text-align: center;color:white;">CÔNG TY TNHH TM – XL MÔI TRƯỜNG <br/><span style="font-size:55px;color: red;text-shadow: -1px 0 red, 0 1px red, 1px 0 black, 0 -1px black;">THÀNH LẬP</span></h2>
                 <p>- Với kinh nghiệm hơn <b>15 năm trong lĩnh vực xử lý và tái chế chất thải</b>, là một trong những đơn vị đi đầu trong lĩnh vực trên đang ngày càng phát triển, đầu tư thêm trang thiết bị mới, hiện đại,… được Quý Khách hàng đánh giá cao về chất lượng sản phẩm dịch vụ sẽ là sự lựa chọn tốt nhất cho các Khách hàng trong việc tìm kiếm các đơn vị có <b>đầy đủ năng lực và tiết kiệm chi phí cho việc xử lý chất thải</b>.</br>- Xin chân thành cảm ơn Quý Khách hàng đã tín nhiệm và hợp tác với chúng tôi trong thời gian qua. Công ty chúng tôi cam kết sẽ đồng hành cùng Quý khách trong công tác bảo vệ môi trường và phát triển bền vững với dịch vụ tốt nhất, </b>giá cả cạnh tranh và hợp lý nhất</b>. Hy vọng, Công ty chúng tôi sẽ đóng góp một phần nhỏ vào sự thành công của Quý  khách.
                 </p>
             </div>
