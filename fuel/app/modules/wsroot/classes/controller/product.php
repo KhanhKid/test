@@ -91,10 +91,13 @@ class Controller_Product extends Controller_Admin{
     public function action_index()
     {
         $data = array();
-        $data['listProduct'] = Model_Article::getAllItem();
+        $brandId = (isset($_GET["b"]))?(int)$_GET["b"]:null;
+        if ($brandId == null ) Response::redirect('/wsroot/product/?b=1');
+        $data['listProduct'] = Model_Article::getAllItem($brandId);
         $data['listCate'] = Model_Cate::getListCate();
-        $this->template->title = "Danh sách sản phẩm";
-        $this->template->content = View::forge('product/index',$data);
+        $brandList = Model_Brand::getListBrand();
+        $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
+        $this->template->content = View::forge('product/giayphep',$data);
     }
     public function action_del($proID)
     {

@@ -3,10 +3,13 @@ class Model_Article extends \Orm\Model{
     protected static $_primary_key=array("id");
     protected static $_table_name="article";
 
-    public static function getAllItem()
+    public static function getAllItem($brandId)
     {   
         // $query = Model_Article::query()->where('status',1);
         $query = Model_Article::find('all', array(
+            'where' => array(
+                array('brand_id', $brandId),
+            ),
             'order_by' => array('reg_datetime' => 'desc'),
         ));
     	return $query;

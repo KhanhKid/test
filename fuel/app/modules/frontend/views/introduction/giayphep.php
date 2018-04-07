@@ -7,7 +7,7 @@
         <p>
             <h2 class="color_green"><?=\Model_Cate::getCateName($cateId);?></h2>
         </p>
-        <img src="<?=$infoPost['content']?>"/>
+        <?=html_entity_decode($infoPost['content'])?>
     </div>
     </div>
 </div>
