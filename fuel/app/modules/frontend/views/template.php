@@ -36,9 +36,9 @@
             Header
             ============================-->
         <header id="header" class="header-fixed">
-            <div class="container">
+            <div class="container"  style="max-width:1450px">
                 <div id="logo" class="pull-left">
-                    <img src="/public/assets/frontend/img/logo_.png" width="45px"/> <a href="/#hero"><img src="/public/assets/frontend/img/logo.png" width="120px" /></a>
+                    <img src="/public/assets/frontend/img/logo_.png" width="45px"/>
                     <!-- Uncomment below if you prefer to use a text logo -->
                     <!--<h1><a href="#hero">Regna</a></h1>-->
                 </div>
@@ -116,7 +116,7 @@
         <!-- #hero -->
         <main id="main">
             <section id="banner">
-                   <img src="/public/assets/frontend/img/1481862023183616003001.jpg">
+                   <img src="/public/assets/frontend/img/1481862023183616003001.jpg" width="100%">
             </section>
         <!--==========================
             About Us Section
@@ -203,12 +203,12 @@
             <style>
                 .ten_ya{
                     margin:10px 0px !important;
-                    font-size:16px !important;
+                    font-size:20px !important;
                     color:#1872c5 !important;
                 }
                 .dt_ya{
                     margin:10px 0px !important;
-                    font-size:14px !important;
+                    font-size:20px !important;
                     color:#1872c5 !important;
                     
                 }
@@ -230,8 +230,8 @@
                     color: #2dc997;
                 }          
             </style>
-            <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 6% 12px no-repeat; position: fixed; right: 0px; top: 200px; width: 350px; z-index: 2147483647; overflow: hidden; min-height: 300px; margin-right: -300px;">
-                <div style="width:300px; float:right;min-height:200px; background:#FFF;border-bottom-left-radius:8px;border-top-left-radius:8px; min-height:252px;">
+            <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 23% 14px no-repeat; position: fixed; right: 0px; top: 200px; width: 500px; z-index: 2147483647; overflow: hidden; min-height: 500px; margin-right: -360px;">
+                <div style="width:360px; float:right;min-height:200px; background:#FFF;border-bottom-left-radius:8px;border-top-left-radius:8px; min-height:420px;">
                     <div class="ho_tro_h">
                         <p class="ten_ya">Tên: <b>Mr Thế </b></p>
                         <p class="dt_ya">Điện thoại: <b><a href="tel:+84915665333">0915.665.333</a></b></p>
@@ -254,11 +254,11 @@
             </div>
                 <script>
                 $(document).ready(function(e) {
-                    $('.chon').animate({marginRight:'-300px'},1000);
+                    $('.chon').animate({marginRight:'-360px'},1000);
                     $('.chon').hover(function(){
                             $(this).stop().animate({marginRight:'0px'},1000);
                         },function(){
-                            $(this).stop().animate({marginRight:'-300px'},1000);
+                            $(this).stop().animate({marginRight:'-360px'},1000);
                             });
                 });
                 </script>
