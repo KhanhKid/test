@@ -8,7 +8,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  background: #fff;
+  background: #f7ffee;
   color: #666666;
   font-family: 'Lato', Calibri, Arial, sans-serif;
   font-size: 20px;
@@ -177,9 +177,12 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/test.png) top center;
   background-size: cover;
   position: relative;
+}
+#banner {
+  padding-top: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -390,7 +393,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-menu ul li {
-  background: #fff;
+  background: #f7ffee;
 }
 
 .nav-menu ul li:first-child {
@@ -551,18 +554,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Us Section
 --------------------------------*/
 #about {
-  background: #fff;
+  background: #f7ffee;
   padding: 80px 0;
 }
 
 #about .about-container .background {
-  min-height: 300px;
-  background: url(../img/about-img.jpg) center top no-repeat;
+  /* min-height: 300px; */
+  /* background: url(../img/about-img.jpg) center top no-repeat; */
   margin-bottom: 10px;
 }
 
 #about .about-container .content {
-  background: #fff;
+  background: #f7ffee;
 }
 
 #about .about-container .title {
@@ -586,14 +589,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-container .icon-box {
-  background: #fff;
+  background: #f7ffee;
   background-size: cover;
   padding: 0 0 30px 0;
 }
 
 #about .about-container .icon-box .icon {
   float: left;
-  background: #fff;
+  background: #f7ffee;
   padding: 16px;
   border-radius: 50%;
   border: 2px solid #20bf6b;
@@ -625,7 +628,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Facts Section
 --------------------------------*/
 #facts {
-  background: #f7f7f7;
+  background: #f7ffee;
   padding: 80px 0 60px 0;
 }
 
@@ -645,7 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
+  background: #f7ffee;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -657,7 +660,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #e6e6e6;
   height: 400px;
   position: relative;
-  background: #fafafa;
+  background: #f7ffee;
 }
 
 #services .icon {
@@ -690,7 +693,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .box:hover .icon a {
   color:#20bf6b;
-  background: #fff;
+  background: #f7ffee;
 }
 
 #services .title {
@@ -713,7 +716,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #license {
-  background: #fff;
+  background: #f7ffee;
   background-size: cover;
   padding: 80px 0 60px 0;
 }
@@ -725,7 +728,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #e6e6e6;
   height: 200px;
   position: relative;
-  background: #fafafa;
+  background: #f7ffee;
 }
 
 #license .icon {
@@ -758,7 +761,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #license .box:hover .icon a {
   color: #20bf6b;
-  background: #fff;
+  background: #f7ffee;
 }
 
 #license .title {
@@ -826,7 +829,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 #portfolio {
-  background: #f7f7f7;
+  background: #f7ffee;
   padding: 80px 0;
 }
 
@@ -851,7 +854,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #666666;
   border-radius: 4px;
   text-transform: uppercase;
-  background: #fff;
+  background: #f7ffee;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
@@ -917,7 +920,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Team Section
 --------------------------------*/
 #team {
-  background: #fff;
+  background: #f7ffee;
   padding: 80px 0 60px 0;
 }
 
@@ -968,7 +971,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Contact Section
 --------------------------------*/
 #contact {
-  background: #fff;
+  background: #f7ffee;
   padding: 80px 0 40px 0;
 }
 

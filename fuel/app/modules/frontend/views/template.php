@@ -97,7 +97,7 @@
             Hero Section
             ============================-->
             
-        <?php
+        <!-- <?php
             if($infoPage->controller == "Frontend\Controller_Index") {
         ?>
         <section id="hero">
@@ -112,9 +112,12 @@
         </section>
         <?php
             }
-        ?>
+        ?> -->
         <!-- #hero -->
         <main id="main">
+            <section id="banner">
+                   <img src="/public/assets/frontend/img/1481862023183616003001.jpg">
+            </section>
         <!--==========================
             About Us Section
             ============================-->
