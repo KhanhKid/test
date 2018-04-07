@@ -118,6 +118,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   margin: 0;
 }
+#header.header-fixed {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    height: 72px;
+    transition: all 0.5s;
+}
 @media (min-width: 1450px) {
 #header.header-fixed {
     background: rgba(255, 255, 255, 0.8);
