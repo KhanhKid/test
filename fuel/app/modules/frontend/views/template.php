@@ -66,13 +66,10 @@
                             </ul>
                         </li>
                         <li class="menu-has-children">
-                            <a href="/ho-so-nang-luc">Hồ Sơ Năng Lực</a>
+                            <a href="javascript:void(0)">Hồ Sơ Năng Lực</a>
                             <ul>
-                                <?php 
-                                    foreach ($listCate[2] as $key => $value) {
-                                        echo "<li><a href='/ho-so-nang-luc?c={$key}'>{$value}</a></li>";
-                                    }
-                                ?>
+                                <li><a href="/cong-ty-khach-hang">Công Ty Khách Hàng</a></li>
+                                <li><a href="/thiet-bi-cong-nghe">Thiết bị – công nghệ</a></li>
                             </ul>
                         </li>
                         <li class="menu-has-children">

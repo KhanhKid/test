@@ -21,7 +21,6 @@
                             <th>No</th>
                             <th>Title</th>
                             <th>Category</th>
-                            <th>Files</th>
                             <th>Ngày Tạo</th>
                             <th>Tool</th>
                         </tr>
@@ -31,7 +30,6 @@
                             <th>No</th>
                             <th>Title</th>
                             <th>Category</th>
-                            <th>Files</th>
                             <th>Ngày Tạo</th>
                             <th>Tool</th>
                         </tr>
@@ -49,11 +47,6 @@
                             <td><?=$value['title']?></td>
                             <td>
                                 <?=$listCate[$value['cate_id']]?>
-                            </td>
-                            <td>
-                                <?php if(isset($value['pdf']) && $value['pdf']){ ?>
-                                    <a href="/public/userfiles/<?php if(isset($value['pdf'])) echo $value['pdf']?>"><span class="glyphicon glyphicon-open-file">Download files</span></a>
-                                <?php }?>
                             </td>
                             <td><?=$value['reg_datetime']?></td>
                             <td>

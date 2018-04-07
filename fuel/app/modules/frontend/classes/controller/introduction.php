@@ -47,12 +47,25 @@ class Controller_Introduction extends Controller_Base{
         $data = array();
         $brandId = 1;
         $cateId = (isset($_GET["c"]))?(int)$_GET["c"]:null;
-        $infoPost = Model_Article::getGiayPhep($brandId, $cateId);
+        $infoPost = Model_Article::getInfobyCateId($cateId);
         $data['infoPost'] = $infoPost;
         $data['cateId'] = $cateId;
         $this->template->title = $data["title"] = "GIẤY PHÉP";
         $this->template->meta = $this->metaTag();
         $this->template->content = View::forge('introduction/giayphep',$data);
+    } 
+
+    public function action_congtykhachhang() {
+        $data = array();
+        $infoPost = Model_Article::getInfobyCateId(6);
+        $data['infoPost'] = $infoPost;
+        $this->template->content = View::forge('introduction/congtykhachhang',$data);
+    } 
+    public function action_thietbicongnghe() {
+        $data = array();
+        $infoPost = Model_Article::getInfobyCateId(7);
+        $data['infoPost'] = $infoPost;
+        $this->template->content = View::forge('introduction/thietbicongnghe',$data);
     } 
     public function action_hosonangluc() {
         $data = array();

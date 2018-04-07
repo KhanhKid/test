@@ -36,7 +36,7 @@ class Model_Article extends \Orm\Model{
 
     	return $query->execute();
     }
-	public static function getGiayPhep($brandId, $cateId = null)
+	public static function getInfobyCateId($cateId)
     {   
         $query = Model_Article::find('first', array(
             'where' => array(

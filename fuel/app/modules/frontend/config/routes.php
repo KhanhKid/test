@@ -14,6 +14,8 @@ return array(
     'van-ban-phap-quy' => 'frontend/introduction/vanbanphapquy',
     'tin-moi-truong' => 'frontend/introduction/tinmoitruong',
     'thieu-huy-hang-hoa' => 'frontend/introduction/thieuhuyhanghoa',
+    'cong-ty-khach-hang' => 'frontend/introduction/congtykhachhang',
+    'thiet-bi-cong-nghe' => 'frontend/introduction/thietbicongnghe',
 
     'article/(:num)' => 'frontend/introduction/detail/$1',
 

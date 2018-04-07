@@ -166,6 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .color_green {
+  margin-top: 10px;
   color: #20bf6b;
 }
 h1.color_green {
