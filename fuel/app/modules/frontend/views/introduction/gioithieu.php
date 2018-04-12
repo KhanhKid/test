@@ -25,15 +25,15 @@
                         <li>Tên đầy đủ: <strong class="color_green">CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP</strong></li>
                         <li>T&ecirc;n ti&ecirc;́ng anh: THANH LAP TRADING - ENVIRONMENT PROTECTION CO., LTD</li>
                         <li>T&ecirc;n c&ocirc;ng ty viết tắt: CTY TNHH TM - XL MT TH&Agrave;NH LẬP</li>
-                        <li>Mã quản lý CTNH: 3-4-5-6.021.VX</li>
-                        <li>Tài khoản: 200014851037950 - Ng&acirc;n h&agrave;ng Eximbank chi nhánh TP. Hồ Ch&iacute; Minh</li>
+                        <li>Mã quản lý CTNH: 3-4-5-6.021.VX</li>
+                        <li>Tài khoản: 200014851037950 - Ng&acirc;n h&agrave;ng Eximbank chi nhánh TP. Hồ Ch&iacute; Minh</li>
                         <li>Mã s&ocirc;́ thu&ecirc;́: 0301761350</li>
                         <li>Website: moitruongthanhlap.com.vn</li>
-                        <li>S&ocirc;́ đi&ecirc;̣n thoại: (028). 3860 3072</li>
+                        <li>S&ocirc;́ đi&ecirc;̣n thoại: (028). 3860 3072</li>
                         <li>E-mail: thanhlapcom@yahoo.comp</li>
                         <li>Địa chỉ văn phòng: 39 Cao Tri&ecirc;̀u Phát, phường T&acirc;n Phong, qu&acirc;̣n 7, Tp. H&ocirc;̀ Chí Minh</li>
                         <li>Nhà máy xử lý: L&ocirc; 147, t&ocirc;̉ 3, &acirc;́p bàu Trăn, xã Nhu&acirc;̣n Đức, huy&ecirc;̣n Củ Chi, Tp. H&ocirc;̀ Chí Minh</li>
-                        <li>Đại di&ecirc;̣n pháp lu&acirc;̣t: Tăng A P&acirc;̉u</li>
+                        <li>Đại di&ecirc;̣n pháp lu&acirc;̣t: Tăng A P&acirc;̉u</li>
                     </ul>
                     <p style="text-align: center;"><img src="/public/assets/frontend/img/gioithieu/gioithieu.png"/></p>
                     

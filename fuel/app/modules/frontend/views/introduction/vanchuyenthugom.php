@@ -82,7 +82,7 @@
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: Bê tông hóa chất thải (tro, xỉ, các chất thải không thể phân hủy bằng lò đốt) nhằm giảm thiểu khả năng phát tán các chất ô nhiễm vào môi trường.</li>
                     <li><strong><u>Công suất</u></strong>: 370 kg/h</li>
-                    <li><strong><u>Xử lý các loại chất thải</u></strong>: tro xỉ, bùn thải đã được xử lý,tro bay, bụi khí thải, vật liệu thải.</li>
+                    <li><strong><u>Xử lý các loại chất thải</u></strong>: tro xỉ, bùn thải đã được xử lý,tro bay, bụi khí thải, vật liệu thải.</li>
                     <li><strong><u>Quy trình xử lý</u></strong>:</li>
                 </ul>
                 <ul>
@@ -93,7 +93,7 @@
                 <p style="text-align: center;"><img width="700px"  src="/public/assets/frontend/img/vanchuyenthugom/chatthai.png"/></p>
                 <p><strong class="color_green">6. Hệ thống súc rửa thùng phuy, bao bì</strong></p>
                 <ul>
-                    <li><strong><u>Chức năng</u></strong>: Xử lý các loại thùng phuy kim loại và nhựa, các loại bao bì nhiễm thành phần nguy hại, tái chế thùng phuy và bao bì mới để cung cấp cho các đơn vị có nhu cầu sử dụng.</li>
+                    <li><strong><u>Chức năng</u></strong>: Xử lý các loại thùng phuy kim loại và nhựa, các loại bao bì nhiễm thành phần nguy hại, tái chế thùng phuy và bao bì mới để cung cấp cho các đơn vị có nhu cầu sử dụng.</li>
                     <li><strong><u>Công suất</u></strong>: 100 phuy/ngày.</li>
                     <li><strong><u>Xử l</u></strong><strong><u>ý các chất thải</u></strong>: bao bì cứng các loại, thùng phuy sắt, phuy nhựa, bồn 1m3, bồn các loại.</li>
                     <li><strong><u>Quy trình xử lý</u></strong>:</li>
@@ -115,7 +115,7 @@
                 </ul>
                 <p style="text-align: center;"><img width="700px" src="/public/assets/frontend/img/vanchuyenthugom/acquy.png"/></p>
                 
-                <p><strong class="color_green">8. Hệ thống xử lý chất thải điện tử</strong></p>
+                <p><strong class="color_green">8. Hệ thống xử lý chất thải điện tử</strong></p>
                 <ul>
                     <li><strong><u>Chức năng</u></strong>: xử lý, thu hồi kim loại và nhựa làm phế liệu.</li>
                     <li><strong><u>Công suất</u></strong>: 1,5 tấn/ngày.</li>

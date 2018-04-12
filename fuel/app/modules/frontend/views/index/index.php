@@ -2,8 +2,8 @@
     <div class="container" style="max-width:1400px">
         <div class="row about-container">
             <div class="col-lg-6 content order-lg-1 order-2" style="background:#0D7F45; color:white;">
-                <h2 class="title" style="text-align: center;color:white;">CÔNG TY TNHH TM – XL MÔI TRƯỜNG <br/><span style="font-size:55px;color: red;text-shadow: -1px 0 red, 0 1px red, 1px 0 black, 0 -1px black;">THÀNH LẬP</span></h2>
-                <p>- Với kinh nghiệm hơn <b>15 năm trong lĩnh vực xử lý và tái chế chất thải</b>, là một trong những đơn vị đi đầu trong lĩnh vực trên đang ngày càng phát triển, đầu tư thêm trang thiết bị mới, hiện đại,… được Quý Khách hàng đánh giá cao về chất lượng sản phẩm dịch vụ sẽ là sự lựa chọn tốt nhất cho các Khách hàng trong việc tìm kiếm các đơn vị có <b>đầy đủ năng lực và tiết kiệm chi phí cho việc xử lý chất thải</b>.</br>- Xin chân thành cảm ơn Quý Khách hàng đã tín nhiệm và hợp tác với chúng tôi trong thời gian qua. Công ty chúng tôi cam kết sẽ đồng hành cùng Quý khách trong công tác bảo vệ môi trường và phát triển bền vững với dịch vụ tốt nhất, </b>giá cả cạnh tranh và hợp lý nhất</b>. Hy vọng, Công ty chúng tôi sẽ đóng góp một phần nhỏ vào sự thành công của Quý  khách.
+                <h2 class="title" style="text-align: center;color:white; margin-top:10px">CÔNG TY TNHH TM – XL MÔI TRƯỜNG <br/><span style="font-size:55px;color: red;text-shadow: -1px 0 red, 0 1px red, 1px 0 black, 0 -1px black;">THÀNH LẬP</span></h2>
+                <p style="margin-bottom:10px">- Với kinh nghiệm hơn <b>15 năm trong lĩnh vực xử lý và tái chế chất thải</b>, là một trong những đơn vị đi đầu trong lĩnh vực trên đang ngày càng phát triển, đầu tư thêm trang thiết bị mới, hiện đại,… được Quý Khách hàng đánh giá cao về chất lượng sản phẩm dịch vụ sẽ là sự lựa chọn tốt nhất cho các Khách hàng trong việc tìm kiếm các đơn vị có <b>đầy đủ năng lực và tiết kiệm chi phí cho việc xử lý chất thải</b>.</br>- Xin chân thành cảm ơn Quý Khách hàng đã tín nhiệm và hợp tác với chúng tôi trong thời gian qua. Công ty chúng tôi cam kết sẽ đồng hành cùng Quý khách trong công tác bảo vệ môi trường và phát triển bền vững với dịch vụ tốt nhất, </b>giá cả cạnh tranh và hợp lý nhất</b>. Hy vọng, Công ty chúng tôi sẽ đóng góp một phần nhỏ vào sự thành công của Quý  khách.
                 </p>
             </div>
             <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight" style="background:#0D7F45">
@@ -58,7 +58,7 @@
                     <div class="icon"><a href="/van-chuyen-thu-gom"><i class="fa fa-desktop"></i></a></div>
                     <p><img height="170px" src="/public/assets/frontend/img/xu_ly.png" alt=""></p>
                     <h4 class="title"><a href="/van-chuyen-thu-gom">XỬ LÝ CHẤT THẢI</a></h4>
-                    <p class="description">Bao gồm: chất thải nguy hại và chất thải không nguy hại là khâu then chốt trong phát triển sản xuất sạch hơn và tiêu dùng sạch hơn, hướng tới nền công nghiệp xanh.</p>
+                    <p class="description">Bao gồm: chất thải nguy hại và chất thải không nguy hại là khâu then chốt trong phát triển sản xuất sạch hơn và tiêu dùng sạch hơn, hướng tới nền công nghiệp xanh.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
@@ -66,7 +66,7 @@
                     <div class="icon"><a href="/thu-mua-phe-lieu"><i class="fa fa-bar-chart"></i></a></div>
                     <p><img height="170px" src="/public/assets/frontend/img/thu_mua.png" alt=""></p>
                     <h4 class="title"><a href="/thu-mua-phe-lieu">THU MUA PHẾ LIỆU</a></h4>
-                    <p class="description">Thu mua phế liệu từ công trình, nhà xưởng, hàng hóa thanh lý, các loại phế liệu đồng, nhôm, chì, kẽm, sắt, phế liệu nhựa, giấy, dầu nhớt, dung môi,…</p>
+                    <p class="description">Thu mua phế liệu từ công trình, nhà xưởng, hàng hóa thanh lý, các loại phế liệu đồng, nhôm, chì, kẽm, sắt, phế liệu nhựa, giấy, dầu nhớt, dung môi,…</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
@@ -111,25 +111,25 @@
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                 <div class="box">
                     <div class="icon"><a href="/giay-phep?c=1"><i class="fa fa-desktop"></i></a></div>
-                    <h4 class="title"><a href="/giay-phep?c=1">Quyết định phê duyệt đề án ĐTM</a></h4>
+                    <h4 class="title"><a href="/giay-phep?c=1">Quyết định phê duyệt đề án ĐTM</a></h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
                 <div class="box">
                     <div class="icon"><a href="/giay-phep?c=2"><i class="fa fa-bar-chart"></i></a></div>
-                    <h4 class="title"><a href="/giay-phep?c=2">Giấy phép kinh doanh</a></h4>
+                    <h4 class="title"><a href="/giay-phep?c=2">Giấy phép kinh doanh</a></h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="box">
                     <div class="icon"><a href="/giay-phep?c=3"><i class="fa fa-paper-plane"></i></a></div>
-                    <h4 class="title"><a href="/giay-phep?c=3">Giấy phép hành nghề quản lý chất thải nguy hại</a></h4>
+                    <h4 class="title"><a href="/giay-phep?c=3">Giấy phép hành nghề quản lý chất thải nguy hại</a></h4>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
                 <div class="box">
                     <div class="icon"><a href="/giay-phep?c=4"><i class="fa fa-paper-plane"></i></a></div>
-                    <h4 class="title"><a href="/giay-phep?c=4">Tiêu chuẩn ISO</a></h4>
+                    <h4 class="title"><a href="/giay-phep?c=4">Tiêu chuẩn ISO</a></h4>
                 </div>
             </div>
         </div>
@@ -144,7 +144,7 @@
 <section id="portfolio">
     <div class="container wow fadeInUp">
         <div class="section-header">
-            <h3 class="section-title">THIẾT BỊ XỬ LÝ CHẤT THẢI</h3>
+            <h3 class="section-title">thiết bị xử lý chất thải</h3>
             <p class="section-description">thiết bị tiên tiến và hiện đại mang lại những dịch vụ tốt nhất cho các bạn</p>
         </div>
         <div class="row" id="portfolio-wrapper">
@@ -161,8 +161,8 @@
                 <a href="">
                     <img src="/public/assets/frontend/img/portfolio/app2.jpg" alt="">
                     <div class="details">
-                        <h4>Hệ thống xử lý nước thải</h4>
-                        <span>Hệ thống xử lý nước thải</span>
+                        <h4>Hệ thống xử lý nước thải</h4>
+                        <span>Hệ thống xử lý nước thải</span>
                     </div>
                 </a>
             </div>

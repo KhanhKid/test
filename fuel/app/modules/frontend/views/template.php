@@ -13,12 +13,11 @@
         <!-- Bootstrap CSS File -->
         <link href="/public/assets/frontend/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <script src="/public/assets/admin/js/jquery-1.11.1.min.js"></script>
-        <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
         <link href="/public/assets/frontend/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="/public/assets/frontend/lib/animate/animate.min.css" rel="stylesheet">
         <!-- Main Stylesheet File -->
         <link href="/public/assets/frontend/css/style.css?v=20180319" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:700&amp;subset=vietnamese" rel="stylesheet">
         <!-- =======================================================
             Theme Name: Regna
             Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
@@ -49,10 +48,10 @@
                         <li class="menu-has-children">
                             <a href="#services">Dịch Vụ</a>
                             <ul>
-                                <li><a href="/van-chuyen-thu-gom">Vận chuyển, thu gom và xử lý chất thải</a></li>
+                                <li><a href="/van-chuyen-thu-gom">Vận chuyển, thu gom và xử lý chất thải</a></li>
                                 <li><a href="/thieu-huy-hang-hoa">Tiêu hủy hàng hóa</a></li>
                                 <li><a href="/thu-mua-phe-lieu">Thu mua phế liệu</a></li>
-                                <li><a href="/tu-van-moi-truong">Tư vấn môi trường</a></li>
+                                <li><a href="/tu-van-moi-truong">Tư vấn môi trường</a></li>
                             </ul>
                         </li>
                         <li class="menu-has-children">
@@ -233,7 +232,7 @@
                     </div>
                     <div class="clear"></div> 
                     <div class="ho_tro_h">
-                        <p class="ten_ya">Tên: <b>Ms. Hạnh</b></p>
+                        <p class="ten_ya">Tên: <b>Ms. Hạnh</b></p>
                         <p class="dt_ya">Điện thoại: <b><a href="tel:+84907089325">0907.089.325</a></b></p>
                         <p class="dt_ya">Email: <b><a href="mailto:duthimyhanh.hcmus@gmail.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">duthimyhanh.hcmus@gmail.com</a></b></p>
                     </div>

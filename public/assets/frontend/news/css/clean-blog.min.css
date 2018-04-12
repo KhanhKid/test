@@ -85,13 +85,13 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand {
-  font-weight: 800;
+  font-weight: 600;
   color: #343a40;
 }
 
 #mainNav .navbar-toggler {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   padding: 13px;
   text-transform: uppercase;
   color: #343a40;
@@ -99,7 +99,7 @@ img::-moz-selection {
 
 #mainNav .navbar-nav > li.nav-item > a {
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -394,7 +394,7 @@ footer .copyright {
 
 .btn {
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 600;
   padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
