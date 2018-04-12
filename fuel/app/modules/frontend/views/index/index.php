@@ -57,7 +57,7 @@
                 <div class="box">
                     <div class="icon"><a href="/van-chuyen-thu-gom"><i class="fa fa-desktop"></i></a></div>
                     <p><img height="170px" src="/public/assets/frontend/img/xu_ly.png" alt=""></p>
-                    <h4 class="title"><a href="/van-chuyen-thu-gom">XỬ LÝ CHẤT THẢI</a></h4>
+                    <h4 class="title"><a href="/van-chuyen-thu-gom">XỬ LÝ CHẤT THẢI</a></h4>
                     <p class="description">Bao gồm: chất thải nguy hại và chất thải không nguy hại là khâu then chốt trong phát triển sản xuất sạch hơn và tiêu dùng sạch hơn, hướng tới nền công nghiệp xanh.</p>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                 <div class="box">
                     <div class="icon"><a href="/thu-mua-phe-lieu"><i class="fa fa-bar-chart"></i></a></div>
                     <p><img height="170px" src="/public/assets/frontend/img/thu_mua.png" alt=""></p>
-                    <h4 class="title"><a href="/thu-mua-phe-lieu">THU MUA PHẾ LIỆU</a></h4>
+                    <h4 class="title"><a href="/thu-mua-phe-lieu">THU MUA PHẾ LIỆU</a></h4>
                     <p class="description">Thu mua phế liệu từ công trình, nhà xưởng, hàng hóa thanh lý, các loại phế liệu đồng, nhôm, chì, kẽm, sắt, phế liệu nhựa, giấy, dầu nhớt, dung môi,…</p>
                 </div>
             </div>
@@ -73,7 +73,7 @@
                 <div class="box">
                     <div class="icon"><a href="/tu-van-moi-truong"><i class="fa fa-paper-plane"></i></a></div>
                     <p><img height="170px" src="/public/assets/frontend/img/tu_van.png" alt=""></p>
-                    <h4 class="title"><a href="/tu-van-moi-truong">TƯ VẤN MÔI TRƯỜNG</a></h4>
+                    <h4 class="title"><a href="/tu-van-moi-truong">TƯ VẤN MÔI TRƯỜNG</a></h4>
                     <p class="description">Tư vấn giải pháp xử lý môi trường phù hợp, đảm bảo hiệu quả xử lý, tiết kiệm chi phí đầu tư, tái chế chất thải.</p>
                 </div>
             </div>
@@ -89,7 +89,7 @@
     <div class="container wow fadeIn">
         <div class="row">
             <div class="col-lg-9 text-center text-lg-left">
-                <h3 class="cta-title">Liên hệ để được tư vấn</h3>
+                <h3 class="cta-title">LIÊN HỆ ĐỂ ĐƯỢC TƯ VẤN</h3>
                 <p class="cta-text">Công ty TNHH Thương mại - Xử lý Môi trường Thành Lập với kinh nghiệm hơn 15 năm trong lĩnh vực xử lý và tái chế chất thải, là một trong những đơn vị đi đầu trong lĩnh vực trên đang ngày càng phát triển, đầu tư thêm trang thiết bị mới, hiện đại,</p>
             </div>
             <div class="col-lg-3 cta-btn-container text-center">

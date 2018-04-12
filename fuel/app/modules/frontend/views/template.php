@@ -129,7 +129,7 @@
                 <div class="container wow fadeInUp">
                     <div class="row justify-content-center">
                         <div class="col-lg-5 col-md-4">
-                            <div class="info">
+                            <div class="info" style="padding-top: 20px;">
                                 <div>
                                     <i class="fa fa-map-marker"></i>
                                     <p> Nhà Máy Xử Lý - Lô 147, tổ 3, ấp Bàu Trăng, xã Nhuận Đức<br>huyện Củ Chi, TP.HCM</p>
