@@ -1,5 +1,6 @@
 <?php $linkHost = "http://".$_SERVER['SERVER_NAME'];?>
 <script type="text/javascript" src="/public/assets/ckfinder/ckfinder.js"></script>
+<script src="/public/assets/ckeditor/ckeditor.js"></script>
 <div class="row">
     <ol class="breadcrumb">
         <li><a href="/wsroot/"><svg class="glyph stroked home"><use xlink:href="#stroked-home"></use></svg></a></li>
@@ -34,14 +35,14 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label>Loại bài:</label>
-                            <select name="cate_id" class="form-control">
+                            <select name="cate_id" class="form-control" <?=(isset($product['brand_id']) && in_array($product['brand_id'],array(1,2)))?"disabled":""?>>
                                 <?php 
                                 $brandID = isset($product['cate_id'])?$product['cate_id']:0;
                                 foreach ($cate as $key => $value): 
                                     $selected="";
-                                    if($value['id'] == $brandID) $selected="selected";
+                                    if($value->id == $brandID) $selected="selected";
                                 ?>
-                                    <option <?=$selected?> value="<?=$value['id']?>"><?=$value['value']?></option>
+                                    <option <?=$selected?> value="<?=$value->id?>"><?=$value->value?></option>
                                 <?php endforeach ?>
                             </select>
                         </div>
@@ -55,8 +56,24 @@
                     </div>
                     <div class="col-md-12">
                         <div class="form-group">
-                            <label>Nội dung bài viết: (nội dung bài viết)</label>
-                            <textarea id="content" name="content" class="form-control" rows="3"><?=isset($product['content'])?$product['content']:''?></textarea>
+                            <?php if ( $brandId == 3 ) { ?>
+                                <label>Link bài viết:</label>
+                                <input name="content" class="form-control" value="<?=isset($product['content'])?$product['content']:''?>"/>
+                            <?php } else {?>
+                                <label>Nội dung bài viết: (nội dung bài viết)</label>
+                                <textarea id="content" name="content" class="form-control" rows="3"><?=isset($product['content'])?$product['content']:''?></textarea>
+                                <script>
+                                    if ( typeof CKEDITOR !== 'undefined' ) {
+                                        CKEDITOR.addCss( 'img {max-width:100%; height: auto;}' );
+                                        var editor = CKEDITOR.replace( 'content', {
+                                            height:350
+                                        } );
+                                        CKFinder.setupCKEditor( editor, '../' ) ;
+                                    } else {
+                                        document.getElementById( 'description' ).innerHTML = '<div class="tip-a tip-a-alert">This sample requires working Internet connection to load CKEditor from CDN.</div>'
+                                    }
+                                </script>
+                            <?php }?>
                         </div>  
                         <hr>
                         <!-- Upload tài liệu: <input type="file" name="fileToUpload" id="fileToUpload">
@@ -64,7 +81,6 @@
                             <a href="/public/userfiles/<?php if(isset($product['pdf'])) echo $product['pdf']?>"><span class="glyphicon glyphicon-open-file">Download files</span></a>
                             <iframe src="http://docs.google.com/gview?url=<?=$linkHost?>/userfiles/<?=$product['pdf']?>&embedded=true" style="width:100%; height:300px;" frameborder="0"></iframe>
                         <?php }?> -->
-                        <hr>
                     </div>
                     <div class="col-md-6">
                         <button type="submit" class="btn btn-primary">Lưu bài</button>
@@ -76,33 +92,7 @@
     </div><!-- /.col-->
 </div><!-- /.row -->
 
-<script src="/public/assets/ckeditor/ckeditor.js"></script>
 <script>
-    // Note: in this sample we use CKEditor with two extra plugins:
-    // - uploadimage to support pasting and dragging images,
-    // - image2 (instead of image) to provide images with captions.
-    // Additionally, the CSS style for the editing area has been slightly modified to provide responsive images during editing.
-    // All these modifications are not required by CKFinder, they just provide better user experience.
-    if ( typeof CKEDITOR !== 'undefined' ) {
-        CKEDITOR.addCss( 'img {max-width:100%; height: auto;}' );
-        var editor = CKEDITOR.replace( 'content', {
-            height:350
-        } );
-        var detail = CKEDITOR.replace( 'detail', {
-            height:350
-        } );
-
-        // Just call CKFinder.setupCKEditor and pass the CKEditor instance as the first argument.
-        // The second parameter (optional), is the path for the CKFinder installation (default = "/ckfinder/").
-        CKFinder.setupCKEditor( editor, '../' ) ;
-        CKFinder.setupCKEditor( detail, '../' ) ;
-
-        // It is also possible to pass an object with selected CKFinder properties as a second argument.
-        // CKFinder.setupCKEditor( editor, { basePath : '../', skin : 'v1' } ) ;
-    } else {
-        document.getElementById( 'description' ).innerHTML = '<div class="tip-a tip-a-alert">This sample requires working Internet connection to load CKEditor from CDN.</div>'
-    }
-
     $("#productName").keyup(function() {
         curName = $(this).val();
         console.log(curName);

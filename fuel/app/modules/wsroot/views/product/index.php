@@ -13,7 +13,7 @@
             <div class="panel-heading">Danh sách bài viết</div>
 
             <div class="panel-body">
-                <a href="/wsroot/product/themmoi" class="btn btn-primary">+ Thêm mới</a>
+                <a href="/wsroot/product/themmoi/<?=$brandId?>" class="btn btn-primary">+ Thêm mới</a>
                 <hr>
                 <table id="listproduct" class="display" cellspacing="0" width="100%">
                     <thead>

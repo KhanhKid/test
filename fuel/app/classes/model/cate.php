@@ -7,6 +7,17 @@ class Model_Cate extends \Orm\Model{
     {
     	return Model_Cate::query()->order_by('id', 'desc')->get();
     }
+    
+    
+    public static function getListItem($brandId)
+    {
+        $allCate = Model_Cate::find('all', array(
+            'where' => array(
+                array('brand_id', $brandId),
+            ),
+        ));
+    	return $allCate;
+    }
 	public static function getListCate()
     {
 		$allCate = Model_Cate::find('all', array(

@@ -12,7 +12,7 @@ class Controller_Product extends Controller_Admin{
 
     public $template = 'template';
 
-    public function action_themmoi()
+    public function action_themmoi($brandId)
     {
         $data = array();
         if (\Input::method() == 'POST')
@@ -37,6 +37,7 @@ class Controller_Product extends Controller_Admin{
                     'short_desc' => Input::post('short_desc'),
                     'content' => Input::post('content'),
                     'cate_id' => Input::post('cate_id'),
+                    'brand_id' => $brandId,
                     'pdf' => $linkpdf,
                     'reg_datetime' => date("Y-m-d H:i:s"),
                 );
@@ -45,8 +46,8 @@ class Controller_Product extends Controller_Admin{
 
             $data['message'] = "Đăng thành công";   
         }
-        $data['brand'] = \Model_Brand::getAllItem();
-        $data['cate'] = \Model_Cate::getAllItem();
+        $data['cate'] = \Model_Cate::getListItem($brandId);
+        $data['brandId'] =$brandId;
         $this->template->title = $data['title'] = "Thêm mới bài viết";
         $this->template->content = View::forge('product/themmoi',$data);
     }
@@ -63,7 +64,9 @@ class Controller_Product extends Controller_Admin{
             $product->status = isset($_POST['status'])?1:0;
             $product->short_desc = Input::post('short_desc');
             $product->content = Input::post('content');
-            $product->cate_id = Input::post('cate_id');
+            if(!is_null(Input::post('cate_id'))) {
+                $product->cate_id = Input::post('cate_id');
+            }
 
             $linkpdf ="";
             if(is_array($_FILES)) {             
@@ -82,9 +85,9 @@ class Controller_Product extends Controller_Admin{
             $product->save();
             $data['message'] = "Sửa sản phẩm thành công";   
         }
-
+        $data['brandId'] = $product->brand_id;
         $data['product'] = $product;
-        $data['cate'] = \Model_Cate::getAllItem();
+        $data['cate'] = \Model_Cate::getListItem($product->brand_id);
         $this->template->title = $data['title'] = "Chỉnh sửa bài viết";
         $this->template->content = View::forge('product/themmoi',$data);
     }
@@ -97,7 +100,48 @@ class Controller_Product extends Controller_Admin{
         $data['listCate'] = Model_Cate::getListCate();
         $brandList = Model_Brand::getListBrand();
         $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
+        $this->template->content = View::forge('product/index',$data);
+    }
+    public function action_hosodoanhnghiep()
+    {
+        $data = array();
+        $brandId = 2;
+        $data['listProduct'] = Model_Article::getAllItem($brandId);
+        $data['listCate'] = Model_Cate::getListCate();
+        $brandList = Model_Brand::getListBrand();
+        $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
         $this->template->content = View::forge('product/giayphep',$data);
+    }
+    public function action_giayphep()
+    {
+        $data = array();
+        $brandId = 1;
+        $data['listProduct'] = Model_Article::getAllItem($brandId);
+        $data['listCate'] = Model_Cate::getListCate();
+        $brandList = Model_Brand::getListBrand();
+        $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
+        $this->template->content = View::forge('product/giayphep',$data);
+    }
+    public function action_tinmoitruong()
+    {
+        $data = array();
+        $brandId = 4;
+        $data['listProduct'] = Model_Article::getAllItem($brandId);
+        $data['listCate'] = Model_Cate::getListCate();
+        $data['brandId'] = $brandId;
+        $brandList = Model_Brand::getListBrand();
+        $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
+        $this->template->content = View::forge('product/index',$data);
+    }
+    public function action_vanbanphapquy()
+    {
+        $data = array();
+        $brandId = 3;
+        $data['listProduct'] = Model_Article::getAllItem($brandId);
+        $data['listCate'] = Model_Cate::getListCate();
+        $brandList = Model_Brand::getListBrand();
+        $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
+        $this->template->content = View::forge('product/vanbanphapquy',$data);
     }
     public function action_del($proID)
     {

@@ -60,10 +60,10 @@
         </form>
         <ul class="nav menu">
             <!-- <li><a href="/wsroot/product/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Bài viết mới</a></li> -->
-            <li><a href="/wsroot/product/?b=1"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Giấy Phép</a></li>
-            <li><a href="/wsroot/product/?b=2"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Hồ Sơ Doanh Nghiệp</a></li>
-            <li><a href="/wsroot/product/?b=3"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Văn Bản Pháp Quy</a></li>
-            <li><a href="/wsroot/product/?b=4"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Tin Môi Trường</a></li>
+            <li><a href="/wsroot/product/giayphep"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Giấy Phép</a></li>
+            <li><a href="/wsroot/product/hosodoanhnghiep"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Hồ Sơ Doanh Nghiệp</a></li>
+            <li><a href="/wsroot/product/vanbanphapquy/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Văn Bản Pháp Quy</a></li>
+            <li><a href="/wsroot/product/tinmoitruong"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Tin Môi Trường</a></li>
             <li><a href="/wsroot/cate/"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Loại bài post</a></li>
             <li role="presentation" class="divider"></li>
         </ul>

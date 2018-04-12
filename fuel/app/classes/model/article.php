@@ -30,11 +30,11 @@ class Model_Article extends \Orm\Model{
 	public static function getListCateDetail($brandId, $cateId = null)
     {   
         $results = "";        
-        $query = DB::select("article.id","title","content","reg_datetime","short_desc")->from('article');
+        $query = DB::select("article.id","article.brand_id","title","content","reg_datetime","short_desc")->from('article');
         $query->join('category');
         $query->on('category.id', '=', 'article.cate_id');
         $query->where('article.status', 1);
-        $query->where('brand_id', $brandId);
+        $query->where('article.brand_id', $brandId);
         if (!is_null($cateId)) $query->where('cate_id', $cateId);
 
     	return $query->execute();
