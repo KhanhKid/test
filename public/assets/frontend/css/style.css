@@ -1139,3 +1139,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 #box_member p {
     margin-bottom: 10px
 }
+
+.uppercase {
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+}

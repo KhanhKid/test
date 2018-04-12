@@ -5,7 +5,7 @@
     <div class="row">
     <div class="col-lg-10 col-md-10 mx-auto">
         <p>
-            <h2 class="color_green"><?=\Model_Cate::getCateName($cateId);?></h2>
+            <h2 class="color_green uppercase"><?=\Model_Cate::getCateName($cateId);?></h2>
         </p>
         <?=html_entity_decode($infoPost['content'])?>
     </div>

@@ -131,7 +131,7 @@ class Controller_Product extends Controller_Admin{
         $data['brandId'] = $brandId;
         $brandList = Model_Brand::getListBrand();
         $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
-        $this->template->content = View::forge('product/index',$data);
+        $this->template->content = View::forge('product/tinmoitruong',$data);
     }
     public function action_vanbanphapquy()
     {
