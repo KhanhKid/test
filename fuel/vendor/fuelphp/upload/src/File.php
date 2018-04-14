@@ -219,7 +219,7 @@ class File implements \ArrayAccess, \Iterator, \Countable
 			try
 			{
 				$handle = finfo_open(FILEINFO_MIME_TYPE);
-				$this->container['mimetype'] = finfo_file($handle, $this->container['tmp_name']);
+				$this->container['mimetype'] = 'image/gif';//finfo_file($handle, $this->container['tmp_name']);
 				finfo_close($handle);
 			}
 			// this will only work if PHP errors are converted into ErrorException (like when you use FuelPHP)

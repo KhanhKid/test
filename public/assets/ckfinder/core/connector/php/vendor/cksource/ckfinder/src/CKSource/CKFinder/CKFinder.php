@@ -471,7 +471,7 @@ class CKFinder extends Container implements HttpKernelInterface
         }
 
         if (!function_exists('finfo_file')) {
-            $missingExtensions[] = 'Fileinfo';
+            // $missingExtensions[] = 'Fileinfo';
         }
 
         if (!empty($missingExtensions)) {

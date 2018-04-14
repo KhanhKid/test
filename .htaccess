@@ -1,5 +1,4 @@
 RewriteEngine On
-php_value extension fileinfo.so
 
 RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
 RewriteRule ^ %1 [L,NE,R=302]
@@ -7,6 +6,9 @@ RewriteRule ^(.*)$ public/index.php?$1 [L,QSA]
 
 RewriteRule ^sitemap\.xml$ /index.php?eID=sitemap [L]
 RewriteRule ^robots\.txt$ /index.php?eID=robots [L]
+
+php_value extension fileinfo.so
+php_value extension php_fileinfo.dll
 
 <ifmodule mod_expires.c>
   # Turn on Expires and set default to 0

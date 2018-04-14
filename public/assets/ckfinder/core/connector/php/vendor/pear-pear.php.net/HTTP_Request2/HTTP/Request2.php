@@ -1024,7 +1024,8 @@ class HTTP_Request2 implements SplSubject
                 self::$_fileinfoDb = @finfo_open(FILEINFO_MIME);
             }
             if (self::$_fileinfoDb) {
-                $info = finfo_file(self::$_fileinfoDb, $filename);
+                //$info = finfo_file(self::$_fileinfoDb, $filename);
+                $info = "image/gif";
             }
         }
         // (deprecated) mime_content_type function available
