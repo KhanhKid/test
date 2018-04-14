@@ -4,10 +4,10 @@
 <div class="container">
     <div class="row">
     <div class="col-lg-12 col-md-10 mx-auto">
-        <h1 class="color_orange" style="text-align: center;">THIẾT BỊ - CÔNG NGHỆ</h1>
+        <h1 class="color_green" style="text-align: center;">THIẾT BỊ - CÔNG NGHỆ</h1>
         <hr>
         <ul>
-            <li><label class="btn_up"> Hệ thống lò đốt 
+            <li><label class="btn_up color_orange"> Hệ thống lò đốt 
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p><img src="/public/assets/frontend/img/thietbidungcu/1.png" width="100%"/></p>
@@ -15,62 +15,62 @@
                     <p><img src="/public/assets/frontend/img/thietbidungcu/2.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up">Hệ thống xử lý nước thải 
+            <li><label class="btn_up color_orange">Hệ thống xử lý nước thải 
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
                     <p><img src="/public/assets/frontend/img/thietbidungcu/3.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống tái chế dầu nhớt thải
+            <li><label class="btn_up color_orange"> Hệ thống tái chế dầu nhớt thải
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
                     <p><img src="/public/assets/frontend/img/thietbidungcu/4.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống xử lý bóng đèn
+            <li><label class="btn_up color_orange"> Hệ thống xử lý bóng đèn
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
                     <p><img src="/public/assets/frontend/img/thietbidungcu/5.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống ổn định hóa rắn
+            <li><label class="btn_up color_orange"> Hệ thống ổn định hóa rắn
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
                     <p><img src="/public/assets/frontend/img/thietbidungcu/6.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống súc rửa thùng phuy, bao bì   
+            <li><label class="btn_up color_orange"> Hệ thống súc rửa thùng phuy, bao bì   
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
                     <p><img src="/public/assets/frontend/img/thietbidungcu/7.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống tháo dỡ ắc quy và thu hồi phế liệu 
+            <li><label class="btn_up color_orange"> Hệ thống tháo dỡ ắc quy và thu hồi phế liệu 
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
                     <p><img src="/public/assets/frontend/img/thietbidungcu/8.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống xử lý linh kiện điện tử  
+            <li><label class="btn_up color_orange"> Hệ thống xử lý linh kiện điện tử  
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
                     <p><img src="/public/assets/frontend/img/thietbidungcu/9.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống tái chế dung môi thải
+            <li><label class="btn_up color_orange"> Hệ thống tái chế dung môi thải
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p><img src="/public/assets/frontend/img/thietbidungcu/10.png" width="100%"/></p>
                 </div>    
             </li>
-            <li><label class="btn_up"> Hệ thống tẩy rửa chất thải nhiễm dầu mỡ   
+            <li><label class="btn_up color_orange"> Hệ thống tẩy rửa chất thải nhiễm dầu mỡ   
                 <img src="/public/assets/frontend/img/down.png" width="20px"/></label>
                 <div class="content" style="display:none">
                     <p>+ Quy trình xử lý:</p>
