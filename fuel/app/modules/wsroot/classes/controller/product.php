@@ -149,8 +149,22 @@ class Controller_Product extends Controller_Admin{
         $product = Model_Article::find($proID);
         if (\Input::method() == 'POST')
         {
+            $brandId = $product->brand_id;
             $product->delete();
-            Response::redirect('/wsroot/product/');
+            switch ($brandId) {
+                case 1:
+                    Response::redirect('/wsroot/product/');        
+                    break;
+                case 2:
+                    Response::redirect('/wsroot/product/hosodoanhnghiep');    
+                    break;
+                case 3:
+                    Response::redirect('/wsroot/product/vanbanphapquy');    
+                    break;
+                case 4:
+                    Response::redirect('/wsroot/product/tinmoitruong');    
+                    break;
+            }
         }
         $data['product'] = $product;
         $this->template->title = $data['title'] = "Xóa sản phẩm";
@@ -161,7 +175,20 @@ class Controller_Product extends Controller_Admin{
         $product = Model_Article::find($proID);
         $product->status = ($product->status == 1)?0:1;
         $product->save();
-        Response::redirect('/wsroot/product/');        
+        switch ($product->brand_id) {
+            case 1:
+                Response::redirect('/wsroot/product/');        
+                break;
+            case 2:
+                Response::redirect('/wsroot/product/hosodoanhnghiep');    
+                break;
+            case 3:
+                Response::redirect('/wsroot/product/vanbanphapquy');    
+                break;
+            case 4:
+                Response::redirect('/wsroot/product/tinmoitruong');    
+                break;
+        }
     }
 }
 ?>

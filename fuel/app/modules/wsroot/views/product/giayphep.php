@@ -16,7 +16,7 @@
                     <thead>
                         <tr>
                             <th>No</th>
-                            <!-- <th>Title</th> -->
+                            <th>Title</th>
                             <th>Category</th>
                             <th>Ngày Tạo</th>
                             <th>Tool</th>
@@ -25,7 +25,7 @@
                     <tfoot>
                         <tr>
                             <th>No</th>
-                            <!-- <th>Title</th> -->
+                            <th>Title</th>
                             <th>Category</th>
                             <th>Ngày Tạo</th>
                             <th>Tool</th>
@@ -41,7 +41,7 @@
                                 ?>
                             <tr>
                             <td><?=$value['id']?></td>
-                            <!-- <td><?=$value['title']?></td> -->
+                            <td><?=$value['title']?></td>
                             <td>
                                 <?=$listCate[$value['cate_id']]?>
                             </td>
