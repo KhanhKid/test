@@ -93,14 +93,7 @@ class Controller_Product extends Controller_Admin{
     }
     public function action_index()
     {
-        $data = array();
-        $brandId = (isset($_GET["b"]))?(int)$_GET["b"]:null;
-        if ($brandId == null ) Response::redirect('/wsroot/product/?b=1');
-        $data['listProduct'] = Model_Article::getAllItem($brandId);
-        $data['listCate'] = Model_Cate::getListCate();
-        $brandList = Model_Brand::getListBrand();
-        $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
-        $this->template->content = View::forge('product/index',$data);
+        Response::redirect('/wsroot/product/giayphep');
     }
     public function action_hosodoanhnghiep()
     {

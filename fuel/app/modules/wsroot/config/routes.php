@@ -3,7 +3,6 @@ return array(
     #'_root_' => 'wsroot/index/index',
     '_root_' => 'wsroot/product/index',
     'index' => 'wsroot/product/index',
-    'product' => 'wsroot/product/index',
     'product/themmoi/(:num)' => 'wsroot/product/themmoi/$1',
     'product/hosodoanhnghiep' => 'wsroot/product/hosodoanhnghiep',
     'product/giayphep' => 'wsroot/product/giayphep',
