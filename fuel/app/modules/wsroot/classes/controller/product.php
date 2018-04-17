@@ -172,6 +172,9 @@ class Controller_Product extends Controller_Admin{
     }
     public function action_status($proID)
     {
+        header("Cache-Control: no-cache, must-revalidate");
+        header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+        header("Content-Type: application/xml; charset=utf-8");
         $product = Model_Article::find($proID);
         $product->status = ($product->status == 1)?0:1;
         $product->save();
