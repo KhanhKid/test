@@ -115,7 +115,7 @@ class Controller_Product extends Controller_Admin{
         $this->template->title = $data['title']= "Danh Sách ".$brandList[$brandId];
         $this->template->content = View::forge('product/giayphep',$data);
     }
-    public function action_tinmoitruong()
+    public function action_tinmoitruong11()
     {
         $data = array();
         $brandId = 4;

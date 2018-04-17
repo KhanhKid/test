@@ -7,7 +7,7 @@ return array(
     'product/hosodoanhnghiep' => 'wsroot/product/hosodoanhnghiep',
     'product/giayphep' => 'wsroot/product/giayphep',
     'product/vanbanphapquy' => 'wsroot/product/vanbanphapquy',
-    'product/tinmoitruong' => 'wsroot/product/tinmoitruong',
+    'product/tinmoitruong' => 'wsroot/product/tinmoitruong11',
 
     'page-info' => 'wsroot/pageinfo/index',
     'product/(:num)' => 'wsroot/product/chinhsua/$1',
