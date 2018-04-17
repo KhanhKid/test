@@ -177,16 +177,16 @@ class Controller_Product extends Controller_Admin{
         $product->save();
         switch ($product->brand_id) {
             case 1:
-                Response::redirect('/wsroot/product/');        
+                Response::redirect('/wsroot/product/', 'refresh');        
                 break;
             case 2:
-                Response::redirect('/wsroot/product/hosodoanhnghiep');    
+                Response::redirect('/wsroot/product/hosodoanhnghiep', 'refresh');    
                 break;
             case 3:
-                Response::redirect('/wsroot/product/vanbanphapquy');    
+                Response::redirect('/wsroot/product/vanbanphapquy', 'refresh');    
                 break;
             case 4:
-                Response::redirect('/wsroot/product/tinmoitruong');    
+                Response::redirect('/wsroot/product/tinmoitruong', 'refresh');    
                 break;
         }
     }
