@@ -163,25 +163,13 @@ class Controller_Product extends Controller_Admin{
         $this->template->title = $data['title'] = "Xóa sản phẩm";
         $this->template->content = View::forge('product/del',$data);
     }
-    public function action_status($proID)
+    public function action_status()
     {
-        $product = Model_Article::find($proID);
+        $id = Input::post('id');
+        $product = Model_Article::find($id);
         $product->status = ($product->status == 1)?0:1;
         $product->save();
-        switch ($product->brand_id) {
-            case 1:
-                Response::redirect('/wsroot/product/', 'refresh');        
-                break;
-            case 2:
-                Response::redirect('/wsroot/product/hosodoanhnghiep', 'refresh');    
-                break;
-            case 3:
-                Response::redirect('/wsroot/product/vanbanphapquy', 'refresh');    
-                break;
-            case 4:
-                Response::redirect('/wsroot/product/tinmoitruong', 'refresh');    
-                break;
-        }
+        echo json_encode(array('success' => 1, 'status'=>$product->status));die();
     }
 }
 ?>

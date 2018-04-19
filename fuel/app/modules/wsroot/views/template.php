@@ -14,10 +14,6 @@
 <script src="/public/assets/admin/js/lumino.glyphs.js"></script>
 
 <script src="/public/assets/admin/js/bootstrap.min.js"></script>
-<script src="/public/assets/admin/js/chart.min.js"></script>
-<script src="/public/assets/admin/js/chart-data.js"></script>
-<script src="/public/assets/admin/js/easypiechart.js"></script>
-<script src="/public/assets/admin/js/easypiechart-data.js"></script>
 <script src="/public/assets/admin/js/bootstrap-datepicker.js"></script>
 
 <!--[if lt IE 9]>
@@ -89,6 +85,15 @@
         $(window).on('resize', function () {
           if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
         })
+        function GoBackWithRefresh(event) {
+            if ('referrer' in document) {
+                window.location = document.referrer;
+                /* OR */
+                //location.replace(document.referrer);
+            } else {
+                window.history.back();
+            }
+        }
     </script>   
 </body>
 

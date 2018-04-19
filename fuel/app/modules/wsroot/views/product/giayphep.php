@@ -72,7 +72,6 @@
                 null,
                 null,
                 null,
-                null
               ]
         });
     } );

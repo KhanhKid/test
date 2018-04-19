@@ -50,7 +50,7 @@
                             </td>
                             <td><?=$value['reg_datetime']?></td>
                             <td>
-                                <a href="/wsroot/product/status/<?=$value['id']?>"><img width="24" alt="Thay đổi status" src="<?=$imgStatus?>"></a>
+                                <a href="javascript:void(0)" class="btnstatus" data-id="<?=$value['id']?>"><img width="24" alt="Thay đổi status" src="<?=$imgStatus?>"></a>
                                 |
                                 <a href="/wsroot/product/del/<?=$value['id']?>"><svg class="glyph stroked trash"><use xlink:href="#stroked-trash"/></svg></a>
                                 |
@@ -78,9 +78,27 @@
                 null,
                 null,
                 null,
-                null,
                 null
               ]
+        });
+        $(document).on("click",".btnstatus", function () {
+            id = $(this).attr("data-id");
+            obj = $(this);
+            $.ajax({
+                type: "POST",
+                url: "/wsroot/product/status",
+                data: {id:id},
+                dataType: "json",
+                success: function (response) {
+                    if(response.success == 1) {
+                        if (response.status == 1) {
+                            obj.html('<img width="24" alt="Thay đổi status" src="/public/assets/img/wsroot/checked.png">');
+                        } else {
+                            obj.html('<img width="24" alt="Thay đổi status" src="/public/assets/img/wsroot/cancel.png">');
+                        }
+                    }
+                }
+            });
         });
     } );
 </script>

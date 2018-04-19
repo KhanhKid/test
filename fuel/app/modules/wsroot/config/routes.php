@@ -12,7 +12,7 @@ return array(
     'page-info' => 'wsroot/pageinfo/index',
     'product/(:num)' => 'wsroot/product/chinhsua/$1',
     'product/del/(:num)' => 'wsroot/product/del/$1',
-    'product/status/(:num)' => 'wsroot/product/status/$1',
+    'product/status' => 'wsroot/product/status',
     'brand/(:num)' => 'wsroot/brand/chinhsua/$1',
     'brand/del/(:num)' => 'wsroot/brand/del/$1',
     'brand/status/(:num)' => 'wsroot/brand/status/$1',
