@@ -217,7 +217,7 @@
                     color: #2dc997;
                 }          
             </style>
-            <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 23% 14px no-repeat; position: fixed; right: 0px; top: 200px; width: 500px; z-index: 2147483647; overflow: hidden; min-height: 500px; margin-right: -360px;">
+            <div class="content1 chon" style="background: url(/public/assets/frontend/img/hotro_bg.png) 20% 14px no-repeat; position: fixed; right: 0px; top: 200px; width: 500px; z-index: 2147483647; overflow: hidden; min-height: 500px; margin-right: -360px;">
                 <div style="width:360px; float:right;min-height:200px; background:#FFF;border-bottom-left-radius:8px;border-top-left-radius:8px; min-height:420px;">
                     <div class="ho_tro_h">
                         <p class="ten_ya">Tên: <b>Mr Thế </b></p>
