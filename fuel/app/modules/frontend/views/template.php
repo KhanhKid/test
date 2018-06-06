@@ -67,7 +67,7 @@
                         <li class="menu-has-children">
                             <a href="javascript:void(0)">Hồ Sơ Năng Lực</a>
                             <ul>
-                                <li><a href="/cong-ty-khach-hang">Công Ty Khách Hàng</a></li>
+                                <!--<li><a href="/cong-ty-khach-hang">Công Ty Khách Hàng</a></li>-->
                                 <li><a href="/thiet-bi-cong-nghe">Thiết bị – công nghệ</a></li>
                             </ul>
                         </li>
@@ -117,34 +117,30 @@
                 <div class="container wow fadeInUp">
                     <div class="section-header">
                         <h3 class="section-title">Liên Hệ</h3>
-                        <p class="section-description">VP HCM - 39 Cao Triều, Phường Tân Phong, Quận 7, TP.HCM</p>
+                        <p class="section-description">Nhà Máy Xử Lý - Lô 147, tổ 3, ấp Bàu Trăng, xã Nhuận Đức, huyện Củ Chi, TP.HCM</p>
                     </div>
                 </div>
-                <iframe
+                <!--<iframe
                 width="100%"
                 height="300"
                 frameborder="0" style="border:0"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.0084198116422!2d106.70822702920225!3d10.73188581717006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f90560fa08b%3A0xb0d0fe2f7ea05031!2zQ8OUTkcgVFkgVFLDgUNIIE5ISeG7hk0gSOG7rlUgSOG6oE4gVEjGr8agTkcgTeG6oEkgLSBY4busIEzDnSBNw5RJIFRSxq_hu5xORyBUSMOATkggTOG6rFA!5e0!3m2!1sen!2s!4v1523550936118" allowfullscreen>
-                </iframe>
+                </iframe>-->
                 <div class="container wow fadeInUp">
                     <div class="row justify-content-center">
                         <div class="col-lg-5 col-md-4">
                             <div class="info" style="padding-top: 20px;">
                                 <div>
                                     <i class="fa fa-map-marker"></i>
-                                    <p> Nhà Máy Xử Lý - Lô 147, tổ 3, ấp Bàu Trăng, xã Nhuận Đức<br>huyện Củ Chi, TP.HCM</p>
-                                </div>
-                                <div>
-                                    <i class="fa fa-map-marker"></i>
-                                    <p> VP HCM - 39 Cao Triều, Phường Tân Phong<br>Quận 7, TP.HCM</p>
+                                    <p> Nhà Máy Xử Lý - Lô 147, tổ 3, ấp Bàu Trăng, xã Nhuận Đức, huyện Củ Chi, TP.HCM</p>
                                 </div>
                                 <div>
                                     <i class="fa fa-envelope"></i>
-                                    <p>thanhlapcom@yahoo.com</p>
+                                    <p><a href="mailto:thanhlapcom@yahoo.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">thanhlapcom@yahoo.com</a></p>
                                 </div>
                                 <div>
                                     <i class="fa fa-phone"></i>
-                                    <p><a href="tel:02833603072">(028) 3860 3072</a></p>
+                                    <p><a href="tel:+84907089325">0907 089 325 (Ms. Hạnh)</a></p>
                                 </div>
                             </div>
                             <div class="social-links">
