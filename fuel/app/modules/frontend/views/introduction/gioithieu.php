@@ -22,14 +22,14 @@
                     <h1 class="color_green" style="text-align:center"><strong>&nbsp;TH&Ocirc;NG TIN CHUNG</strong></h1>
                     
                     <ul>
-                        <li>Tên đầy đủ: <strong class="color_green">CÔNG TY TRÁCH NHIỆM HỮU HẠN THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP</strong></li>
+                        <li>Tên đầy đủ: <strong class="color_green">CÔNG TY TNHH THƯƠNG MẠI - XỬ LÝ MÔI TRƯỜNG THÀNH LẬP</strong></li>
                         <li>T&ecirc;n ti&ecirc;́ng anh: THANH LAP TRADING - ENVIRONMENT PROTECTION CO., LTD</li>
                         <li>T&ecirc;n c&ocirc;ng ty viết tắt: CTY TNHH TM - XL MT TH&Agrave;NH LẬP</li>
                         <li>Mã quản lý CTNH: 3-4-5-6.021.VX</li>
                         <li>Tài khoản: 200014851037950 - Ng&acirc;n h&agrave;ng Eximbank chi nhánh TP. Hồ Ch&iacute; Minh</li>
                         <li>Mã s&ocirc;́ thu&ecirc;́: 0301761350</li>
                         <li>Website: moitruongthanhlap.com.vn</li>
-                        <li>S&ocirc;́ đi&ecirc;̣n thoại: <a href="tel:+84907089325">0907 089 325 (Ms. Hạnh)</a></li>
+                        <li>S&ocirc;́ đi&ecirc;̣n thoại: <a href="tel:+02838603072">(028) 3860 3072</a></li>
                         <li>E-mail: <a href="mailto:thanhlapcom@yahoo.com?Subject=[Website]%20Hỗ%20Trợ%20" target="_top">thanhlapcom@yahoo.com</a></li>
                         <li>Nhà máy xử lý: L&ocirc; 147, t&ocirc;̉ 3, &acirc;́p bàu Trăn, xã Nhu&acirc;̣n Đức, huy&ecirc;̣n Củ Chi, Tp. H&ocirc;̀ Chí Minh</li>
                         <li>Đại di&ecirc;̣n pháp lu&acirc;̣t: Tăng A P&acirc;̉u</li>
